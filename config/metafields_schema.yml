@@ -1,0 +1,89 @@
+##### Site metafield schema #####
+
+### EXAMPLE
+# general: # no spaces, only digits and underscores
+#   label: # if you want to provide the label in another language (back-office)
+#     en: 'General Stuff' 
+#   fields:
+#     company_name:
+#       label: 'Company Name' # used as the label of the HTML input. Use a hash if you want it in another languages.
+#       hint: 'Lorem Ipsum...' # used as the hint of the HTML input. Use a hash if you want it in another languages.
+#       type: string # <string|text|integer|float|image|boolean|select|color>
+#       localized: false # if the value is scoped by the current locale when rendering the site.
+#       position: 0 # <0..n>, position of the input in the form
+#       select_options: [array]
+#       # select_options:
+#       #   <option_value_1>: <label> # use a hash instead if you want it in another languages.
+#       #   <option_value_2>: <label> # use a hash instead if you want it in another languages.
+#     # other_field:
+#     #   ...
+#
+# theme:
+#   # ...
+#
+### EXAMPLE END
+
+general:
+  label: "General"
+  fields: []
+
+company:
+  label: 'Company'
+  fields:
+    name:
+      type: string
+    address:
+      type: string
+    city:
+      type: string
+    postal_code:
+      type: string
+    hours:
+      type: text
+    tel:
+      type: string
+    mail:
+      type: string
+
+theme:
+  label: 'Theme'
+  fields:
+    background_image:
+      type: image
+      hint: "full screen image (min: 3000px x 3000px)"
+    link_color:
+      type: color
+    font:
+      type: select
+      select_options: ['helvetica', 'Noto']
+
+contact:
+  label: Contact
+  fields:
+    tel1:
+      type: string
+    tel2:
+      type: string
+    address1:
+      type: string
+    address2:
+      type: string
+    email:
+      type: string
+social:
+  label: Social networks
+  fields:
+    - facebook
+    - twitter
+    - linkedin
+    - pinterest
+    - dribbble
+    - instagram
+email_settings:
+  label: Email server
+  fields:
+    - subject
+    - smtp_address
+    - smtp_port
+    - smtp_user_name
+    - smtp_password

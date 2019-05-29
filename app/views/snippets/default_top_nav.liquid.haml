@@ -1,0 +1,21 @@
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+  .container
+    %a.navbar-brand{:href => "#"} {{ site.name }} 
+    %button.navbar-toggler{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+
+    #navbarResponsive.collapse.navbar-collapse
+      %ul.navbar-nav.ml-auto
+        {% with_scope listed: true %}
+        {% for p in site.pages %}
+        {% if p.depth <= 2 %}
+        {% if page == p %}
+        {% assign active_class = "active" %}
+        {% else %}
+        {% assign active_class = "" %}
+        {% endif %}
+        %li.nav-item(class="{{active_class}}")
+          %a.nav-link{:href => "{{p.fullpath}}"} {{ p.title }}
+        {% endif %}
+        {% endfor %}
+        {% endwith_scope %}

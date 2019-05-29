@@ -1,0 +1,135 @@
+---
+title: Foodee Template
+handle: foodee
+listed: true
+published: true
+sections_content: >
+  {
+    "foodee-home": {
+      "settings": {
+        "show": true,
+        "title": "foodee",
+        "subtitle": "Lovely Designed <span>with</span> <a href=\"http://freehtml5.co/\" target=\"_blank\">html5</a>"
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "settings": {
+            "image": "/images/foodee/samples/slide_1.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "/images/foodee/samples/slide_2.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "settings": {
+            "image": "/images/foodee/samples/slide_3.jpg"
+          }
+        }
+      ]
+    },
+    "foodee-about": {
+      "settings": {
+        "show": true,
+        "image": "/images/foodee/samples/res_img_1.jpg",
+        "title": "About Us",
+        "text": "<span class=\"firstcharacter\">F</span>ar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
+        "btn": true,
+        "btntext": "Get in touch",
+        "btnlink": "#",
+        "quotes": true
+      }
+    },
+    "foodee-features": {
+      "settings": {
+        "show": true,
+        "title": "Featured Dishes",
+        "subtitle": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "footer": true,
+        "image": "/images/foodee/samples/slide_3.jpg"
+      },
+      "blocks": [
+        {
+          "type": "legend",
+          "settings": {
+            "icon": "icon-1",
+            "title": "Fruits",
+            "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          }
+        },
+        {
+          "type": "legend",
+          "settings": {
+            "icon": "icon-2",
+            "title": "Sea food",
+            "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          }
+        },
+        {
+          "type": "legend",
+          "settings": {
+            "icon": "icon-3",
+            "title": "Vegetables",
+            "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          }
+        },
+        {
+          "type": "legend",
+          "settings": {
+            "icon": "icon-4",
+            "title": "Meat",
+            "text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+          }
+        }
+      ]
+    },
+    "foodee-menu": {
+      "settings": {
+        "show": true,
+        "title": "Food Menu",
+        "subtitle": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "btn": true,
+        "btntext": "more food menu",
+        "btnlink": "/menu"
+      },
+      "blocks": []
+    },
+    "foodee-events": {
+      "settings": {
+        "show": true,
+        "title": "Upcoming Events",
+        "subtitle": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "image" :"/images/foodee/samples/slide_2.jpg"
+      },
+      "blocks": []
+    },
+    "foodee-reservation": {
+      "settings": {
+        "show": true,
+        "title": "Reserve a Table",
+        "subtitle": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+      },
+      "blocks": []
+    },
+    "foodee-footer": {
+      "settings": {
+        "text": "&copy; 2016 Foodee HTML5 Template. <br> Demo images: <a href=\"http://pexels.com/\" target=\"_blank\">Pexels</a> <br> Tasty Icons Free <a href=\"http://handdrawngoods.com/store/tasty-icons-free-food-icons/\" target=\"_blank\">handdrawngoods</a>",
+        "show": true
+      }
+    }
+  }
+---
+{% extends layouts/foodee %}
+{% block 'main' %}
+  {% section 'foodee-home', placement: 'top' %}
+  {% include 'foodee-nav' %}
+  {% section 'foodee-about' %}
+  {% section 'foodee-features' %}
+  {% section 'foodee-menu' %}
+  {% section 'foodee-events' %}
+  {% section 'foodee-reservation' %}
+{% endblock %}

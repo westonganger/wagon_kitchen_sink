@@ -1,0 +1,42 @@
+---
+title: Bootstrap Portfolio Item
+is_layout: true
+slug: bootstrap_portfolio_item
+---
+{% extends layouts/default %}
+
+{% block main %}
+.container
+  %h1.my-4
+    Page Heading
+    %small Secondary Text
+
+  .row
+    .col-md-8
+      %img.img-fluid{:alt => "", :src => "http://placehold.it/750x500"}/
+    .col-md-4
+      %h3.my-3 Project Description
+      %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.
+      %h3.my-3 Project Details
+      %ul
+        %li Lorem Ipsum
+        %li Dolor Sit Amet
+        %li Consectetur
+        %li Adipiscing Elit
+
+  %h3.my-4 Related Projects
+  .row
+    .col-md-3.col-sm-6.mb-4
+      %a{:href => "#"}
+        %img.img-fluid{:alt => "", :src => "http://placehold.it/500x300"}/
+    .col-md-3.col-sm-6.mb-4
+      %a{:href => "#"}
+        %img.img-fluid{:alt => "", :src => "http://placehold.it/500x300"}/
+    .col-md-3.col-sm-6.mb-4
+      %a{:href => "#"}
+        %img.img-fluid{:alt => "", :src => "http://placehold.it/500x300"}/
+    .col-md-3.col-sm-6.mb-4
+      %a{:href => "#"}
+        %img.img-fluid{:alt => "", :src => "http://placehold.it/500x300"}/
+
+{% endblock %}

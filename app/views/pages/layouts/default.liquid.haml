@@ -1,0 +1,54 @@
+---
+title: Default Layout (Bootstrap 4)
+is_layout: false
+slug: default
+---
+
+%html{lang: "en"}
+  %head
+    {% include 'shared_head' %}
+
+    %link{href: "{{ 'favicon.png' | theme_image_url }}", rel: "shortcut icon"}
+
+    {{ 'main/app' | stylesheet_tag }}
+    {{ 'main/app' | javascript_tag }}
+
+    {% block head %}{% endblock %}
+
+  %body(class="d-flex flex-column {{ page.handle }}")
+    {% if page.fullpath != "/" %}
+    {% include 'back_button' %}
+    {% endif %}
+
+    {% block loader %}
+    {% include 'default_loader' %}
+    {% endblock %}
+
+    {% block left_sidebar %}
+    {% include 'default_left_sidebar' %}
+    {% endblock %}
+
+    {% block right_sidebar %}
+    {% include 'default_right_sidebar' %}
+    {% endblock %}
+
+    #page-content
+      {% block top_nav %}
+      {% include 'default_top_nav' %}
+      {% endblock %}
+
+      {% block flash_notice %}
+      {% include 'default_flash_notice' %}
+      {% endblock %}
+
+      {% block main %}{% endblock %}
+
+    {% block footer %}
+    {% include 'default_footer' %}
+    {% endblock %}
+
+    {% block bottom_nav %}
+    {% include 'default_bottom_nav' %}
+    {% endblock %}
+
+    {% block body_bottom %}{% endblock %}

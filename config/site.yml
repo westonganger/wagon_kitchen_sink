@@ -1,0 +1,73 @@
+# The name of this site
+# This text displays in the back-office and
+# can be used in templates through the site.name global variable
+name: Kitchen Sink Site Templates 
+
+# An array of domain aliases for the site
+# This option is for sites on multi-site engines
+domains: []
+
+# An array of locales (languages) the site is available in
+# The locale listed first is the site's default locale
+# Locales are specified using ISO language codes
+# Possible locales include: en, de, fr, pl, pt-BR, it, nl, nb, es, ru, et, ja, zh-CN
+locales: [en]
+
+# The site's timezone
+# This converts the server's time to the site's time zone in templates
+# The TimeZone class from Rail's ActiveSupport is used to interpret the string
+# Sample timezone strings: Tokyo, Beijing, Moscow, Cairo, Paris, Pacific Time (US & Canada)
+timezone: Pacific Time (US & Canada)
+
+# For SEO purposes, sites may wish to add a relevant string to the <title> tag
+# And include <meta type="keywords"> and <meta type="description">
+# For this purpose you can set values for these variables here
+# They can be accessed in templates through the site.seo_title, site.meta_keywords, and site.meta_description variables
+#seo_title: Bootstrap 4 SFWD Template ### defaults to site.name
+meta_keywords: ""
+meta_description: "some meta description"
+
+# You can control the display of the "Properties" section in the back-office
+metafields_ui:
+  label: # use a hash for localized versions
+    en: Site Properties # default
+  icon: file-alt # FontAwesome icons without the leading "fa-" string.
+  #hint: "Lorem ipsum..."
+
+# Each site can have its own set of custom properties organized in namespaces.
+# First, define namespaces and their fields in the config/metafields_schema.yml file.
+# Finally, set default values below as described in the example.
+# You can access them in your liquid templates and snippets:
+#   {{ site.metafields.<namespace>.<field> }}
+
+metafields:
+  # shop:
+  #   address: 700 South Laflin Street
+  company:
+    name: "My Company Name"
+    address: 5555 Love Paradise 56 New Clity 5655,<br>Excel Tower United Kingdom
+    tel: (123) 465-6789
+    mail: info@html5
+
+  theme:
+    #background_image: "/samples/background.png"
+  contact:
+    tel1: +11 234 567 890
+    tel2: +11 286 543 850
+    address1: 123 Fifth Avenue
+    address2: 12th,Belgrade,SRB 11000
+    email: ourstudio@somemail.com
+  social:
+    facebook: https://www.facebook.com/
+    twitter: https://twitter.com/
+    linkedin: https://www.linkedin.com/
+    pinterest: https://www.pinterest.com/
+    dribbble: https://www.dribbble.com/
+    instagram: https://instagram.com
+
+  email_settings:
+    subject: "Email from Pluton"
+    smtp_address: "smtp.gmail.com"
+    smtp_port: 587
+    smtp_user_name: "postmaster@studiowan.fr"
+    smtp_password: "6UA-Zn9-3Sc-GAF"

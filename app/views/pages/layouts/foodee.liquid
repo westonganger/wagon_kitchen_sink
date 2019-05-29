@@ -1,0 +1,24 @@
+---
+title: Foodee Layout
+slug: foodee
+is_layout: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'shared_head' %}
+
+    {{ 'foodee/app' | stylesheet_tag }}
+    {{ 'foodee/app' | javascript_tag }}
+  </head>
+  <body>
+    {% include 'back_button' %}
+
+    <div id="fh5co-container">
+    {% block 'main' %}
+    {% endblock %}
+    </div>
+
+    {% section foodee-footer, placement: 'bottom' %}
+  </body>
+</html>

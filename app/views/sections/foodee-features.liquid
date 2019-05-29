@@ -1,0 +1,149 @@
+---
+{
+  "name": "Features",
+  "icon": "image_text",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Show Features",
+      "id": "show",
+      "type": "checkbox"
+    },
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text"
+    },
+    {
+      "label": "SubTitle",
+      "id": "subtitle",
+      "type": "text",
+      "html": true
+    },
+    {
+      "label": "Footer",
+      "id": "footer",
+      "type": "checkbox"
+    },
+    {
+      "label": "Footer background",
+      "id": "image",
+      "type": "image_picker"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "legend",
+      "type": "legend",
+      "settings": [
+        {
+          "label": "Icon",
+          "id": "icon",
+          "type": "select",
+          "options": [{"label": "icon-1","value": "icon-1"},{"label": "icon-2", "value": "icon-2"},{"label": "icon-3", "value": "icon-3"},{"label": "icon-4", "value": "icon-4"}]
+        },
+        {
+          "label": "Tile",
+          "id": "title",
+          "type": "text"
+        },
+        {
+          "label": "Text",
+          "id": "text",
+          "type": "text",
+          "html": true
+        }
+      ]
+    }
+  ]
+}
+---
+{% if section.settings.show == true %}
+<script type="text/javascript">$("#features").css('display', 'inline-block');</script>
+  <div id="fh5co-featured" data-section="features">
+    <div class="container">
+      <div class="row text-center fh5co-heading row-padded">
+        <div class="col-md-8 col-md-offset-2">
+          <h2 class="heading to-animate">{{ section.settings.title }}</h2>
+          <p class="sub-heading to-animate">{{ section.settings.subtitle }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="fh5co-grid">
+          <div class="fh5co-v-half to-animate-2">
+            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.photo.url }})"></div>
+            <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+              <h2>{{ contents.items.first.name }}</h2>
+              <span class="pricing">${{ contents.items.first.price }}</span>
+              <p>{{ contents.items.first.desc }}</p>
+            </div>
+          </div>
+          <div class="fh5co-v-half">
+            <div class="fh5co-h-row-2 to-animate-2">
+              <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.photo.url }})"></div>
+              <div class="fh5co-v-col-2 fh5co-text arrow-left">
+                <h2>{{ contents.items.first.next.name }}</h2>
+                <span class="pricing">${{ contents.items.first.next.price }}</span>
+                <p>{{ contents.items.first.next.desc }}</p>
+              </div>
+            </div>
+            <div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
+              <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.photo.url }})"></div>
+              <div class="fh5co-v-col-2 fh5co-text arrow-right">
+                <h2>{{ contents.items.first.next.next.name }}</h2>
+                <span class="pricing">${{ contents.items.first.next.next.price }}</span>
+                <p>{{ contents.items.first.next.next.desc }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="fh5co-v-half">
+            <div class="fh5co-h-row-2 fh5co-reversed to-animate-2">
+              <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.next.photo.url }})"></div>
+              <div class="fh5co-v-col-2 fh5co-text arrow-right">
+                <h2>{{ contents.items.first.next.next.next.name }}</h2>
+                <span class="pricing">${{ contents.items.first.next.next.next.price }}</span>
+                <p>{{ contents.items.first.next.next.next.desc }}</p>
+              </div>
+            </div>
+            <div class="fh5co-h-row-2 to-animate-2">
+              <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.next.next.photo.url }})"></div>
+              <div class="fh5co-v-col-2 fh5co-text arrow-left">
+                <h2>{{ contents.items.first.next.next.next.next.name }}</h2>
+                <span class="pricing">${{ contents.items.first.next.next.next.next.price }}</span>
+                <p>{{ contents.items.first.next.next.next.next.desc }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="fh5co-v-half to-animate-2">
+            <div class="fh5co-v-col-2 fh5co-bg-img" style="background-image: url({{ contents.items.first.next.next.next.next.next.photo.url }}"></div>
+            <div class="fh5co-v-col-2 fh5co-text fh5co-special-1 arrow-left">
+              <h2>{{ contents.items.first.next.next.next.next.next.name }}</h2>
+              <span class="pricing">${{ contents.items.first.next.next.next.next.next.price }}</span>
+              <p>{{ contents.items.first.next.next.next.next.next.desc }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% if section.settings.footer == true %}
+  <div id="fh5co-type" style="background-image: url({{ section.settings.image }});" data-stellar-background-ratio="0.5">
+    <div class="fh5co-overlay"></div>
+    <div class="container">
+      <div class="row">
+        {% for block in section.blocks %}
+        <div class="col-md-3 to-animate">
+          <div class="fh5co-type">
+            <h3 class="with-icon {{ block.settings.icon }}">{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% else %}
+<script type="text/javascript">$("#features").hide()</script>
+{% endif %}
