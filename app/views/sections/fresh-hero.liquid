@@ -1,0 +1,78 @@
+---
+{
+  "name": "Hero",
+  "class": "hero-main",
+  "icon": "image_text",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "nb_rows": 2
+    },
+    {
+      "label": "Button",
+      "id": "button",
+      "type": "text",
+      "nb_rows": 1
+    },    {
+      "label": "Link",
+      "id": "link",
+      "type": "url"
+    },
+    {
+      "label": "Image",
+      "id": "image",
+      "type": "image_picker"
+    },
+    {
+      "label": "Show clients",
+      "id": "clients",
+      "type": "checkbox"
+    }
+  ],
+  "blocks": [],
+  "presets": []
+}
+---
+<section class="hero is-fullheight is-default is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-5 is-offset-1 landing-caption">
+          <h1 class="title is-1 is-bold is-spaced">{{ section.settings.title }}</h1>
+          <h2 class="subtitle is-5 is-muted">{{ section.settings.text }}</h2>
+          <p>
+            <a class="button cta rounded primary-btn raised" href="{{ section.settings.link }}">{{ section.settings.button }}</a>
+          </p>
+        </div>
+        <div class="column is-5 is-offset-1">
+          <figure class="image is-4by3">
+            <img src="{{ section.settings.image }}" alt="Description">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot mb-20">
+    <div class="container">
+      <div class="tabs is-centered">
+        <ul>
+          {% if section.settings.clients == true %}
+          {% for client in contents.clients %}
+          <li><a href="{{ client.website }}"><img class="partner-logo" src="{{ client.logo.url }}"></a></li>
+          {% endfor %}
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

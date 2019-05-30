@@ -16,6 +16,7 @@ mix.webpackConfig({
     new BundleAnalyzerPlugin({
       analyzerMode: 'static', // use 'server' to start webserver instead of open file 
       openAnalyzer: false, // open generated webpage automatically upon every bundle
+      reportFilename: './../bundle-analyzer.html'
     }),
     new SourceMapDevToolPlugin({
       filename: '[name].js.map',
@@ -52,6 +53,12 @@ mix
 
   .js('app/assets/foodee/javascripts/app.js', 'public/javascripts/foodee/app.js')
   .sass('app/assets/foodee/stylesheets/app.scss', 'public/stylesheets/foodee/app.css')
+
+  .js('app/assets/cube/javascripts/app.js', 'public/javascripts/cube/app.js')
+  .sass('app/assets/cube/stylesheets/app.scss', 'public/stylesheets/cube/app.css')
+
+  .js('app/assets/fresh/javascripts/app.js', 'public/javascripts/fresh/app.js')
+  .sass('app/assets/fresh/stylesheets/app.scss', 'public/stylesheets/fresh/app.css')
 
   // .combine([
   //   'node_modules/jquery/dist/jquery.js',

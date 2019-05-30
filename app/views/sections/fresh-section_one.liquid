@@ -1,0 +1,94 @@
+---
+{
+  "name": "Section one",
+  "class": "one-main",
+  "icon": "default",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "nb_rows": 2
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "label": "Card title",
+          "id": "ctitle",
+          "type": "text"
+        },
+        {
+          "label": "Card icon",
+          "id": "cicon",
+          "type": "image_picker"
+        },
+        {
+          "label": "Card text",
+          "id": "ctext",
+          "type": "text"
+        },
+        {
+          "label": "Card button type",
+          "id": "cbtype",
+          "type": "select",
+          "options": [{"label": "accent-btn","value": "accent-btn"},{"label": "secondary-btn", "value": "secondary-btn"},{"label": "primary-btn", "value": "primary-btn"}]
+        },
+        {
+          "label": "Card button text",
+          "id": "cbtext",
+          "type": "text"
+        },
+        {
+          "label": "Card link",
+          "id": "cblink",
+          "type": "url"
+        }
+      ]
+    }
+  ],
+  "presets": []
+}
+---
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ section.settings.title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ section.settings.text }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns">
+        {% for block in section.blocks %}
+        <div class="column">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-{{ forloop.index }}" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>{{ block.settings.ctitle }}</h4>
+            </div>
+            <div class="card-icon">
+              <img src="{{ block.settings.cicon }}">
+            </div>
+            <div class="card-text">
+              <p>{{ block.settings.ctext }}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{ block.settings.cblink }}" class="button btn-align-md {{ block.settings.cbtype }} raised">{{ block.settings.cbtext }}</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

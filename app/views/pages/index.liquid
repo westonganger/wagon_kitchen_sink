@@ -1,0 +1,29 @@
+---
+title: Home
+handle: home
+listed: true
+published: true
+position: -999
+---
+{% extends 'layouts/default' %}
+
+{% block main %}
+<div class="container text-center">
+  <h1 class="text-underline mt-5 mb-4">Website Templates</h1>
+  <div class="mt-2">
+    <a class="btn" href="/bootstrap-kitchen-sink">Bootstrap Kitchen Sink</a>
+  </div>
+
+  {% with_scope depth: 1, listed: true %}
+    {% assign sorted_pages = site.pages | sort: 'title' %}
+    {% for p in sorted_pages %}
+      {% if p.slug != 'bootstrap-kitchen-sink' %}
+        <div class="mt-2">
+          <a class="btn" href="{{ p.slug }}">{{ p.title }}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endwith_scope %}
+  <div class="mt-5"></div>
+</div>
+{% endblock %}

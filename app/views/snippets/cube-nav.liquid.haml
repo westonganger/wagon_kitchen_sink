@@ -1,0 +1,39 @@
+%nav.gtco-nav{:role => "navigation"}
+  .gtco-container
+    .row
+      .col-sm-2.col-xs-12
+        #gtco-logo
+          %a{:href => "index.html"}
+            %img{:alt => "Free HTML5 Website Template by FreeHTML5.co", :src => "{{ 'cube/logo.png' | theme_image_url }}"}/
+      .col-xs-10.text-right.menu-1
+        %ul
+          %li.active
+            %a{:href => "index.html"} Home
+          %li
+            %a{:href => "about.html"} About
+          %li.has-dropdown
+            %a{:href => "services.html"} Services
+            %ul.dropdown
+              %li
+                %a{:href => "#"} Web Design
+              %li
+                %a{:href => "#"} eCommerce
+              %li
+                %a{:href => "#"} Branding
+              %li
+                %a{:href => "#"} API
+          %li.has-dropdown
+            %a{:href => "#"} Dropdown
+            %ul.dropdown
+              %li
+                %a{:href => "#"} HTML5
+              %li
+                %a{:href => "#"} CSS3
+              %li
+                %a{:href => "#"} Sass
+              %li
+                %a{:href => "#"} jQuery
+          %li
+            %a{:href => "portfolio.html"} Portfolio
+          %li
+            %a{:href => "contact.html"} Contact

@@ -42,27 +42,27 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: false
-    #hint: Explanatory text displayed in the back office
+    #hint: 
     localized: false
 
 - phone_number: # The lowercase, underscored name of the field
     label: Phone number # Human readable name of the field
     type: string
     required: false
-    #hint: Explanatory text displayed in the back office
+    #hint: 
     localized: false
 
 - email: # The lowercase, underscored name of the field
     label: Email # Human readable name of the field
     type: string
     required: false
-    #hint: Explanatory text displayed in the back office
+    #hint: 
     localized: false
 
 - message: # The lowercase, underscored name of the field
     label: Message # Human readable name of the field
     type: text
     required: false
-    #hint: Explanatory text displayed in the back office
+    #hint: 
     localized: false
     text_formatting: raw # html (uses rich text editor), markdown or text (uses plain text editor)

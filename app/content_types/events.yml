@@ -5,7 +5,7 @@ name: Events
 slug: events
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: 
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: name
@@ -41,20 +41,20 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - date: # The lowercase, underscored name of the field
     label: Date # Human readable name of the field
     type: date
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - desc: # The lowercase, underscored name of the field
     label: Desc # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)

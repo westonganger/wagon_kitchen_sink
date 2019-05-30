@@ -1,6 +1,6 @@
 ---
-title: Default Layout (Bootstrap 4)
-is_layout: false
+title: Default Layout
+is_layout: true
 slug: default
 ---
 
@@ -11,44 +11,44 @@ slug: default
     %link{href: "{{ 'favicon.png' | theme_image_url }}", rel: "shortcut icon"}
 
     {{ 'main/app' | stylesheet_tag }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+
     {{ 'main/app' | javascript_tag }}
 
     {% block head %}{% endblock %}
 
-  %body(class="d-flex flex-column {{ page.handle }}")
-    {% if page.fullpath != "/" %}
-    {% include 'back_button' %}
-    {% endif %}
+  %body(class="d-flex flex-column {{ page.handle }} {{ body_class }}")
+    {% block body_top %}{% endblock %}
 
     {% block loader %}
-    {% include 'default_loader' %}
+    {% include 'loader' %}
     {% endblock %}
 
     {% block left_sidebar %}
-    {% include 'default_left_sidebar' %}
+    {% include 'left_sidebar' %}
     {% endblock %}
 
     {% block right_sidebar %}
-    {% include 'default_right_sidebar' %}
+    {% include 'right_sidebar' %}
     {% endblock %}
 
-    #page-content
-      {% block top_nav %}
-      {% include 'default_top_nav' %}
-      {% endblock %}
+    {% block top_nav %}
+    {% include 'top_nav' %}
+    {% endblock %}
 
+    #page-content.flex-shrink-0
       {% block flash_notice %}
-      {% include 'default_flash_notice' %}
+      {% include 'flash_notice' %}
       {% endblock %}
 
       {% block main %}{% endblock %}
-
+    
     {% block footer %}
-    {% include 'default_footer' %}
+    {% include 'footer' %}
     {% endblock %}
 
     {% block bottom_nav %}
-    {% include 'default_bottom_nav' %}
+    {% include 'bottom_nav' %}
     {% endblock %}
 
     {% block body_bottom %}{% endblock %}

@@ -1,13 +1,13 @@
 // https://github.com/VodkaBears/Vide/issues/183#issuecomment-365603849
 jQuery.fn.load = function(callback) { $(window).on("load", callback) };
 
-import './jquery.mixitup.js';
-import './bootstrap.js';
-import './jquery.bxslider.js';
-import './jquery.cslider.js';
-import './jquery.placeholder.js';
-import './jquery.inview.js';
-import './appli.js';
+import './vendor/jquery.mixitup.js';
+import './vendor/bootstrap.js';
+import './vendor/jquery.bxslider.js';
+import './vendor/jquery.cslider.js';
+import './vendor/jquery.placeholder.js';
+import './vendor/jquery.inview.js';
+import './vendor/appli.js';
 
 // Tell Webpack to load the style
 //import '../stylesheets/app.scss';

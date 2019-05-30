@@ -5,7 +5,7 @@ name: Posts
 slug: posts
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: 
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: title
@@ -36,41 +36,41 @@ fields:
     label: Title # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - subtitle: # The lowercase, underscored name of the field
     label: Subtitle # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - author: # The lowercase, underscored name of the field
     label: Author # Human readable name of the field
     type: string
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - date: # The lowercase, underscored name of the field
     label: Date # Human readable name of the field
     type: date
     required: false
-    hint: Explanatory text displayed in the back office
+    hint:
     localized: false
 
-- header_img: # The lowercase, underscored name of the field
-    label: Header img # Human readable name of the field
+- image: # The lowercase, underscored name of the field
+    label: Image # Human readable name of the field
     type: file
     required: false
-    hint: Explanatory text displayed in the back office
+    hint:
     localized: false
 
 - body: # The lowercase, underscored name of the field
     label: Body # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
     # text_formatting: html # html (uses rich text editor) or text (uses plain text editor)

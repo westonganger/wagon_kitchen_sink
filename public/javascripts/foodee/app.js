@@ -95,14 +95,14 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _jquery_easing_1_3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery.easing.1.3 */ "./app/assets/foodee/javascripts/jquery.easing.1.3.js");
-/* harmony import */ var _jquery_easing_1_3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_easing_1_3__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _bootstrap_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bootstrap.min */ "./app/assets/foodee/javascripts/bootstrap.min.js");
-/* harmony import */ var _bootstrap_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_min__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _jquery_waypoints_min__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./jquery.waypoints.min */ "./app/assets/foodee/javascripts/jquery.waypoints.min.js");
-/* harmony import */ var _jquery_waypoints_min__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_jquery_waypoints_min__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _jquery_stellar_min__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./jquery.stellar.min */ "./app/assets/foodee/javascripts/jquery.stellar.min.js");
-/* harmony import */ var _jquery_stellar_min__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_jquery_stellar_min__WEBPACK_IMPORTED_MODULE_3__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _vendor_jquery_easing_1_3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/jquery.easing.1.3 */ "./app/assets/foodee/javascripts/vendor/jquery.easing.1.3.js");
+/* harmony import */ var _vendor_jquery_easing_1_3__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_easing_1_3__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vendor_bootstrap_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/bootstrap.min */ "./app/assets/foodee/javascripts/vendor/bootstrap.min.js");
+/* harmony import */ var _vendor_bootstrap_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_bootstrap_min__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _vendor_jquery_waypoints_min__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/jquery.waypoints.min */ "./app/assets/foodee/javascripts/vendor/jquery.waypoints.min.js");
+/* harmony import */ var _vendor_jquery_waypoints_min__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_waypoints_min__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _vendor_jquery_stellar_min__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/jquery.stellar.min */ "./app/assets/foodee/javascripts/vendor/jquery.stellar.min.js");
+/* harmony import */ var _vendor_jquery_stellar_min__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_stellar_min__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _shared_javascripts_sections_manager__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../shared/javascripts/sections/_manager */ "./app/assets/shared/javascripts/sections/_manager.js");
 /* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sections */ "./app/assets/foodee/javascripts/sections/index.js");
 // Tell Webpack to load the style
@@ -346,10 +346,251 @@ var homeAnimate = function homeAnimate() {
 
 /***/ }),
 
-/***/ "./app/assets/foodee/javascripts/bootstrap.min.js":
+/***/ "./app/assets/foodee/javascripts/sections/about.js":
+/*!*********************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/about.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/events.js":
+/*!**********************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/events.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/features.js":
+/*!************************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/features.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/footer.js":
+/*!**********************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/footer.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/home.js":
 /*!********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/bootstrap.min.js ***!
+  !*** ./app/assets/foodee/javascripts/sections/home.js ***!
   \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/index.js":
+/*!*********************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/index.js ***!
+  \*********************************************************/
+/*! exports provided: Home, About, Feature, Menu, Event, Reservation, Footer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./app/assets/foodee/javascripts/sections/home.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Home", function() { return _home__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about */ "./app/assets/foodee/javascripts/sections/about.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "About", function() { return _about__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _features__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./features */ "./app/assets/foodee/javascripts/sections/features.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Feature", function() { return _features__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ "./app/assets/foodee/javascripts/sections/menu.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Menu", function() { return _menu__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _events__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./events */ "./app/assets/foodee/javascripts/sections/events.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Event", function() { return _events__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony import */ var _reservation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reservation */ "./app/assets/foodee/javascripts/sections/reservation.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Reservation", function() { return _reservation__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer */ "./app/assets/foodee/javascripts/sections/footer.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _footer__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+// Import all the sections here
+//
+// Example:
+// export { default as Hero } from './hero';
+//
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/menu.js":
+/*!********************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/menu.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/sections/reservation.js":
+/*!***************************************************************!*\
+  !*** ./app/assets/foodee/javascripts/sections/reservation.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/foodee/javascripts/vendor/bootstrap.min.js":
+/*!***************************************************************!*\
+  !*** ./app/assets/foodee/javascripts/vendor/bootstrap.min.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1387,10 +1628,10 @@ if ("undefined" == typeof jQuery) throw new Error("Bootstrap's JavaScript requir
 
 /***/ }),
 
-/***/ "./app/assets/foodee/javascripts/jquery.easing.1.3.js":
-/*!************************************************************!*\
-  !*** ./app/assets/foodee/javascripts/jquery.easing.1.3.js ***!
-  \************************************************************/
+/***/ "./app/assets/foodee/javascripts/vendor/jquery.easing.1.3.js":
+/*!*******************************************************************!*\
+  !*** ./app/assets/foodee/javascripts/vendor/jquery.easing.1.3.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1623,10 +1864,10 @@ jQuery.extend(jQuery.easing, {
 
 /***/ }),
 
-/***/ "./app/assets/foodee/javascripts/jquery.stellar.min.js":
-/*!*************************************************************!*\
-  !*** ./app/assets/foodee/javascripts/jquery.stellar.min.js ***!
-  \*************************************************************/
+/***/ "./app/assets/foodee/javascripts/vendor/jquery.stellar.min.js":
+/*!********************************************************************!*\
+  !*** ./app/assets/foodee/javascripts/vendor/jquery.stellar.min.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1995,10 +2236,10 @@ jQuery.extend(jQuery.easing, {
 
 /***/ }),
 
-/***/ "./app/assets/foodee/javascripts/jquery.waypoints.min.js":
-/*!***************************************************************!*\
-  !*** ./app/assets/foodee/javascripts/jquery.waypoints.min.js ***!
-  \***************************************************************/
+/***/ "./app/assets/foodee/javascripts/vendor/jquery.waypoints.min.js":
+/*!**********************************************************************!*\
+  !*** ./app/assets/foodee/javascripts/vendor/jquery.waypoints.min.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2346,247 +2587,6 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
   __webpack_provided_window_dot_jQuery && (__webpack_provided_window_dot_jQuery.fn.waypoint = t(__webpack_provided_window_dot_jQuery)), window.Zepto && (window.Zepto.fn.waypoint = t(window.Zepto));
 }();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/about.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/about.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/events.js":
-/*!**********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/events.js ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/features.js":
-/*!************************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/features.js ***!
-  \************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/footer.js":
-/*!**********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/footer.js ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/home.js":
-/*!********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/home.js ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/index.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/index.js ***!
-  \*********************************************************/
-/*! exports provided: Home, About, Feature, Menu, Event, Reservation, Footer */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./app/assets/foodee/javascripts/sections/home.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Home", function() { return _home__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about */ "./app/assets/foodee/javascripts/sections/about.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "About", function() { return _about__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
-/* harmony import */ var _features__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./features */ "./app/assets/foodee/javascripts/sections/features.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Feature", function() { return _features__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ "./app/assets/foodee/javascripts/sections/menu.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Menu", function() { return _menu__WEBPACK_IMPORTED_MODULE_3__["default"]; });
-
-/* harmony import */ var _events__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./events */ "./app/assets/foodee/javascripts/sections/events.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Event", function() { return _events__WEBPACK_IMPORTED_MODULE_4__["default"]; });
-
-/* harmony import */ var _reservation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./reservation */ "./app/assets/foodee/javascripts/sections/reservation.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Reservation", function() { return _reservation__WEBPACK_IMPORTED_MODULE_5__["default"]; });
-
-/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./footer */ "./app/assets/foodee/javascripts/sections/footer.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Footer", function() { return _footer__WEBPACK_IMPORTED_MODULE_6__["default"]; });
-
-// Import all the sections here
-//
-// Example:
-// export { default as Hero } from './hero';
-//
-
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/menu.js":
-/*!********************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/menu.js ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/foodee/javascripts/sections/reservation.js":
-/*!***************************************************************!*\
-  !*** ./app/assets/foodee/javascripts/sections/reservation.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
 
 /***/ }),
 

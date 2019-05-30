@@ -5,7 +5,7 @@ name: Quotes
 slug: quotes
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: 
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: author
@@ -41,13 +41,13 @@ fields:
     label: Author # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - quote: # The lowercase, underscored name of the field
     label: Quote # Human readable name of the field
     type: text
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
     # text_formatting: html # html (uses rich text editor), markdown or text (uses plain text editor)

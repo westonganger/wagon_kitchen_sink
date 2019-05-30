@@ -1,2 +1,5 @@
-@import '~chosen-js/chosen.css';
-@import '~chosen-bootstrap-theme/dist/chosen-bootstrap-theme.css';
+@import "./utility";
+
+svg text{
+  text-anchor: middle; // center align all svg placeholders
+}

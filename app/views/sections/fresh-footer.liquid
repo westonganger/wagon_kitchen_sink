@@ -1,0 +1,149 @@
+---
+{
+  "name": "Footer",
+  "class": "footer-main",
+  "icon": "footer",
+  "keep_icon": true,
+  "settings": [
+    {
+      "label": "Logo",
+      "id": "site_logo",
+      "type": "image_picker"
+    },
+    {
+      "label": "Social",
+      "id": "social",
+      "type": "checkbox"
+    },
+    {
+      "label": "Social title",
+      "id": "social_title",
+      "type": "text"
+    },
+    {
+      "label": "Praise",
+      "id": "praise",
+      "type": "checkbox"
+    },
+    {
+      "label": "Praise logo",
+      "id": "praise_logo",
+      "type": "image_picker"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Columns",
+      "type": "columns",
+      "settings": [
+        {
+          "label": "Title",
+          "id": "title",
+          "type": "text"
+        },
+        {
+          "label": "Link 1",
+          "id": "link_1",
+          "type": "url"
+        },
+        {
+          "label": "Link 1 text",
+          "id": "link_1_txt",
+          "type": "text"
+        },
+        {
+          "label": "Link 2",
+          "id": "link_2",
+          "type": "url"
+        },
+        {
+          "label": "Link 2 text",
+          "id": "link_2_txt",
+          "type": "text"
+        },
+        {
+          "label": "Link 3",
+          "id": "link_3",
+          "type": "url"
+        },
+        {
+          "label": "Link 3 text",
+          "id": "link_3_txt",
+          "type": "text"
+        },
+        {
+          "label": "Link 4",
+          "id": "link_4",
+          "type": "url"
+        },
+        {
+          "label": "Link 4 text",
+          "id": "link_4_txt",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+---
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      {% if section.settings.site_logo %}
+      <div class="column">
+        <div class="footer-logo">
+          <img src="{{ section.settings.site_logo }}">
+        </div>
+      </div>
+      {% endif %}
+      {% for block in section.blocks %}
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>{{ block.settings.title }}</h3>
+          </div>
+          <ul class="link-list">
+            <li><a href="{{ block.settings.link_1 }}">{{ block.settings.link_1_txt }}</a></li>
+            <li><a href="{{ block.settings.link_2 }}">{{ block.settings.link_2_txt }}</a></li>
+            <li><a href="{{ block.settings.link_3 }}">{{ block.settings.link_3_txt }}</a></li>
+            <li><a href="{{ block.settings.link_4 }}">{{ block.settings.link_4_txt }}</a></li>
+          </ul>
+        </div>
+      </div>
+      {% endfor %}
+      {% if section.settings.social == true %}
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>{{ section.settings.social_title }}</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://github.com/#">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://dribbble.com/#">
+                  <span class="icon"><i class="fa fa-dribbble"></i></span>
+                </a>
+                <a class="level-item" href="https://fb.com/#">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/#">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://bitbucket.org/#">
+                  <span class="icon"><i class="fa fa-bitbucket"></i></span>
+                </a>
+              </div>
+            </nav>
+            <a href="https://bulma.io" target="_blank">
+            {% if section.settings.praise == true %}
+              <img src="{{ section.settings.praise_logo }}" alt="Made with Bulma" width="128" height="24">
+            {% endif %}
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</footer>

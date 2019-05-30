@@ -23,53 +23,45 @@
 #
 ### EXAMPLE END
 
-general:
-  label: "General"
-  fields: []
-
 company:
   label: 'Company'
   fields:
     name:
       type: string
+      sample: My Company
     address:
       type: string
+      sample: 1234 Smith St
     city:
       type: string
+      sample: Vancouver, BC, Canada
     postal_code:
       type: string
+      sample: V5K 0A1
+    phone:
+      type: string
+      sample: (123)-456-7890
+    email:
+      type: string
+      sample: info@mycompany.com
     hours:
       type: text
-    tel:
-      type: string
-    mail:
-      type: string
+      sample: "Monday to Friday<br>9am - 5pm"
 
 theme:
   label: 'Theme'
   fields:
+    background_color:
+      type: color
     background_image:
       type: image
-      hint: "full screen image (min: 3000px x 3000px)"
-    link_color:
+      hint: "full screen background image (min: 3000px x 3000px)"
+    main_link_color:
       type: color
     font:
       type: select
       select_options: ['helvetica', 'Noto']
 
-contact:
-  label: Contact
-  fields:
-    tel1:
-      type: string
-    tel2:
-      type: string
-    address1:
-      type: string
-    address2:
-      type: string
-    email:
-      type: string
 social:
   label: Social networks
   fields:
@@ -79,11 +71,21 @@ social:
     - pinterest
     - dribbble
     - instagram
+
 email_settings:
-  label: Email server
+  label: "Email SMTP Settings"
   fields:
-    - subject
-    - smtp_address
-    - smtp_port
-    - smtp_user_name
-    - smtp_password
+    smtp_host:
+      type: string
+    smtp_post:
+      type: string
+    smtp_user:
+      type: string
+    smtp_password:
+      type: string
+    authentication:
+      type: string
+      sample: plain
+    enable_starttls_auto: 
+      type: boolean
+      sample: true

@@ -1,34 +1,31 @@
-/* Tilde (~) actually refers to "../../../node_modules/" */
-
 @import "~bootswatch/dist/cosmo/variables";
-
 @import "~bootstrap/scss/bootstrap";
-
 @import "~bootswatch/dist/cosmo/bootswatch";
 
+/*
 @import '~chosen-js/chosen.css';
 @import '~chosen-bootstrap-theme/dist/chosen-bootstrap-theme.css';
+*/
+
+$top_navbar_height: 55px;
 
 html, body{
-  height: 100%;
+  height: 100%; // required for sticky footer
 }
 
-body {
-  margin-top: 55px;
+footer{
+  margin-top: auto; // required for sticky footer, https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/
 }
 
-body.full-page-image-background {
-  background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+.full-height{
+  height: calc(100vh - #{$top_navbar_height});
 }
 
 #page-content{
-  flex: 1 0 auto;
+  margin-top: $top_navbar_height;
 }
 
-.sticky-footer{
-  flex-shrink: 0;
+.blue-gradient{
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
 }

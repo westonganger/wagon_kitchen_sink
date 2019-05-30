@@ -1,19 +1,19 @@
 development:
-  #host: http://localhost:3000
-  host: http://127.0.0.1:3000
+  host: http://localhost:3000
+  #host: http://127.0.0.1:3000
   handle: kitchen-sink-template
   email: weston@westonganger.com
   api_key: 0f4bc6fd71ddcf9fea584acdb4891f1832e8059d
 
 # staging:
-#   host: staging.example.com
-#   email: john@doe.net
-#   handle: my-test-site
+#   host: staging-cms.solidfoundationwebdev.com
+#   email: weston@westonganger.com
+#   handle: kitchen-sink-template
 #   api_key: <your api key here>
 
-production:
-  host: cms.solidfoundationwebdev.com
-  handle: kitchen-sink-template
-  email: weston@westonganger.com
-  api_key: 8c16f3ab5aff02adcedd659aea9289f6890f7894
-  ssl: true
+# production:
+#   host: production-cms.solidfoundationwebdev.com
+#   email: weston@westonganger.com
+#   handle: kitchen-sink-template
+#   api_key: <your api key here>
+#   ssl: true

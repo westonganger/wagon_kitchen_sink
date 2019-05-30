@@ -1,0 +1,24 @@
+name: Clients
+slug: clients
+description: A description of the content type for the editors
+label_field_name: name
+order_by: manually
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Explanatory text displayed in the back office
+    localized: false
+- logo:
+    label: Logo
+    type: file
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false
+- website:
+    label: Website
+    type: string
+    required: false
+    hint: Explanatory text displayed in the back office
+    localized: false

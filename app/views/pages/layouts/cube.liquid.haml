@@ -1,0 +1,33 @@
+---
+title: Cube
+is_layout: true
+display_settings:
+  hidden: true
+---
+
+%html
+  %head
+    {% include shared_head %}
+
+    %link{:href => "https://fonts.googleapis.com/css?family=Raleway:100,300,400,700", :rel => "stylesheet"}/
+
+    {{ 'cube/app' | stylesheet_tag }}
+
+    {{ 'cube/app' | javascript_tag }}
+
+    {% if page.fullpath contains 'contact' %}
+    %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"}
+    {{ 'google_map' | javascript_tag }}
+    {% endif %}
+
+  %body
+    .gtco-loader
+
+    #page
+      {% include 'cube-nav' %}
+
+      {% block 'main' %}{% endblock %}
+
+    .gototop.js-top
+      %a.js-gotop{:href => "#"}
+        %i.icon-arrow-up

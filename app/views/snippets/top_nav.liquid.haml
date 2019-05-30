@@ -1,0 +1,45 @@
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+  .container
+    %a.navbar-brand{:href => "/"} {{ site.name }} 
+    %button.navbar-toggler{"data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+
+    #navbarResponsive.collapse.navbar-collapse
+      %ul.navbar-nav.ml-auto
+        %li.nav-item
+          %a.btn.btn-dark{:href => "/"} Back to Website Template List
+
+        %li.nav-item.ml-2
+          %a.btn.btn-success{:href => "https://cms.solidfoundationwebdev.com"} Get Your Website Today!
+
+        -# {% if page.slug == 'index' %}
+        -# {% assign active_class = "active" %}
+        -# {% else %}
+        -# {% assign active_class = nil %}
+        -# {% endif %}
+
+        -# %li.nav-item(class="{{active_class}}")
+        -#   %a.nav-link{:href => "{{ path_to home }}"} Home
+
+        -# {% with_scope depth: 1, listed: true %}
+        -# {% assign sorted_pages = site.pages | sort: 'title' %}
+        -# {% for p in sorted_pages %}
+        -# {% if p.slug != 'contact' %}
+
+        -# {% if page.slug == p.slug %}
+        -# {% assign active_class = "active" %}
+        -# {% else %}
+        -# {% assign active_class = nil %}
+        -# {% endif %}
+
+        -# %li.nav-item(class="{{active_class}}")
+        -#   %a.nav-link{:href => "{{ path_to p }}"} {{ p.title }}
+        -# {% endif %}
+        -# {% endfor %}
+        -# {% endwith_scope %}
+
+        -# {% if page.slug == 'contact' %}
+        -# {% assign active_class = "active" %}
+        -# {% else %}
+        -# {% assign active_class = nil %}
+        -# {% endif %}

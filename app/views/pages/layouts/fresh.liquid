@@ -1,0 +1,23 @@
+---
+title: Fresh
+is_layout: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include shared_head %}
+
+    {{ 'fresh/app.css' | stylesheet_tag }}
+    {{ 'fresh/app.js' | javascript_tag }}
+  </head>
+  <body>
+    {% include 'fresh-preloader' %}
+
+    {% block 'main' %}{% endblock %}
+
+    {% include 'fresh-modal' %}
+    {% section 'fresh-footer', placement: 'bottom' %}
+    {% include 'fresh-backtotop' %}
+    {% include 'fresh-sidebar' %}
+  </body>
+</html>

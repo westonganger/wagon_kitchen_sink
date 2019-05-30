@@ -1,0 +1,77 @@
+---
+{
+  "name": "Section two",
+  "class": "two-main",
+  "icon": "list",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 2
+    },
+    {
+      "label": "Text",
+      "id": "text",
+      "type": "text",
+      "nb_rows": 1
+    }
+  ],
+  "blocks": [
+    {
+      "name": "List",
+      "type": "list",
+      "settings": [
+        {
+          "label": "List icon",
+          "id": "licon",
+          "type": "image_picker"
+        },
+        {
+          "label": "List title",
+          "id": "ltitle",
+          "type": "text"
+        },
+        {
+          "label": "List text",
+          "id": "ltext",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "presets": []
+}
+---
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">{{ section.settings.title }}</h1>
+        <h3 class="subtitle is-4 is-muted">{{ section.settings.text }}</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-8 mt-60">
+        {% for block in section.blocks %}
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="{{ block.settings.licon }}">
+            </p>
+          </figure>
+          <div class="media-content mt-50">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">{{ block.settings.ltitle }}</span>
+                <span class="icon-box-text">{{ block.settings.ltext }}</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

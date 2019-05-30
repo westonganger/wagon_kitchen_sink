@@ -1,9 +1,8 @@
 global.$ = global.jQuery = require('jquery');
 
 var autosize = require('autosize/dist/autosize.js');
-require("chosen-js");
 require("bootstrap/dist/js/bootstrap.bundle.min.js");
-require("./jquery.tablesorter.js");
+require("./vendor/jquery.tablesorter.js");
 
 require("@rails/ujs").start();
 

@@ -95,20 +95,20 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony import */ var _jquery_mixitup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./jquery.mixitup.js */ "./app/assets/pluton/javascripts/jquery.mixitup.js");
-/* harmony import */ var _jquery_mixitup_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_jquery_mixitup_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _bootstrap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bootstrap.js */ "./app/assets/pluton/javascripts/bootstrap.js");
-/* harmony import */ var _bootstrap_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_bootstrap_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _jquery_bxslider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./jquery.bxslider.js */ "./app/assets/pluton/javascripts/jquery.bxslider.js");
-/* harmony import */ var _jquery_bxslider_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_jquery_bxslider_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _jquery_cslider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./jquery.cslider.js */ "./app/assets/pluton/javascripts/jquery.cslider.js");
-/* harmony import */ var _jquery_cslider_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_jquery_cslider_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _jquery_placeholder_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./jquery.placeholder.js */ "./app/assets/pluton/javascripts/jquery.placeholder.js");
-/* harmony import */ var _jquery_placeholder_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_jquery_placeholder_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _jquery_inview_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./jquery.inview.js */ "./app/assets/pluton/javascripts/jquery.inview.js");
-/* harmony import */ var _jquery_inview_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_jquery_inview_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _appli_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./appli.js */ "./app/assets/pluton/javascripts/appli.js");
-/* harmony import */ var _appli_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_appli_js__WEBPACK_IMPORTED_MODULE_6__);
+/* WEBPACK VAR INJECTION */(function($, jQuery) {/* harmony import */ var _vendor_jquery_mixitup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/jquery.mixitup.js */ "./app/assets/pluton/javascripts/vendor/jquery.mixitup.js");
+/* harmony import */ var _vendor_jquery_mixitup_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_mixitup_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _vendor_bootstrap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vendor/bootstrap.js */ "./app/assets/pluton/javascripts/vendor/bootstrap.js");
+/* harmony import */ var _vendor_bootstrap_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_vendor_bootstrap_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _vendor_jquery_bxslider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./vendor/jquery.bxslider.js */ "./app/assets/pluton/javascripts/vendor/jquery.bxslider.js");
+/* harmony import */ var _vendor_jquery_bxslider_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_bxslider_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _vendor_jquery_cslider_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./vendor/jquery.cslider.js */ "./app/assets/pluton/javascripts/vendor/jquery.cslider.js");
+/* harmony import */ var _vendor_jquery_cslider_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_cslider_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _vendor_jquery_placeholder_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vendor/jquery.placeholder.js */ "./app/assets/pluton/javascripts/vendor/jquery.placeholder.js");
+/* harmony import */ var _vendor_jquery_placeholder_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_placeholder_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _vendor_jquery_inview_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./vendor/jquery.inview.js */ "./app/assets/pluton/javascripts/vendor/jquery.inview.js");
+/* harmony import */ var _vendor_jquery_inview_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_vendor_jquery_inview_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _vendor_appli_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./vendor/appli.js */ "./app/assets/pluton/javascripts/vendor/appli.js");
+/* harmony import */ var _vendor_appli_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_vendor_appli_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _shared_javascripts_sections_manager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../shared/javascripts/sections/_manager */ "./app/assets/shared/javascripts/sections/_manager.js");
 /* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sections */ "./app/assets/pluton/javascripts/sections/index.js");
 // https://github.com/VodkaBears/Vide/issues/183#issuecomment-365603849
@@ -145,10 +145,251 @@ $(document).on('DOMContentLoaded turbolinks:load', function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/appli.js":
-/*!************************************************!*\
-  !*** ./app/assets/pluton/javascripts/appli.js ***!
-  \************************************************/
+/***/ "./app/assets/pluton/javascripts/sections/about.js":
+/*!*********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/about.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/clients.js":
+/*!***********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/clients.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/contact.js":
+/*!***********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/contact.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/home.js":
+/*!********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/home.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/index.js":
+/*!*********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/index.js ***!
+  \*********************************************************/
+/*! exports provided: Home, Service, Portfolio, About, Client, Price, Contact */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./app/assets/pluton/javascripts/sections/home.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Home", function() { return _home__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./service */ "./app/assets/pluton/javascripts/sections/service.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Service", function() { return _service__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _portfolio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./portfolio */ "./app/assets/pluton/javascripts/sections/portfolio.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Portfolio", function() { return _portfolio__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ "./app/assets/pluton/javascripts/sections/about.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "About", function() { return _about__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _clients__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clients */ "./app/assets/pluton/javascripts/sections/clients.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Client", function() { return _clients__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony import */ var _price__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./price */ "./app/assets/pluton/javascripts/sections/price.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Price", function() { return _price__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact */ "./app/assets/pluton/javascripts/sections/contact.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Contact", function() { return _contact__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+// Import all the sections here
+//
+// Example:
+// export { default as Hero } from './hero';
+//
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/portfolio.js":
+/*!*************************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/portfolio.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/price.js":
+/*!*********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/price.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/sections/service.js":
+/*!***********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/sections/service.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var Section = {// load: (section) => {
+  // },
+  // unload: (section) => {
+  // },
+  // select: (section) => {
+  // },
+  // deselect: (section) => {
+  // },
+  // reorder: (section) => {
+  // },
+  // blockSelect: (section, block) => {
+  // },
+  // blockDeSelect: (section, block) => {
+  // }
+};
+/* harmony default export */ __webpack_exports__["default"] = (Section);
+
+/***/ }),
+
+/***/ "./app/assets/pluton/javascripts/vendor/appli.js":
+/*!*******************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/appli.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -533,10 +774,10 @@ window.initializeMap = function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/bootstrap.js":
-/*!****************************************************!*\
-  !*** ./app/assets/pluton/javascripts/bootstrap.js ***!
-  \****************************************************/
+/***/ "./app/assets/pluton/javascripts/vendor/bootstrap.js":
+/*!***********************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/bootstrap.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2436,10 +2677,10 @@ window.initializeMap = function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/jquery.bxslider.js":
-/*!**********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/jquery.bxslider.js ***!
-  \**********************************************************/
+/***/ "./app/assets/pluton/javascripts/vendor/jquery.bxslider.js":
+/*!*****************************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/jquery.bxslider.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3849,10 +4090,10 @@ window.initializeMap = function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/jquery.cslider.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/jquery.cslider.js ***!
-  \*********************************************************/
+/***/ "./app/assets/pluton/javascripts/vendor/jquery.cslider.js":
+/*!****************************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/jquery.cslider.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4126,10 +4367,10 @@ window.initializeMap = function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/jquery.inview.js":
-/*!********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/jquery.inview.js ***!
-  \********************************************************/
+/***/ "./app/assets/pluton/javascripts/vendor/jquery.inview.js":
+/*!***************************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/jquery.inview.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4194,10 +4435,10 @@ window.initializeMap = function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/jquery.mixitup.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/jquery.mixitup.js ***!
-  \*********************************************************/
+/***/ "./app/assets/pluton/javascripts/vendor/jquery.mixitup.js":
+/*!****************************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/jquery.mixitup.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5417,10 +5658,10 @@ window.initializeMap = function () {
 
 /***/ }),
 
-/***/ "./app/assets/pluton/javascripts/jquery.placeholder.js":
-/*!*************************************************************!*\
-  !*** ./app/assets/pluton/javascripts/jquery.placeholder.js ***!
-  \*************************************************************/
+/***/ "./app/assets/pluton/javascripts/vendor/jquery.placeholder.js":
+/*!********************************************************************!*\
+  !*** ./app/assets/pluton/javascripts/vendor/jquery.placeholder.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5596,247 +5837,6 @@ window.initializeMap = function () {
   }
 })(this, document, jQuery);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/about.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/about.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/clients.js":
-/*!***********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/clients.js ***!
-  \***********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/contact.js":
-/*!***********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/contact.js ***!
-  \***********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/home.js":
-/*!********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/home.js ***!
-  \********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/index.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/index.js ***!
-  \*********************************************************/
-/*! exports provided: Home, Service, Portfolio, About, Client, Price, Contact */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./app/assets/pluton/javascripts/sections/home.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Home", function() { return _home__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-/* harmony import */ var _service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./service */ "./app/assets/pluton/javascripts/sections/service.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Service", function() { return _service__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
-/* harmony import */ var _portfolio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./portfolio */ "./app/assets/pluton/javascripts/sections/portfolio.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Portfolio", function() { return _portfolio__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
-/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ "./app/assets/pluton/javascripts/sections/about.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "About", function() { return _about__WEBPACK_IMPORTED_MODULE_3__["default"]; });
-
-/* harmony import */ var _clients__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clients */ "./app/assets/pluton/javascripts/sections/clients.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Client", function() { return _clients__WEBPACK_IMPORTED_MODULE_4__["default"]; });
-
-/* harmony import */ var _price__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./price */ "./app/assets/pluton/javascripts/sections/price.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Price", function() { return _price__WEBPACK_IMPORTED_MODULE_5__["default"]; });
-
-/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./contact */ "./app/assets/pluton/javascripts/sections/contact.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Contact", function() { return _contact__WEBPACK_IMPORTED_MODULE_6__["default"]; });
-
-// Import all the sections here
-//
-// Example:
-// export { default as Hero } from './hero';
-//
-
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/portfolio.js":
-/*!*************************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/portfolio.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/price.js":
-/*!*********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/price.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
-
-/***/ }),
-
-/***/ "./app/assets/pluton/javascripts/sections/service.js":
-/*!***********************************************************!*\
-  !*** ./app/assets/pluton/javascripts/sections/service.js ***!
-  \***********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var Section = {// load: (section) => {
-  // },
-  // unload: (section) => {
-  // },
-  // select: (section) => {
-  // },
-  // deselect: (section) => {
-  // },
-  // reorder: (section) => {
-  // },
-  // blockSelect: (section, block) => {
-  // },
-  // blockDeSelect: (section, block) => {
-  // }
-};
-/* harmony default export */ __webpack_exports__["default"] = (Section);
 
 /***/ }),
 

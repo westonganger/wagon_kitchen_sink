@@ -1,0 +1,47 @@
+.gtco-section.gtco-products
+  .gtco-container
+    .row.row-pb-sm
+      .col-md-8.col-md-offset-2.gtco-heading.text-center
+        {% editable_text intro %}{% endeditable_text %}
+    .row.row-pb-md
+      .col-md-4.col-sm-4
+        %a.gtco-item.two-row.bg-img.animate-box{:href => "#", :style => "background-image: url({{ 'cube/img_1.jpg' | theme_image_url }});"}
+          .overlay
+            %i.ti-arrow-top-right
+            .copy
+              {% editable_text product_1 %}{% endeditable_text %}
+          %img.hidden{:alt => "Free HTML5 Website Template by FreeHTML5.co", :src => "{{ 'cube/img_1.jpg' | theme_image_url }}"}/
+
+        %a.gtco-item.two-row.bg-img.animate-box{:href => "#", :style => "background-image: url({{ 'cube/img_2.jpg' | theme_image_url }});"}
+          .overlay
+            %i.ti-arrow-top-right
+            .copy
+              {% editable_text product_2 %}{% endeditable_text %}
+          %img.hidden{:alt => "Free HTML5 Website Template by FreeHTML5.co", :src => "{{ 'cube/img_1.jpg' | theme_image_url }}"}/
+
+      .col-md-4.col-sm-4
+        %a.gtco-item.one-row.bg-img.animate-box{:href => "#", :style => "background-image: url({{ 'cube/img_md_1.jpg' | theme_image_url }});"}
+          .overlay
+            %i.ti-arrow-top-right
+            .copy
+              {% editable_text product_3 %}{% endeditable_text %}
+          %img.hidden{:alt => "Free HTML5 Website Template by FreeHTML5.co", :src => "{{ 'cube/img_1.jpg' | theme_image_url }}"}/
+
+      .col-md-4.col-sm-4
+        %a.gtco-item.two-row.bg-img.animate-box{:href => "#", :style => "background-image: url({{ 'cube/img_3.jpg' | theme_image_url }});"}
+          .overlay
+            %i.ti-arrow-top-right
+            .copy
+              {% editable_text product_4 %}{% endeditable_text %}
+          %img.hidden{:alt => "Free HTML5 Website Template by FreeHTML5.co", :src => "{{ 'cube/img_1.jpg' | theme_image_url }}"}/
+
+        %a.gtco-item.two-row.bg-img.animate-box{:href => "#", :style => "background-image: url({{ 'cube/img_4.jpg' | theme_image_url }});"}
+          .overlay
+            %i.ti-arrow-top-right
+            .copy
+              {% editable_text product_5 %}{% endeditable_text %}
+          %img.hidden{:alt => "Free HTML5 Website Template by FreeHTML5.co", :src => "{{ 'cube/img_1.jpg' | theme_image_url }}"}/
+
+    .row
+      .col-md-12.text-center
+        {% editable_text button %}{% endeditable_text %}

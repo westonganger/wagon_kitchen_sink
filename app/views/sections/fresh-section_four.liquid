@@ -1,0 +1,75 @@
+---
+{
+  "name": "Section four",
+  "class": "four-main",
+  "icon": "default",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Subtitle",
+      "id": "subtitle",
+      "type": "text",
+      "nb_rows": 2
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Quote",
+      "type": "quote",
+      "settings": [
+        {
+          "label": "Quote",
+          "id": "quote",
+          "type": "text"
+        },
+        {
+          "label": "Quote pict",
+          "id": "qpict",
+          "type": "image_picker"
+        },
+        {
+          "label": "Quote author",
+          "id": "qauth",
+          "type": "text"
+        },
+        {
+          "label": "Author job",
+          "id": "authj",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "presets": []
+}
+---
+<section class="section is-medium section-secondary">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">{{ section.settings.title }}</h2>
+      <h3 class="subtitle is-5 light-text">{{ section.settings.subtitle }}</h3>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+        {% for block in section.blocks %}
+        <div class="column is-4">
+          <figure class="testimonial">
+            <blockquote>{{ block.settings.quote }}</blockquote>
+            <div class="author">
+              <img src="{{ block.settings.qpict }}" alt="" />
+              <h5>{{ block.settings.qauth }}</h5><span>{{ block.settings.authj }}</span>
+            </div>
+          </figure>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

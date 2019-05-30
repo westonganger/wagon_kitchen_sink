@@ -1,0 +1,48 @@
+%footer#gtco-footer.gtco-section{:role => "contentinfo"}
+  .gtco-container
+    .row.row-pb-md
+      .col-md-8.col-md-offset-2.gtco-cta.text-center
+        {% editable_text intro %}{% endeditable_text %}
+    .row.row-pb-md
+      .col-md-4.gtco-widget.gtco-footer-paragraph
+        {% editable_text text %}{% endeditable_text %}
+      .col-md-4.gtco-footer-link
+        .row
+          .col-md-6
+            %ul.gtco-list-link
+              %li
+                %a{:href => "#"} Home
+              %li
+                %a{:href => "#"} Features
+              %li
+                %a{:href => "#"} Products
+              %li
+                %a{:href => "#"} Testimonial
+              %li
+                %a{:href => "#"} Contact
+          .col-md-6
+            %p
+              %a{:href => "tel://{{ site.metafields.contacts.phone }}"} {{ site.metafields.contacts.phone }}
+              %br/
+              %a{:href => "mailto:{{ site.metafields.emails.info }}"} {{ site.metafields.emails.info }}
+      .col-md-4.gtco-footer-subscribe
+        %form.form-inline
+          .form-group
+            %label.sr-only{:for => "exampleInputEmail3"} Email address
+            %input.form-control{:id => "", :placeholder => "Email", :type => "email"}/
+          %button.btn.btn-primary{:type => "submit"} Send
+  .gtco-copyright
+    .gtco-container
+      .row
+        .col-md-6.text-left
+          %p
+            %small &copy; {{ now | format_date: '%Y' }}  Free HTML5. All Rights Reserved.
+        .col-md-6.text-right
+          %p
+            %small
+              Designed by
+              %a{:href => "http://freehtml5.co/", :target => "_blank"} FreeHTML5.co
+              Demo Images:
+              %a{:href => "http://pixeden.com/", :target => "_blank"} Pixeden
+              \&amp;
+              %a{:href => "http://unsplash.com", :target => "_blank"} Unsplash

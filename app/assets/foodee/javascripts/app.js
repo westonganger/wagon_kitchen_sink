@@ -1,11 +1,11 @@
 // Tell Webpack to load the style
 //import '../stylesheets/app.scss';
 
-import './jquery.easing.1.3';
-import './bootstrap.min';
+import './vendor/jquery.easing.1.3';
+import './vendor/bootstrap.min';
 require('bootstrap-datepicker');
-import './jquery.waypoints.min';
-import './jquery.stellar.min';
+import './vendor/jquery.waypoints.min';
+import './vendor/jquery.stellar.min';
 require('flexslider');
 
 // Import the classes required to handle sections

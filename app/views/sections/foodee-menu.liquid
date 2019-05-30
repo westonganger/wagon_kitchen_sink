@@ -55,7 +55,7 @@
             <h2 class="fh5co-drinks">Drinks</h2>
             <ul>
               {% with_scope type: 'drinks' %}
-              {% for item in contents.items | limit: 4 %}
+              {% for item in contents.products | limit: 4 %}
               <li>
                 <div class="fh5co-food-desc">
                   <figure>
@@ -80,7 +80,7 @@
             <h2 class="fh5co-dishes">Steak</h2>
             <ul>
               {% with_scope type: 'meats' %}
-              {% for item in contents.items | limit: 4 %}
+              {% for item in contents.products | limit: 4 %}
               <li>
                 <div class="fh5co-food-desc">
                   <figure>

@@ -1,0 +1,59 @@
+---
+{
+  "name": "Section three",
+  "class": "three-main",
+  "icon": "default",
+  "keep_icon": true,
+  "keep_label": true,
+  "settings": [
+    {
+      "label": "Image",
+      "id": "image",
+      "type": "image_picker"
+    },
+    {
+      "label": "Title",
+      "id": "title",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Subtitle",
+      "id": "subtitle",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Button",
+      "id": "button",
+      "type": "text",
+      "nb_rows": 1
+    },
+    {
+      "label": "Link",
+      "id": "link",
+      "type": "url"
+    }
+  ],
+  "blocks": [],
+  "presets": []
+}
+---
+<section class="section section-feature-grey is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="has-text-centered">
+          <img class="pushed-image" src="{{ section.settings.image }}">
+        </div>
+      </div>
+    </div>
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ section.settings.title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ section.settings.subtitle }}</h3>
+    </div>
+    <p class="has-text-centered mt-20">
+      <a class="button cta is-large rounded secondary-btn raised" href="{{ section.settings.link }}">{{ section.settings.button }}</a>
+    </p>
+  </div>
+</section>

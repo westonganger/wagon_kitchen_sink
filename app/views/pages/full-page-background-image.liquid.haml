@@ -1,0 +1,23 @@
+---
+title: Full Page Image Background
+listed: true
+published: true
+---
+{% extends layouts/default %}
+
+{% block main %}
+:css
+  body{
+    background: url('https://i.ytimg.com/vi/CIfN6vIck0Y/maxresdefault.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+.container
+  .card.border-0.shadow.my-5
+    .card-body.p-5
+      %h1.font-weight-light Full Page Background Image
+      %p.lead In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!
+      %p.lead Scroll down...
+      %div{:style => "height: 700px"}
+      %p.lead.mb-0 You've reached the end!
+{% endblock %}

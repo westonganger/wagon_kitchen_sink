@@ -5,7 +5,7 @@ name: Accounts
 slug: accounts
 
 # Explanatory text displayed in the back-office
-description: A description of the content type for the editors
+description: 
 
 # Slug of field used to identify entries by default, such as the title
 label_field_name: name
@@ -41,7 +41,7 @@ fields:
     label: Name # Human readable name of the field
     type: string
     required: true
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - email: # The lowercase, underscored name of the field
@@ -49,12 +49,12 @@ fields:
     type: email
     required: true
     unique: true
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
 
 - password: # The lowercase, underscored name of the field
     label: Password # Human readable name of the field
     type: password
     required: false
-    hint: Explanatory text displayed in the back office
+    hint: 
     localized: false
