@@ -2187,17 +2187,6 @@
   overflow: visible;
   clip: auto;
 }
-@font-face {
-    font-family: 'simple-line-icons';
-    src: url(/fonts/simple-line-icons.eot?d6590eb77c5d667a24a7d947eff5b3ff);
-    src: url(/fonts/simple-line-icons.eot?d6590eb77c5d667a24a7d947eff5b3ff?#iefix) format('embedded-opentype'),
-        url(/fonts/simple-line-icons.woff2?fd0fdf3f4c2b21ddcf373d672f1a4725) format('woff2'),
-        url(/fonts/simple-line-icons.woff?6865fd65e8578e461ce3139aee7b5aa2) format('woff'),
-        url(/fonts/simple-line-icons.ttf?f5c8c024b79273600cf20ac8f6866e51) format('truetype'),
-        url(/fonts/simple-line-icons.svg?01c72c267c1dfa1e9e6f6aa42773f242#simple-line-icons) format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 .sl {
   font-family: 'simple-line-icons' !important;
   speak: none;
@@ -2721,7 +2710,8 @@
 }
 .sl-icon-location:before {
   content: "\E810";
-}@charset "UTF-8";
+}
+@charset "UTF-8";
 
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 

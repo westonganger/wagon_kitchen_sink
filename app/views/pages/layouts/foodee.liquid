@@ -7,8 +7,12 @@ is_layout: true
   <head>
     {% include 'shared_head' %}
 
+    {% include 'css-framework' with type: 'bootstrap', version: '3.4.1' bootswatch_theme: nil %}
+
     {{ 'foodee/app' | stylesheet_tag }}
     {{ 'foodee/app' | javascript_tag }}
+
+    {% include 'icons' with type: 'simple-line-icons' %}
   </head>
   <body>
     {% include 'back_button' %}

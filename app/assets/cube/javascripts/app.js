@@ -1,5 +1,4 @@
 import './vendor/jquery.easing.1.3.js';
-import './vendor/bootstrap.min.js';
 import './vendor/jquery.waypoints.min.js';
 import './vendor/owl.carousel.min.js';
 import './vendor/jquery.magnific-popup.min.js';

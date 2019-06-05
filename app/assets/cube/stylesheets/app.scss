@@ -1,20 +1,9 @@
 @import "./vendor/animate";
-@import "./vendor/icomoon";
-@import "./vendor/themify-icons";
-@import "./vendor/bootstrap";
 @import "./vendor/magnific-popup";
 @import "./vendor/owl.carousel.min";
 @import "./vendor/owl.theme.default.min";
 @import "./vendor/magnific-popup";
 
-@font-face
-{
-    font-family: 'icomoon';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../fonts/icomoon/icomoon.eot?srf3rx');
-    src: url('../fonts/icomoon/icomoon.eot?srf3rx#iefix') format('embedded-opentype'), url('../fonts/icomoon/icomoon.ttf?srf3rx') format('truetype'), url('../fonts/icomoon/icomoon.woff?srf3rx') format('woff'), url('../fonts/icomoon/icomoon.svg?srf3rx#icomoon') format('svg');
-}
 body
 {
     font-family: 'Raleway', Arial, sans-serif;

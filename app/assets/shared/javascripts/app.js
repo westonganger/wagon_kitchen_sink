@@ -1,7 +1,6 @@
 global.$ = global.jQuery = require('jquery');
 
 var autosize = require('autosize/dist/autosize.js');
-require("bootstrap/dist/js/bootstrap.bundle.min.js");
 require("./vendor/jquery.tablesorter.js");
 
 require("@rails/ujs").start();
@@ -19,10 +18,6 @@ $(document).on('DOMContentLoaded turbolinks:load',  function(){
   $("a[href^='#'], a[href^='/#'], a[href^='tel'], a[href^='mailto']").attr('data-turbolinks','false');
 
   $('form').prop('autocomplete','off');
-
-  //$('[data-toggle="popover"]').popover();
-
-  //$('[data-toggle="tooltip"]').tooltip();
 
   $('table.table-sortable').tablesorter();
 });
@@ -83,44 +78,3 @@ $(document).on('keydown', 'input[type=number][maxlength]', function(e){
     }
   }, 0);
 });
-
-/* Bootstrap AJAX Modals */
-var active_modal = null;
-$(document).on('click','a[data-toggle=ajax_modal]', function(e) {
-  e.preventDefault();
-  //$('body').modalmanager('loading');
-  $('#loader').addClass('withmodal').show();
-  if (active_modal) {
-    active_modal.modal('hide');
-    active_modal = null;
-  }
-  var target = $(this).attr('data-target');
-  var width = $(this).attr('data-width');
-
-  var url = $(this).attr('href');
-  if ($(target).length > 0) {
-    $(target).remove();
-  }
-  var $modal = $('<div/>', {
-    id: target.split("#").join(""),
-    // 'class': 'modal hide fade',
-    'class': 'modal hide',
-    data: {width: width, backdrop: 'static'}
-  }).appendTo('body');;
-  $modal.load(url, function(){
-    $modal.modal('show');
-    $('#loader').removeClass('withmodal').hide();
-  });
-  active_modal = $modal;
-});
-
-$('body').on('hide', '.modal', function(){
-  active_modal = null;
-});
-
-$('a[data-toggle=modal]').on('click', function(e){
-  var target = $(this).attr('data-target');
-  var url = $(this).attr('href');
-  $(target).load(url);
-});
-/* END bootstrap AJAX modals */

@@ -7,8 +7,13 @@ is_layout: true
   <head>
     {% include shared_head %}
 
+    {% include 'css-framework' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
+
     {{ 'fresh/app.css' | stylesheet_tag }}
     {{ 'fresh/app.js' | javascript_tag }}
+
+    {% include 'icons' with type: 'simple-line-icons' %}
+    {% include 'icons' with type: 'feather' %}
   </head>
   <body>
     {% include 'fresh-preloader' %}

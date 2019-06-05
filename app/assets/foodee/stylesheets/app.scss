@@ -1,19 +1,9 @@
 // Wagon main stylesheet file
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic');
 @import './vendor/animate.css';
-@import './vendor/icomoon.css';
-@import './vendor/simple-line-icons.css';
 @import '~flexslider/flexslider.css';
 @import '~bootstrap-datepicker/dist/css/bootstrap-datepicker3.css';
-@import './vendor/bootstrap.css';
 
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot");
-  src: url("../fonts/icomoon/icomoon.eot#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf") format("truetype"), url("../fonts/icomoon/icomoon.woff") format("woff"), url("../fonts/icomoon/icomoon.svg#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 body {
   font-family: "Merriweather", serif;
   font-size: 18px;

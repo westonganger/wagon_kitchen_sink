@@ -2,7 +2,6 @@
 jQuery.fn.load = function(callback) { $(window).on("load", callback) };
 
 import './vendor/jquery.mixitup.js';
-import './vendor/bootstrap.js';
 import './vendor/jquery.bxslider.js';
 import './vendor/jquery.cslider.js';
 import './vendor/jquery.placeholder.js';

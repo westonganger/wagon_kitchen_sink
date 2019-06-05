@@ -7,11 +7,10 @@ slug: default
 %html{lang: "en"}
   %head
     {% include 'shared_head' %}
-
-    %link{href: "{{ 'favicon.png' | theme_image_url }}", rel: "shortcut icon"}
+    {% include 'css-framework' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
 
     {{ 'main/app' | stylesheet_tag }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+    {% include 'icons' with type: 'font-awesome-5' %}
 
     {{ 'main/app' | javascript_tag }}
 

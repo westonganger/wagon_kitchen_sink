@@ -37,6 +37,19 @@ Warning the `-d` option will re-write seed data even if they have previously bee
 - TGV, Locomotive Code Snippets, etc: https://tgv.studiowan.fr/list?type=actions
 - Web App Example: https://github.com/manuchap/Tgv/
 
+## Bootstrap Theming
+- Bootstrap 4 Full Themes - Start from any pre-designed Bootstrap 4 template:
+  * https://cssauthor.com/bootstrap-templates/
+  * https://startbootstrap.com/themes/
+  * https://themes.getbootstrap.com/ (Paid Themes)
+  * https://wrapbootstrap.com/ (Paid Themes)
+  * https://w3layouts.com/ (Good quality themes, but hard to tell whats Bootstrap 4 compatible)
+- Bootstrap 4 Snippets:
+  * https://startbootstrap.com/snippets/
+  * https://bootsnipp.com/
+  * https://getbootstrap.com/docs/4.3/examples/
+- Bootswatch Custom Theming - choose from any base bootswatch theme on https://bootswatch.com/
+
 ## Liquid Cheatsheet
 
 ### Liquid Guides
@@ -196,16 +209,3 @@ setProp
 
 callAPI
 ```
-
-## Bootstrap Theming
-- Bootstrap 4 Snippets:
-  * https://startbootstrap.com/snippets/
-  * https://bootsnipp.com/
-  * https://getbootstrap.com/docs/4.3/examples/
-- Bootstrap 4 Full Themes - Start from any pre-designed Bootstrap 4 template:
-  * https://cssauthor.com/bootstrap-templates/
-  * https://startbootstrap.com/themes/
-  * https://themes.getbootstrap.com/ (Paid Themes)
-  * https://wrapbootstrap.com/ (Paid Themes)
-  * https://w3layouts.com/ (Good quality themes, but hard to tell whats Bootstrap 4 compatible)
-- Bootswatch Custom Theming - choose from any base bootswatch theme on https://bootswatch.com/

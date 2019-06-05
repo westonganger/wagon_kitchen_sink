@@ -2,7 +2,6 @@
 //import '../stylesheets/app.scss';
 
 import './vendor/jquery.easing.1.3';
-import './vendor/bootstrap.min';
 require('bootstrap-datepicker');
 import './vendor/jquery.waypoints.min';
 import './vendor/jquery.stellar.min';

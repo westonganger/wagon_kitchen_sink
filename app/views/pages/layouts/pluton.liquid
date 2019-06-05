@@ -5,13 +5,9 @@ is_layout: true
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ 'pluton/ico/apple-touch-icon-144.png' | theme_image_url }}">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ 'pluton/ico/apple-touch-icon-114.png' | theme_image_url }}">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ 'pluton/ico/apple-touch-icon-72.png' | theme_image_url }}">
-  <link rel="apple-touch-icon-precomposed" href="{{ 'pluton/ico/apple-touch-icon-57.png' | theme_image_url }}">
-  <link rel="shortcut icon" href="{{ 'pluton/ico/favicon.ico' | theme_image_url }}">
-
   {% include 'shared_head' %}
+
+  {% include 'css-framework' with type: 'bootstrap', version: '2.3.1', bootswatch_theme: nil %}
 
   {{ 'pluton/app' | stylesheet_tag }}
   {{ 'pluton/app' | javascript_tag }}
