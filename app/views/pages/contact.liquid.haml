@@ -15,37 +15,5 @@ position: 999
   %p Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!
   {% endeditable_text %}
 
-  {% model_form "contact_form", id: "contactForm" %}
-  .control-group
-    .form-group.floating-label-form-group.controls
-      %label Name
-      %input#name{ type: 'text', class: 'form-control', placeholder: 'Name', required: true, data: { validation_required_message: 'Please enter your name.' } }
-      %p.help-block.text-danger
-
-  .control-group
-    .form-group.floating-label-form-group.controls
-      %label Email Address
-      %input#email{ type: 'email', class: 'form-control', placeholder: 'Email Address', required: true, data: { validation_required_message: 'Please enter your email address.' } }
-      %p.help-block.text-danger
-
-  .control-group
-    .form-group.floating-label-form-group.controls
-      %label Phone Number
-      %input#phone{ type: 'tel', class: 'form-control', placeholder: 'Phone Number', required: true, data: { validation_required_message: 'Please enter your phone number.' } }
-      %p.help-block.text-danger
-
-  .control-group
-    .form-group.floating-label-form-group.controls
-      %label Message
-      %textarea#message{ type: 'tel', class: 'form-control', placeholder: 'Message', required: true, data: { validation_required_message: 'Please enter a message.' } }
-      %p.help-block.text-danger
-
-  %br
-
-  #success
-
-  .form-group.col-xs-12
-    %button{ type: 'submit', class: 'btn btn-primary' } Send
-
-  {% endmodel_form %}
+  {% include contact-form %}
 {% endblock %}

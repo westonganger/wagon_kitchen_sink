@@ -2,7 +2,8 @@
 {% when 'bootstrap' %}
   {% assign version = version | default: '4.3.1' %}
 
-  {% if version | slice: 0 == 2 %}
+  {% assign major_version = version | slice: 0 %}
+  {% if major_version == '2' %}
     {% assign path = 'https://stackpath.bootstrapcdn.com/twitter-bootstrap/the-version/css/bootstrap-combined.min.css' | replace_first: 'the-version', version | replace_first: 'the-theme', bootswatch_theme %}
     {{ path | stylesheet_tag }}
 

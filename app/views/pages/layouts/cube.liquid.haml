@@ -7,7 +7,8 @@ display_settings:
 
 %html
   %head
-    {% include shared_head %}
+    {% include shared-head %}
+
     {% include 'css-framework' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
 
     {{ 'cube/app' | stylesheet_tag }}

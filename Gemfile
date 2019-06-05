@@ -3,10 +3,13 @@ source 'https://rubygems.org'
 ruby '2.6.3'
 
 #gem 'locomotivecms_wagon', '~> 3.0.0.rc0'
-gem 'locomotivecms_wagon', git: 'git@github.com:locomotivecms/wagon.git'#, ref: '58da0f7'
+#gem 'locomotivecms_wagon', git: 'git@github.com:locomotivecms/wagon.git'
+gem 'locomotivecms_wagon', git: 'git@github.com:westonganger/wagon.git', branch: 'update_timezone_on_deploy'
+#gem 'locomotivecms_wagon', path: '../open_source/wagon/'
 
-#gem 'locomotivecms_steam', git: 'git@github.com:locomotivecms/steam.git'
-gem 'locomotivecms_steam', git: 'git@github.com:westonganger/steam.git', branch: 'hjson_support'
+gem 'locomotivecms_steam', git: 'git@github.com:locomotivecms/steam.git'
+#gem 'locomotivecms_steam', git: 'git@github.com:westonganger/steam.git', branch: 'all_fixes'
+#gem 'locomotivecms_steam', path: '../open_source/steam/'
 
 gem 'locomotivecms_coal', git: 'git@github.com:locomotivecms/coal.git'
 gem 'locomotivecms_common', git: 'git@github.com:locomotivecms/common.git'

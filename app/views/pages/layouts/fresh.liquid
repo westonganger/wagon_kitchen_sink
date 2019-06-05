@@ -5,7 +5,7 @@ is_layout: true
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include shared_head %}
+    {% include shared-head %}
 
     {% include 'css-framework' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
 
@@ -16,6 +16,8 @@ is_layout: true
     {% include 'icons' with type: 'feather' %}
   </head>
   <body>
+    {% include back-button %}
+
     {% include 'fresh-preloader' %}
 
     {% block 'main' %}{% endblock %}

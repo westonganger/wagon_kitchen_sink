@@ -95,13 +95,10 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
-/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sections_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sections.js */ "./app/assets/main/javascripts/sections.js");
-/* harmony import */ var _sections_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sections_js__WEBPACK_IMPORTED_MODULE_1__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _sections_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sections.js */ "./app/assets/main/javascripts/sections.js");
+/* harmony import */ var _sections_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sections_js__WEBPACK_IMPORTED_MODULE_0__);
 // Tell Webpack to load the style
 //import '../stylesheets/app.scss';
-
 
 $(document).on('DOMContentLoaded turbolinks:load', function () {//$('[data-toggle="popover"]').popover();
   //$('[data-toggle="tooltip"]').tooltip();
@@ -229,17 +226,6 @@ $(document).on("locomotive::section::load", function (event) {
   var block = section.find("[data-locomotive-block='section-".concat(sectionId, "-block-").concat(blockId, "']"));
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/node_modules/bootstrap/dist/js/bootstrap.js'");
 
 /***/ }),
 
