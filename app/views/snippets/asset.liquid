@@ -1,0 +1,69 @@
+{% case type %}
+{% when 'bootstrap' %}
+  {% assign version = version | default: '4.3.1' %}
+  {% assign major_version = version | slice: 0 %}
+
+  {% if bootswatch_theme && bootswatch_theme != '' %}
+    {% assign the_path = 'https://stackpath.bootstrapcdn.com/bootswatch/the-version/the-theme/bootstrap.min.css' | replace_first: 'the-theme', bootswatch_theme %}
+
+  {% else %}
+    {% if major_version == '2' %}
+      {% assign the_path = 'https://stackpath.bootstrapcdn.com/twitter-bootstrap/the-version/css/bootstrap-combined.min.css' %}
+    {% else %}
+      {% assign the_path = 'https://stackpath.bootstrapcdn.com/bootstrap/the-version/css/bootstrap.min.css' %}
+    {% endif %}
+  {% endif %}
+
+  {% assign the_path = the_path | replace_first: 'the-version', version %}
+  {{ the_path | stylesheet_tag }}
+
+  {% if major_version == '2' %}
+    {% assign the_path = 'https://stackpath.bootstrapcdn.com/twitter-bootstrap/the-version/js/bootstrap.min.js' %}
+  {% elsif major_version == '3' %}
+    {% assign the_path = 'https://stackpath.bootstrapcdn.com/bootstrap/the-version/js/bootstrap.min.js' %}
+  {% else %}
+    {% assign the_path = 'https://stackpath.bootstrapcdn.com/bootstrap/the-version/js/bootstrap.bundle.min.js' %}
+  {% endif %}
+
+  {% assign the_path = the_path | replace_first: 'the-version', version %}
+  {{ the_path | javascript_tag }}
+
+{% when 'bulma' %}
+  {% assign version = version | default: '0.7.5' %}
+  {% assign the_path = 'https://cdnjs.cloudflare.com/ajax/libs/bulma/the-version/css/bulma.min.css' | replace_first: 'the-version', version %}
+  {{ the_path | stylesheet_tag }}
+
+{% when 'flexslider', 'flex-slider' %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider.min.js"></script>
+
+{% when 'jquery-easing', 'jquery.easing' %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+{% when 'materialize' %}
+  {% assign version = version | default: '1.0.0' %}
+
+  {% assign the_path = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/the-version/css/materialize.min.css' | replace_first: 'the-version', version %}
+  {{ the_path | stylesheet_tag }}
+
+  {% assign the_path = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/the-version/js/materialize.min.js' | replace_first: 'the-version', version %}
+  {{ the_path | javascript_tag }}
+
+{% when 'milligram' %}
+  {% assign version = version | default: '1.3.0' %}
+  {% assign the_path = 'https://cdnjs.cloudflare.com/ajax/libs/milligram/the-version/milligram.min.css' | replace_first: 'the-version', version %}
+  {{ the_path | stylesheet_tag }}
+
+{% when 'semantic-ui' %}
+  {% assign version = version | default: '2.4.2' %}
+
+  {% assign the_path = 'https://cdn.jsdelivr.net/npm/semantic-ui@the-version/dist/semantic.min.css' | replace_first: 'the-version', version %}
+  {{ the_path | stylesheet_tag }}
+
+  {% assign the_path = 'https://cdn.jsdelivr.net/npm/semantic-ui@the-version/dist/semantic.min.js' | replace_first: 'the-version', version %}
+  {{ the_path | javascript_tag }}
+
+{% else %}
+  <script type="text/javascript">console.log("Invalid asset specified: {{ type }}");</script>
+
+{% endcase %}

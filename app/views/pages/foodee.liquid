@@ -123,13 +123,36 @@ sections_content: >
     }
   }
 ---
-{% extends layouts/foodee %}
-{% block 'main' %}
-  {% section 'foodee-home', placement: 'top' %}
-  {% include 'foodee-nav' %}
-  {% section 'foodee-about' %}
-  {% section 'foodee-features' %}
-  {% section 'foodee-menu' %}
-  {% section 'foodee-events' %}
-  {% section 'foodee-reservation' %}
+{% extends layouts/default %}
+
+{% block top-nav %}
+{% endblock %}
+
+{% block assets %}
+  {% include 'asset' with type: 'bootstrap', version: '3.4.1' bootswatch_theme: nil %}
+  {% include 'asset' with type: 'flex-slider' %}
+  {{ 'foodee/app' | stylesheet_tag }}
+  {{ 'foodee/app' | javascript_tag }}
+{% endblock %}
+
+{% block icons %}
+  {% include 'icons' with type: 'simple-line-icons' %}
+{% endblock %}
+
+{% block main %}
+  {% include 'back-button' %}
+
+  <div id="fh5co-container">
+    {% section 'foodee-home', placement: 'top' %}
+    {% include 'foodee-nav' %}
+    {% section 'foodee-about' %}
+    {% section 'foodee-features' %}
+    {% section 'foodee-menu' %}
+    {% section 'foodee-events' %}
+    {% section 'foodee-reservation' %}
+  </div>
+{% endblock %}
+
+{% block footer %}
+  {% section foodee-footer, placement: 'bottom' %}
 {% endblock %}

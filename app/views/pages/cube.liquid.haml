@@ -1,0 +1,117 @@
+---
+title: Cube Template 
+listed: true
+published: true
+editable_elements:
+  main/header/logo: <img title="cube.png" alt="cube" src="/cube/samples/cube.png"><br>
+  main/header/intro: <h1>Make your life simpler, try this for free 😀.</h1><p>A free
+    template hand-crafted by FreeHTML5.co. Visit our site for more awesome templates.</p><p><a
+    target="_blank" href="http://freehtml5.co" class="btn btn-white">Visit FreeHTML5.co</a></p>
+  main/clients/client_1: <img title="client_1.png" alt="undefined" src="/cube/samples/client_1.png"><br>
+  main/clients/client_2: <img title="client_2.png" alt="undefined" src="/cube/samples/client_2.png"><br>
+  main/clients/client_3: <img title="client_3.png" alt="undefined" src="/cube/samples/client_3.png"><br>
+  main/clients/client_4: <img title="client_4.png" alt="undefined" src="/cube/samples/client_4.png"><br>
+  main/clients/client_5: <img title="client_5.png" alt="undefined" src="/cube/samples/client_5.png"><br>
+  main/services/intro: <div class="col-md-8 col-md-offset-2 gtco-heading text-center"><h2>Make
+    your life simpler.</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Phasellus placerat enim et urna sagittis, rhoncus euismod ertincidunt. Donec tincidunt
+    volutpat erat.</p><p><a href="https://vimeo.com/channels/staffpicks/93951774"
+    class="btn btn-special popup-vimeo">Watch The Video</a></p></div>
+  main/services/service_1: <h3><i class="ti-pie-chart"></i>Marketing</h3><p>Lorem
+    ipsum dolor sit amet, consectetur adipisicing elit. Consectetur voluptatibus nesciunt,
+    est alias deleniti ipsum fuga ullam maxime repudiandae neque, ad. Maiores quis
+    atque, culpa rem inventore vero amet praesentium, quam sint, magnam reprehenderit
+    doloremque.</p>
+  main/services/service_2: <h3><i class="ti-ruler-pencil"></i>Design</h3><p>Lorem
+    ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem quae, assumenda
+    dolores ad pariaturdebitis, voluptatem! Omnis enim magnam perspiciatis, natus.
+    Ipsum distinctio, voluptatibus vero laboriosam sequfuga quam eveniet quo similique!</p>
+  main/services/service_3: <h3><i class="ti-settings"></i>Development</h3><p>Lorem
+    ipsum dolor sit amet, consectetur adipisicing elit. Dicta aperiam, maiores officia
+    alias accusantium fugiat, doloremque voluptas, voluptatem dolore vel animi praesentium
+    saepe unde consequuntur, eum asperiores odit aliquam error nulla impedit repellendus.
+    Nesciunt, delectus.</p>
+  main/products/intro: "<h2>Popular Products</h2><p>Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat
+    tincidunt. Donec tincidunt volutpat erat.</p>"
+  main/products/product_1: "<h3>Paper Hot Cup</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  main/products/product_2: "<h3>Notepad Mockup</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  main/products/product_3: "<h3>Paper Pouch</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  main/products/product_4: "<h3>Fancy 3D</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  main/products/product_5: "<h3>Hard Cover Book</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+  main/products/button: <p><a target="_blank" href="http://freehtml5.co" class="btn  btn-special">Visit Gettemplates.co</a></p>
+  main/love/intro: "<h2>People Love Us</h2><p>Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod erat
+    tincidunt. Donec tincidunt volutpat erat.</p>"
+  main/love/picture_1: <img title="person_1.jpg" alt="undefined" src="/cube/samples/person_1.jpg"><br>
+  main/love/picture_2: <img title="person_2.jpg" alt="undefined" src="/cube/samples/person_2.jpg"><br>
+  main/love/picture_3: <img title="person_3.jpg" alt="undefined" src="/cube/samples/person_3.jpg"><br>
+  main/love/picture_4: <img title="person_1.jpg" alt="undefined" src="/cube/samples/person_1.jpg"><br>
+  main/love/testi_1: "<p>\"Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.\"<cite class=\"author\">— Ferdinand A. Porsche</cite></p>"
+  main/love/testi_2: "<p>\"Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.\"<cite class=\"author\">— Steve Jobs</cite></p>"
+  main/love/testi_3: "<p>\"I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.\"<cite class=\"author\">— Frank Chimero</cite></p>"
+  main/love/testi_4: "<p>\"Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.\"<cite class=\"author\">— Ferdinand A. Porsche</cite></p>"
+  main/footer/intro: "<h3>We Love To Talk About Your Business</h3><p><a class=\"btn btn-white btn-outline\" href=\"#\">Contact Us</a></p>"
+  main/footer/text: "<h3>Cube</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat enim et urna sagittis, rhoncus euismod.</p>"
+---
+
+{% extends 'layouts/default' %}
+
+{% block assets %}
+{{ 'cube/app' | stylesheet_tag }}
+{{ 'cube/app' | javascript_tag }}
+{% endblock %}
+
+{% block icons %}
+{% include 'icons' with type: 'icomoon' %}
+{% include 'icons' with type: 'themify' %}
+{% endblock %}
+
+{% block head %}
+%link{:href => "https://fonts.googleapis.com/css?family=Raleway:100,300,400,700", :rel => "stylesheet"}/
+
+{% if page.fullpath contains 'contact' %}
+%script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"}
+{{ 'google_map' | javascript_tag }}
+{% endif %}
+{% endblock %}
+
+{% block 'main' %}
+{% include 'back-button' %}
+
+{% include 'cube-nav' %}
+
+{% block 'header' %}
+{% include 'cube-header' %}
+{% endblock %}
+
+{% block 'clients' %}
+{% include 'cube-clients' %}
+{% endblock %}
+
+{% block 'services' %}
+{% include 'cube-services' %}
+{% endblock %}
+
+{% block 'products' %}
+{% include 'cube-products' %}
+{% endblock %}
+
+{% block 'love' %}
+{% include 'cube-love' %}
+{% endblock %}
+{% endblock %}
+
+{% block 'footer' %}
+{% include 'cube-footer' %}
+
+.gototop.js-top
+  %a.js-gotop{:href => "#"}
+    %i.icon-arrow-up
+{% endblock %}
+
+{% block loader %}
+.gtco-loader
+{% endblock %}
+
+{% block top-nav %}{% endblock %}

@@ -64,33 +64,6 @@ mix
 
   .js('app/assets/fresh/javascripts/app.js', 'public/javascripts/fresh/app.js')
   .sass('app/assets/fresh/stylesheets/app.scss', 'public/stylesheets/fresh/app.css')
-
-  .js('app/assets/sb-landing/javascripts/app.js', 'public/javascripts/sb-landing/app.js')
-  .sass('app/assets/sb-landing/stylesheets/app.scss', 'public/stylesheets/sb-landing/app.css')
-
-  .js('app/assets/sb-new-age/javascripts/app.js', 'public/javascripts/sb-new-age/app.js')
-  .sass('app/assets/sb-new-age/stylesheets/app.scss', 'public/stylesheets/sb-new-age/app.css')
-
-  .js('app/assets/sb-business-casual/javascripts/app.js', 'public/javascripts/sb-business-casual/app.js')
-  .sass('app/assets/sb-business-casual/stylesheets/app.scss', 'public/stylesheets/sb-business-casual/app.css')
-
-  .js('app/assets/sb-stylish-portfolio/javascripts/app.js', 'public/javascripts/sb-stylish-portfolio/app.js')
-  .sass('app/assets/sb-stylish-portfolio/stylesheets/app.scss', 'public/stylesheets/sb-stylish-portfolio/app.css')
-
-  .js('app/assets/sb-clean-blog/javascripts/app.js', 'public/javascripts/sb-clean-blog/app.js')
-  .sass('app/assets/sb-clean-blog/stylesheets/app.scss', 'public/stylesheets/sb-clean-blog/app.css')
-
-  .js('app/assets/sb-resume/javascripts/app.js', 'public/javascripts/sb-resume/app.js')
-  .sass('app/assets/sb-resume/stylesheets/app.scss', 'public/stylesheets/sb-resume/app.css')
-
-  .js('app/assets/sb-grayscale/javascripts/app.js', 'public/javascripts/sb-grayscale/app.js')
-  .sass('app/assets/sb-grayscale/stylesheets/app.scss', 'public/stylesheets/sb-grayscale/app.css')
-
-  .js('app/assets/sb-agency/javascripts/app.js', 'public/javascripts/sb-agency/app.js')
-  .sass('app/assets/sb-agency/stylesheets/app.scss', 'public/stylesheets/sb-agency/app.css')
-
-  .js('app/assets/sb-creative/javascripts/app.js', 'public/javascripts/sb-creative/app.js')
-  .sass('app/assets/sb-creative/stylesheets/app.scss', 'public/stylesheets/sb-creative/app.css')
   /* END Theme Assets */
 
   // .combine([

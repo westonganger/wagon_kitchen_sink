@@ -8,16 +8,19 @@ slug: default
   %head
     {% include 'shared-head' %}
 
-    {% include 'css-framework' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
-
+    {% block assets %}
+    {% include 'asset' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
     {{ 'main/app' | stylesheet_tag }}
-    {% include 'icons' with type: 'font-awesome-5' %}
-
     {{ 'main/app' | javascript_tag }}
+    {% endblock %}
+
+    {% block icons %}
+    {% include 'icons' with type: 'font-awesome-5' %}
+    {% endblock %}
 
     {% block head %}{% endblock %}
 
-  %body(class="d-flex flex-column {{ page.handle }} {{ body_class }}")
+  %body(class="page-top d-flex flex-column {{ page.handle }} {{ body_class }}")
     {% block body-top %}{% endblock %}
 
     {% block loader %}

@@ -4,21 +4,12 @@
     "/javascripts/fresh/app.js": "/javascripts/fresh/app.js",
     "/javascripts/main/app.js": "/javascripts/main/app.js",
     "/javascripts/pluton/app.js": "/javascripts/pluton/app.js",
-    "/javascripts/sb-agency/app.js": "/javascripts/sb-agency/app.js",
-    "/javascripts/sb-business-casual/app.js": "/javascripts/sb-business-casual/app.js",
-    "/javascripts/sb-clean-blog/app.js": "/javascripts/sb-clean-blog/app.js",
-    "/javascripts/sb-creative/app.js": "/javascripts/sb-creative/app.js",
-    "/javascripts/sb-grayscale/app.js": "/javascripts/sb-grayscale/app.js",
-    "/javascripts/sb-landing/app.js": "/javascripts/sb-landing/app.js",
-    "/javascripts/sb-new-age/app.js": "/javascripts/sb-new-age/app.js",
-    "/javascripts/sb-resume/app.js": "/javascripts/sb-resume/app.js",
-    "/javascripts/sb-stylish-portfolio/app.js": "/javascripts/sb-stylish-portfolio/app.js",
     "/javascripts/shared/app.js": "/javascripts/shared/app.js",
     "/stylesheets/shared/app.css": "/stylesheets/shared/app.css",
     "/stylesheets/shared/icomoon.css": "/stylesheets/shared/icomoon.css",
     "/stylesheets/main/app.css": "/stylesheets/main/app.css",
     "/stylesheets/pluton/app.css": "/stylesheets/pluton/app.css",
-    "/stylesheets/foodee/app.css": "/stylesheets/foodee/app.css",
     "/stylesheets/cube/app.css": "/stylesheets/cube/app.css",
-    "/stylesheets/fresh/app.css": "/stylesheets/fresh/app.css"
+    "/stylesheets/fresh/app.css": "/stylesheets/fresh/app.css",
+    "/stylesheets/foodee/app.css": "/stylesheets/foodee/app.css"
 }

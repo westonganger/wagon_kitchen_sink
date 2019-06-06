@@ -2,6 +2,7 @@ global.$ = global.jQuery = require('jquery');
 
 var autosize = require('autosize/dist/autosize.js');
 require("./vendor/jquery.tablesorter.js");
+require("jquery-enable-disable/dist/jquery-enable-disable.js");
 
 require("@rails/ujs").start();
 

@@ -397,9 +397,62 @@ sections_content: >
     }
   }
 ---
-{% extends layouts/pluton %}
+{% extends layouts/default %}
 
-{% block 'main' %}
+{% block top-nav %}
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a href="#" class="brand">
+          <img src="{{ 'pluton/logo.png' | theme_image_url }}" width="120" height="40" alt="Logo" />
+        </a>
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><i class="icon-menu"></i></button>
+        <div class="nav-collapse collapse pull-right">
+          <ul class="nav" id="top-navigation">
+            <li class="active" id="home_lnk" style="display:none">
+              <a href="#home">Home</a>
+            </li>
+            <li id="service_lnk" style="display:none">
+              <a href="#service">Services</a>
+            </li>
+            <li id="portfolio_lnk" style="display:none">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li id="about_lnk" style="display:none">
+              <a href="#about">About</a>
+            </li>
+            <li id="clients_lnk" style="display:none">
+              <a href="#clients">Clients</a>
+            </li>
+            <li id="price_lnk" style="display:none">
+              <a href="#price">Price</a>
+            </li>
+            <li id="contact_lnk" style="display:none">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block assets %}
+  {% include 'asset' with type: 'bootstrap', version: '2.3.1' bootswatch_theme: nil %}
+  {{ 'pluton/app' | stylesheet_tag }}
+  {{ 'pluton/app' | javascript_tag }}
+{% endblock %}
+
+{% block head %}
+  {% unless wagon %}
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=initializeMap" async defer></script>
+  {% endunless %}
+{% endblock %}
+
+{% block main %}
+  {% include 'back-button' %}
+
   {% section 'pluton-home', placement: 'top' %}
   {% section 'pluton-service' %}
   {% section 'pluton-portfolio' %}
@@ -407,4 +460,13 @@ sections_content: >
   {% section 'pluton-clients' %}
   {% section 'pluton-price' %}
   {% section 'pluton-contact' %}
+{% endblock %}
+
+{% block footer %}
+  <div class="footer">
+    <p>&copy; {{ now | date: '%Y' }} Your Company Name</p>
+  </div>
+  <div class="scrollup">
+    <a href="#"><i class="icon-up-open"></i></a>
+  </div>
 {% endblock %}

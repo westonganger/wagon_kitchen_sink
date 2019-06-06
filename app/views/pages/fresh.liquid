@@ -194,9 +194,17 @@ sections_content: >
     }
   }
 ---
-{% extends layouts/fresh %}
+{% extends layouts/default %}
+
+{% block top-nav %}{% endblock %}
+
+{% block loader %}
+  {% include 'fresh-preloader' %}
+{% endblock %}
 
 {% block 'main' %}
+  {% include back-button %}
+
   {% section 'fresh-header', placement: 'top' %}
   {% section 'fresh-hero' %}
   {% section 'fresh-section_one' %}
@@ -204,4 +212,23 @@ sections_content: >
   {% section 'fresh-section_three' %}
   {% section 'fresh-section_four' %}
   {% include 'fresh-contact' %}
+{% endblock %}
+
+{% block footer %}
+  {% include 'fresh-modal' %}
+  {% section 'fresh-footer', placement: 'bottom' %}
+  {% include 'fresh-backtotop' %}
+  {% include 'fresh-sidebar' %}
+{% endblock %}
+
+{% block icons %}
+  {% include 'icons' with type: 'simple-line-icons' %}
+  {% include 'icons' with type: 'feather' %}
+{% endblock %}
+
+{% block assets %}
+  {% include 'asset' with type: 'bulma' %}
+
+  {{ 'fresh/app.css' | stylesheet_tag }}
+  {{ 'fresh/app.js' | javascript_tag }}
 {% endblock %}

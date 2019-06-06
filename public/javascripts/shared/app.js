@@ -154,6 +154,8 @@ var autosize = __webpack_require__(/*! autosize/dist/autosize.js */ "./node_modu
 
 __webpack_require__(/*! ./vendor/jquery.tablesorter.js */ "./app/assets/shared/javascripts/vendor/jquery.tablesorter.js");
 
+__webpack_require__(/*! jquery-enable-disable/dist/jquery-enable-disable.js */ "./node_modules/jquery-enable-disable/dist/jquery-enable-disable.js");
+
 __webpack_require__(/*! @rails/ujs */ "./node_modules/@rails/ujs/lib/assets/compiled/rails-ujs.js").start();
 /* Disabled because we use seperate asset bundles for each theme template */
 //var Turbolinks = require("turbolinks");
@@ -4624,6 +4626,93 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	exports.default = autosize;
 	module.exports = exports['default'];
 });
+
+/***/ }),
+
+/***/ "./node_modules/jquery-enable-disable/dist/jquery-enable-disable.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/jquery-enable-disable/dist/jquery-enable-disable.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(jQuery) {/*
+ * jquery-enable-disable plugin v1.0.2
+ * https://github.com/schlaus/jquery-enable-disable
+ * 
+ * A simple, lightweight jQuery plugin that adds methods
+ * to enable and disable elements, as well as to chcek
+ * whether an element is enabled or disabled. Designed
+ * to work well together with Bootstrap!
+ * 
+ * Copyright 2015 Klaus Karkia
+ * Released under the MIT license
+ * http://schlaus.mit-license.org/
+ *
+ */
+jQuery.fn.enable = function(extraFilter) {
+  extraFilter = extraFilter || "*";
+  this.filter(extraFilter).each(function() {
+    var $this, ref;
+    $this = jQuery(this);
+    $this.removeClass('disabled').prop('disabled', false);
+    switch ($this.prop('tagName')) {
+      case "A":
+        if ($this.data('disabled-href')) {
+          return $this.attr('href', $this.data('disabled-href')).removeData("disabled-href");
+        }
+        break;
+      case "INPUT":
+        if ((ref = $this.prop("type")) === "checkbox" || ref === "radio") {
+          return $this.parents(".radio,.radio-inline,.checkbox,.checkbox-inline").removeClass("disabled");
+        }
+        break;
+      case "FIELDSET":
+      case "FORM":
+        return $this.find("input,select,label,a,button,fieldset,textarea,li").each(function() {
+          return jQuery(this).enable();
+        });
+    }
+  });
+  return this;
+};
+
+jQuery.fn.disable = function(extraFilter) {
+  extraFilter = extraFilter || "*";
+  this.filter(extraFilter).each(function() {
+    var $this, ref;
+    $this = jQuery(this);
+    $this.addClass('disabled').prop('disabled', true);
+    switch ($this.prop("tagName")) {
+      case "A":
+        if ($this.attr("href") && !$this.data("disabled-href")) {
+          return $this.data("disabled-href", $this.attr("href")).attr("href", null);
+        }
+        break;
+      case "INPUT":
+        if ((ref = $this.prop("type")) === "checkbox" || ref === "radio") {
+          return $this.parents(".radio,.radio-inline,.checkbox,.checkbox-inline").addClass("disabled");
+        }
+        break;
+      case "FIELDSET":
+      case "FORM":
+        return $this.find("input,select,label,a,button,fieldset,textarea,li").each(function() {
+          return jQuery(this).disable();
+        });
+    }
+  });
+  return this;
+};
+
+jQuery.fn.isDisabled = function() {
+  return this.hasClass("disabled") || this.prop("disabled") === true || this.data("disabled-href");
+};
+
+jQuery.fn.isEnabled = function() {
+  return !this.isDisabled;
+};
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -15269,9 +15358,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 0:
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./app/assets/shared/javascripts/app.js ./app/assets/shared/stylesheets/app.scss ./app/assets/shared/stylesheets/icomoon.scss ./app/assets/main/stylesheets/app.scss ./app/assets/pluton/stylesheets/app.scss ./app/assets/foodee/stylesheets/app.scss ./app/assets/cube/stylesheets/app.scss ./app/assets/fresh/stylesheets/app.scss ./app/assets/sb-landing/stylesheets/app.scss ./app/assets/sb-new-age/stylesheets/app.scss ./app/assets/sb-business-casual/stylesheets/app.scss ./app/assets/sb-stylish-portfolio/stylesheets/app.scss ./app/assets/sb-clean-blog/stylesheets/app.scss ./app/assets/sb-resume/stylesheets/app.scss ./app/assets/sb-grayscale/stylesheets/app.scss ./app/assets/sb-agency/stylesheets/app.scss ./app/assets/sb-creative/stylesheets/app.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./app/assets/shared/javascripts/app.js ./app/assets/shared/stylesheets/app.scss ./app/assets/shared/stylesheets/icomoon.scss ./app/assets/main/stylesheets/app.scss ./app/assets/pluton/stylesheets/app.scss ./app/assets/foodee/stylesheets/app.scss ./app/assets/cube/stylesheets/app.scss ./app/assets/fresh/stylesheets/app.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15282,16 +15371,7 @@ __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/pluton/stylesheets/app.scss */"./app/assets/pluton/stylesheets/app.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/foodee/stylesheets/app.scss */"./app/assets/foodee/stylesheets/app.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/cube/stylesheets/app.scss */"./app/assets/cube/stylesheets/app.scss");
-__webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/fresh/stylesheets/app.scss */"./app/assets/fresh/stylesheets/app.scss");
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-landing/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-new-age/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-business-casual/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-stylish-portfolio/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-clean-blog/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-resume/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-grayscale/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-agency/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-!(function webpackMissingModule() { var e = new Error("Cannot find module '/home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/sb-creative/stylesheets/app.scss'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+module.exports = __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/fresh/stylesheets/app.scss */"./app/assets/fresh/stylesheets/app.scss");
 
 
 /***/ })
