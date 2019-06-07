@@ -1,8 +1,4 @@
-import './vendor/jquery.easing.1.3.js';
-import './vendor/jquery.waypoints.min.js';
 import './vendor/owl.carousel.min.js';
-import './vendor/jquery.magnific-popup.min.js';
-import './vendor/magnific-popup-options.js';
 
 var mobileMenuOutsideClick = function() {
 
@@ -12,13 +8,9 @@ var mobileMenuOutsideClick = function() {
       $('.js-gtco-nav-toggle').addClass('');
 
       if ( $('body').hasClass('offcanvas') ) {
-
         $('body').removeClass('offcanvas');
         $('.js-gtco-nav-toggle').removeClass('active');
-
       }
-
-
     }
   });
 

@@ -196,7 +196,9 @@ sections_content: >
 ---
 {% extends layouts/default %}
 
-{% block top-nav %}{% endblock %}
+{% block top-nav %}
+  {% include back-button %}
+{% endblock %}
 
 {% block loader %}
   {% include 'fresh-preloader' %}

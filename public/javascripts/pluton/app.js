@@ -125,7 +125,7 @@ jQuery.fn.load = function (callback) {
 
 
 
-$(document).on('DOMContentLoaded turbolinks:load', function () {
+$(document).on('turbolinks:load', function () {
   // Load all the sections
   var sectionsManager = new _shared_javascripts_sections_manager__WEBPACK_IMPORTED_MODULE_6__["default"](); // Register sections here. DO NOT REMOVE OR UPDATE THIS LINE
 

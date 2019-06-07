@@ -400,6 +400,8 @@ sections_content: >
 {% extends layouts/default %}
 
 {% block top-nav %}
+  {% include back-button %}
+
   <div class="navbar">
     <div class="navbar-inner">
       <div class="container">
@@ -440,6 +442,10 @@ sections_content: >
 
 {% block css-framework %}
   {% include 'asset' with type: 'bootstrap', version: '2.3.1' bootswatch_theme: nil %}
+{% endblock %}
+
+{% block css-before %}
+  {% include asset with type: 'animate.css' %}
 {% endblock %}
 
 {% block css-default %}

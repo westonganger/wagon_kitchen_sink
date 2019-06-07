@@ -15,7 +15,7 @@ import './vendor/appli.js';
 import SectionsManager from '../../shared/javascripts/sections/_manager';
 import * as Sections from './sections';
 
-$(document).on('DOMContentLoaded turbolinks:load',  function(){
+$(document).on('turbolinks:load',  function(){
   // Load all the sections
   const sectionsManager = new SectionsManager();
 

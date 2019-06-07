@@ -15,7 +15,7 @@ published: true
 
 {% block js %}
 :javascript
-  $(document).on('DOMContentLoaded turbolinks:load', function(){
+  $(document).on('turbolinks:load', function(){
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
       type: 'line',

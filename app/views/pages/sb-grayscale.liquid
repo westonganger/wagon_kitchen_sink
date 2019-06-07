@@ -1,6 +1,6 @@
 ---
-title: 
-handle: 
+title: SB Grayscale
+handle: sb-grayscale
 listed: true
 published: true
 ---
@@ -54,7 +54,7 @@ published: true
             <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
         </div>
       </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
+      <img src="{{ 'sb/ipad.png' | theme_image_url }}" class="img-fluid" alt="">
     </div>
   </section>
 
@@ -78,7 +78,7 @@ published: true
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+          <img class="img-fluid" src="{{ 'sb/demo-image-01.jpg' | theme_image_url }}" alt="">
         </div>
         <div class="col-lg-6">
           <div class="bg-black text-center h-100 project">
@@ -96,7 +96,7 @@ published: true
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+          <img class="img-fluid" src="{{ 'sb/demo-image-02.jpg' | theme_image_url }}" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -294,7 +294,7 @@ published: true
       height: auto;
       min-height: 35rem;
       padding: 15rem 0;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("{{ 'sb/bg-masthead.jpg' | theme_image_url }}");
       background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
       background-position: center;
       background-repeat: no-repeat;
@@ -411,8 +411,8 @@ published: true
 
     .signup-section {
       padding: 10rem 0;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-      background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("{{ 'sb/bg-signup.jpg' | theme_image_url }}");
+      background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("{{ 'sb/bg-signup.jpg' | theme_image_url }}");
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
@@ -467,6 +467,10 @@ published: true
       color: rgba(255, 255, 255, 0.3);
     }
 
+    .contact-section .social a i{
+      line-height: 3rem;
+    }
+
     .contact-section .social a:hover {
       color: rgba(255, 255, 255, 0.5);
     }
@@ -513,7 +517,7 @@ published: true
 
 {% block js %}
   <script type="text/javascript">
-    $(document).on('DOMContentLoaded turbolinks:load', function(){
+    $(document).on('turbolinks:load', function(){
       // Smooth scrolling using jQuery easing
       $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -61,6 +61,10 @@ editable_elements:
 {{ 'cube/app' | stylesheet_tag }}
 {% endblock %}
 
+{% block css-before %}
+{% include asset with type: 'animate.css' %}
+{% endblock %}
+
 {% block js-default %}
 {{ 'cube/app' | javascript_tag }}
 {% endblock %}
@@ -72,6 +76,11 @@ editable_elements:
 
 {% block fonts %}
 %link{:href => "https://fonts.googleapis.com/css?family=Raleway:100,300,400,700", :rel => "stylesheet"}/
+{% endblock %}
+
+{% block js-before %}
+  {% include asset with type: 'jquery-easing' %}
+  {% include asset with type: 'jquery-magnific-popup' %}
 {% endblock %}
 
 {% block js %}
@@ -117,4 +126,6 @@ editable_elements:
 .gtco-loader
 {% endblock %}
 
-{% block top-nav %}{% endblock %}
+{% block top-nav %}
+  {% include back-button %}
+{% endblock %}

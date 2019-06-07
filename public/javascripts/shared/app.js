@@ -162,7 +162,10 @@ __webpack_require__(/*! @rails/ujs */ "./node_modules/@rails/ujs/lib/assets/comp
 //Turbolinks.start()
 
 
-$(document).on('DOMContentLoaded turbolinks:load', function () {
+$(document).ready(function () {
+  $(document).trigger('turbolinks:load');
+});
+$(document).on('turbolinks:load', function () {
   /* Vertical Autosizing textarea tags */
   var textarea = $("textarea:not(.no-autosize)");
   textarea.not('.more-rows').prop('rows', '1');

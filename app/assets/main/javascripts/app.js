@@ -3,7 +3,7 @@
 
 import './sections.js';
 
-$(document).on('DOMContentLoaded turbolinks:load',  function(){
+$(document).on('turbolinks:load',  function(){
   //$('[data-toggle="popover"]').popover();
 
   //$('[data-toggle="tooltip"]').tooltip();

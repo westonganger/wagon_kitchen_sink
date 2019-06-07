@@ -2,14 +2,13 @@
 //import '../stylesheets/app.scss';
 
 require('bootstrap-datepicker');
-import './vendor/jquery.waypoints.min';
 import './vendor/jquery.stellar.min';
 
 // Import the classes required to handle sections
 import SectionsManager from '../../shared/javascripts/sections/_manager';
 import * as Sections from './sections';
 
-$(document).on('DOMContentLoaded turbolinks:load', event => {
+$(document).on('turbolinks:load', event => {
   // Load all the sections
   const sectionsManager = new SectionsManager();
 

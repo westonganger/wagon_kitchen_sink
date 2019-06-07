@@ -100,7 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 // Tell Webpack to load the style
 //import '../stylesheets/app.scss';
 
-$(document).on('DOMContentLoaded turbolinks:load', function () {//$('[data-toggle="popover"]').popover();
+$(document).on('turbolinks:load', function () {//$('[data-toggle="popover"]').popover();
   //$('[data-toggle="tooltip"]').tooltip();
 });
 /* Bootstrap AJAX Modals */

@@ -126,10 +126,15 @@ sections_content: >
 {% extends layouts/default %}
 
 {% block top-nav %}
+  {% include back-button %}
 {% endblock %}
 
 {% block css-framework %}
   {% include 'asset' with type: 'bootstrap', version: '3.4.1' bootswatch_theme: nil %}
+{% endblock %}
+
+{% block css-before %}
+  {% include asset with type: 'animate.css' %}
 {% endblock %}
 
 {% block css-default %}
@@ -144,8 +149,9 @@ sections_content: >
   {{ 'foodee/app' | javascript_tag }}
 {% endblock %}
 
-{% block js-before
-  % include 'asset' with type: 'flex-slider' %}
+{% block js-before %}
+  {% include 'asset' with type: 'flex-slider' %}
+{% endblock %}
 
 {% block main %}
   <div id="fh5co-container">

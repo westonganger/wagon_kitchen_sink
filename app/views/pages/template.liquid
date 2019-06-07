@@ -7,14 +7,6 @@ published: true
 
 {% extends layouts/default %}
 
-{% block main %}
-
-{% endblock %}
-
-{% block footer %}
-
-{% endblock %}
-
 {% block fonts %}
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 {% endblock %}
@@ -23,13 +15,21 @@ published: true
   {% include 'icons' with type: '' %}
 {% endblock %}
 
+{% block main %}
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
+
 {% block js-before %}
   {% include asset with type: 'jquery-easing' %}
 {% endblock %}
 
 {% block js %}
   <script type="text/javascript">
-    $(document).on('DOMContentLoaded turbolinks:load', function(){
+    $(document).on('turbolinks:load', function(){
       
     });
   </script>

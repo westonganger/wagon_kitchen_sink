@@ -97,7 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _shared_javascripts_sections_manager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../shared/javascripts/sections/_manager */ "./app/assets/shared/javascripts/sections/_manager.js");
 /* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sections */ "./app/assets/fresh/javascripts/sections/index.js");
-$(document).on('DOMContentLoaded turbolinks:load', function () {
+$(document).on('turbolinks:load', function () {
   //Preloader
   $(window).on('load', function () {
     // makes sure the whole site is loaded

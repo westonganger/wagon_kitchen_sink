@@ -5,7 +5,7 @@ slug: default
 ---
 
 {% case page.handle %}
-{% when 'sb-coming-soon' %}
+{% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age' %}
 {% when '' %}
 {% else %}
   {% assign body_class = 'has-sticky-footer' %}
@@ -68,7 +68,6 @@ slug: default
     {% endblock %}
 
     {% block top-nav %}
-      {% include back-button %}
       {% include 'top-nav' %}
     {% endblock %}
 

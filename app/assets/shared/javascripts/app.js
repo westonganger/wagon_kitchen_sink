@@ -10,7 +10,11 @@ require("@rails/ujs").start();
 //var Turbolinks = require("turbolinks");
 //Turbolinks.start()
 
-$(document).on('DOMContentLoaded turbolinks:load',  function(){
+$(document).ready(function(){
+  $(document).trigger('turbolinks:load');
+});
+
+$(document).on('turbolinks:load',  function(){
   /* Vertical Autosizing textarea tags */
   var textarea = $("textarea:not(.no-autosize)");
   textarea.not('.more-rows').prop('rows','1');
