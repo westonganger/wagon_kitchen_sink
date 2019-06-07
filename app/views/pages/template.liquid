@@ -15,11 +15,27 @@ published: true
 
 {% endblock %}
 
-{% block head %}
+{% block fonts %}
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+{% endblock %}
 
+{% block icons %}
   {% include 'icons' with type: '' %}
+{% endblock %}
 
+{% block js-before %}
+  {% include asset with type: 'jquery-easing' %}
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $(document).on('DOMContentLoaded turbolinks:load', function(){
+      
+    });
+  </script>
+{% endblock %}
+
+{% block css %}
   <style>
 
   </style>

@@ -203,8 +203,6 @@ sections_content: >
 {% endblock %}
 
 {% block 'main' %}
-  {% include back-button %}
-
   {% section 'fresh-header', placement: 'top' %}
   {% section 'fresh-hero' %}
   {% section 'fresh-section_one' %}
@@ -221,14 +219,19 @@ sections_content: >
   {% include 'fresh-sidebar' %}
 {% endblock %}
 
-{% block icons %}
+{% block css-framework %}
+  {% include 'asset' with type: 'bulma' %}
+{% endblock %}
+
+{% block css-default %}
+  {{ 'fresh/app.css' | stylesheet_tag }}
+{% endblock %}
+
+{% block icons-default %}
   {% include 'icons' with type: 'simple-line-icons' %}
   {% include 'icons' with type: 'feather' %}
 {% endblock %}
 
-{% block assets %}
-  {% include 'asset' with type: 'bulma' %}
-
-  {{ 'fresh/app.css' | stylesheet_tag }}
+{% block js-default %}
   {{ 'fresh/app.js' | javascript_tag }}
 {% endblock %}

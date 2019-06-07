@@ -1,0 +1,556 @@
+---
+title: 
+handle: 
+listed: true
+published: true
+---
+
+{% extends layouts/default %}
+
+{% block top-nav %}
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block main %}
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
+          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+        </div>
+      </div>
+      <img src="img/ipad.png" class="img-fluid" alt="">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>Shoreline</h4>
+            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Misty</h4>
+                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">Mountains</h4>
+                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">hello@yourdomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (555) 902-8832</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a href="#" class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+{% endblock %}
+
+{% block footer %}
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      Copyright &copy; Your Website 2019
+    </div>
+  </footer>
+{% endblock %}
+
+{% block fonts %}
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+{% endblock %}
+
+{% block css %}
+  <style>
+    #mainNav {
+      min-height: 56px;
+      background-color: #fff;
+    }
+
+    #mainNav .navbar-toggler {
+      font-size: 80%;
+      padding: 0.75rem;
+      color: #64a19d;
+      border: 1px solid #64a19d;
+    }
+
+    #mainNav .navbar-toggler:focus {
+      outline: none;
+    }
+
+    #mainNav .navbar-brand {
+      color: #161616;
+      font-weight: 700;
+      padding: .9rem 0;
+    }
+
+    #mainNav .navbar-nav .nav-item:hover {
+      color: fade(white, 80%);
+      outline: none;
+      background-color: transparent;
+    }
+
+    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+      outline: none;
+      background-color: transparent;
+    }
+
+    @media (min-width: 992px) {
+      #mainNav {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+      }
+      #mainNav .navbar-brand {
+        padding: .5rem 0;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      #mainNav .nav-link {
+        -webkit-transition: none;
+        transition: none;
+        padding: 2rem 1.5rem;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      #mainNav .nav-link:hover {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      #mainNav .nav-link:active {
+        color: white;
+      }
+      #mainNav.navbar-shrink {
+        background-color: #fff;
+      }
+      #mainNav.navbar-shrink .navbar-brand {
+        color: #161616;
+      }
+      #mainNav.navbar-shrink .nav-link {
+        color: #161616;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+      }
+      #mainNav.navbar-shrink .nav-link:hover {
+        color: #64a19d;
+      }
+      #mainNav.navbar-shrink .nav-link:active {
+        color: #467370;
+      }
+      #mainNav.navbar-shrink .nav-link.active {
+        color: #64a19d;
+        outline: none;
+        border-bottom: 0.25rem solid #64a19d;
+      }
+    }
+
+    .masthead {
+      position: relative;
+      width: 100%;
+      height: auto;
+      min-height: 35rem;
+      padding: 15rem 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead.jpg");
+      background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+    }
+
+    .masthead h1 {
+      font-family: 'Varela Round';
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.8rem;
+      background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    .masthead h2 {
+      max-width: 20rem;
+      font-size: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .masthead {
+        height: 100vh;
+        padding: 0;
+      }
+      .masthead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+      }
+      .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+      }
+    }
+
+    .btn {
+      -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      padding: 1.25rem 2rem;
+      font-family: 'Varela Round';
+      font-size: 80%;
+      text-transform: uppercase;
+      letter-spacing: .15rem;
+      border: 0;
+    }
+
+    .btn-primary {
+      background-color: #64a19d;
+    }
+
+    .btn-primary:hover {
+      background-color: #4f837f;
+    }
+
+    .btn-primary:focus {
+      background-color: #4f837f;
+      color: white;
+    }
+
+    .btn-primary:active {
+      background-color: #467370 !important;
+    }
+
+    .about-section {
+      padding-top: 10rem;
+      background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+      background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+    }
+
+    .about-section p {
+      margin-bottom: 5rem;
+    }
+
+    .projects-section {
+      padding: 10rem 0;
+    }
+
+    .projects-section .featured-text {
+      padding: 2rem;
+    }
+
+    @media (min-width: 992px) {
+      .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+      }
+    }
+
+    .projects-section .project-text {
+      padding: 3rem;
+      font-size: 90%;
+    }
+
+    @media (min-width: 992px) {
+      .projects-section .project-text {
+        padding: 5rem;
+      }
+      .projects-section .project-text hr {
+        border-color: #64a19d;
+        border-width: .25rem;
+        width: 30%;
+      }
+    }
+
+    .signup-section {
+      padding: 10rem 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
+      background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+    }
+
+    .signup-section .form-inline input {
+      -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      padding: 1.25rem 2rem;
+      height: auto;
+      font-family: 'Varela Round';
+      font-size: 80%;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border: 0;
+    }
+
+    .contact-section {
+      padding: 5rem 0 0;
+    }
+
+    .contact-section .card {
+      border: 0;
+      border-bottom: 0.25rem solid #64a19d;
+    }
+
+    .contact-section .card h4 {
+      font-size: 0.8rem;
+      font-family: 'Varela Round';
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+    }
+
+    .contact-section .card hr {
+      border-color: #64a19d;
+      border-width: 0.25rem;
+      width: 3rem;
+    }
+
+    .contact-section .social {
+      margin-top: 5rem;
+    }
+
+    .contact-section .social a {
+      text-align: center;
+      height: 3rem;
+      width: 3rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 100%;
+      line-height: 3rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .contact-section .social a:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .contact-section .social a:active {
+      color: #fff;
+    }
+
+    body {
+      font-family: 'Nunito';
+      letter-spacing: 0.0625em;
+    }
+
+    a {
+      color: #64a19d;
+    }
+
+    a:focus, a:hover {
+      text-decoration: none;
+      color: #3c6360;
+    }
+
+    .bg-black {
+      background-color: #161616 !important;
+    }
+
+    .bg-primary {
+      background-color: #64a19d !important;
+    }
+
+    .text-primary {
+      color: #64a19d !important;
+    }
+
+    footer {
+      padding: 5rem 0;
+    }
+  </style>
+{% endblock %}
+
+{% block js-before %}
+  {% include asset with type: 'jquery-easing' %}
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $(document).on('DOMContentLoaded turbolinks:load', function(){
+      // Smooth scrolling using jQuery easing
+      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: (target.offset().top - 70)
+            }, 1000, "easeInOutExpo");
+            return false;
+          }
+        }
+      });
+
+      // Closes responsive menu when a scroll trigger link is clicked
+      $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+      // Activate scrollspy to add active class to navbar items on scroll
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 100
+      });
+
+      // Collapse Navbar
+      var navbarCollapse = function() {
+        if ($("#mainNav").offset().top > 100) {
+          $("#mainNav").addClass("navbar-shrink");
+        } else {
+          $("#mainNav").removeClass("navbar-shrink");
+        }
+      };
+      // Collapse now if page is not at top
+      navbarCollapse();
+      // Collapse the navbar when page is scrolled
+      $(window).scroll(navbarCollapse);
+    });
+  </script>
+{% endblock %}

@@ -5,10 +5,15 @@ published: true
 ---
 {% extends 'layouts/default' %}
 
-{% block head %}
+{% block icons-default %}
 {% include 'icons' with type: 'feather' %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+{% endblock %}
 
+{% block js-before %}
+%script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js")
+{% endblock %}
+
+{% block js %}
 :javascript
   $(document).on('DOMContentLoaded turbolinks:load', function(){
     var ctx = document.getElementById('myChart');

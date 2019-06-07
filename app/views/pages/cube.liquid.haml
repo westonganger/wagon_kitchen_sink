@@ -57,19 +57,24 @@ editable_elements:
 
 {% extends 'layouts/default' %}
 
-{% block assets %}
+{% block css-default %}
 {{ 'cube/app' | stylesheet_tag }}
+{% endblock %}
+
+{% block js-default %}
 {{ 'cube/app' | javascript_tag }}
 {% endblock %}
 
-{% block icons %}
+{% block icons-default %}
 {% include 'icons' with type: 'icomoon' %}
 {% include 'icons' with type: 'themify' %}
 {% endblock %}
 
-{% block head %}
+{% block fonts %}
 %link{:href => "https://fonts.googleapis.com/css?family=Raleway:100,300,400,700", :rel => "stylesheet"}/
+{% endblock %}
 
+{% block js %}
 {% if page.fullpath contains 'contact' %}
 %script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"}
 {{ 'google_map' | javascript_tag }}
@@ -77,8 +82,6 @@ editable_elements:
 {% endblock %}
 
 {% block 'main' %}
-{% include 'back-button' %}
-
 {% include 'cube-nav' %}
 
 {% block 'header' %}

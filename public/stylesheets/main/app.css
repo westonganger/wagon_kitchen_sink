@@ -8,20 +8,26 @@ body {
   height: 100%;
 }
 
-footer {
-  margin-top: auto;
+body.has-sticky-footer {
+  display: flex;
+  flex-direction: column;
 }
 
-.full-height {
-  height: calc(100vh - 55px);
-}
-
-#page-content {
+body.has-sticky-footer #page-content {
+  flex-shrink: 0;
   margin-top: 55px;
+}
+
+body.has-sticky-footer footer {
+  margin-top: auto;
 }
 
 .blue-gradient {
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.full-height {
+  height: calc(100vh - 55px);
 }
 

@@ -438,21 +438,25 @@ sections_content: >
 
 {% endblock %}
 
-{% block assets %}
+{% block css-framework %}
   {% include 'asset' with type: 'bootstrap', version: '2.3.1' bootswatch_theme: nil %}
+{% endblock %}
+
+{% block css-default %}
   {{ 'pluton/app' | stylesheet_tag }}
+{% endblock %}
+
+{% block js-default %}
   {{ 'pluton/app' | javascript_tag }}
 {% endblock %}
 
-{% block head %}
+{% block js %}
   {% unless wagon %}
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?callback=initializeMap" async defer></script>
   {% endunless %}
 {% endblock %}
 
 {% block main %}
-  {% include 'back-button' %}
-
   {% section 'pluton-home', placement: 'top' %}
   {% section 'pluton-service' %}
   {% section 'pluton-portfolio' %}

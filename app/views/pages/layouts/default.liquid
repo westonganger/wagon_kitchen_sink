@@ -1,0 +1,93 @@
+---
+title: Default Layout
+is_layout: true
+slug: default
+---
+
+{% case page.handle %}
+{% when 'sb-coming-soon' %}
+{% when '' %}
+{% else %}
+  {% assign body_class = 'has-sticky-footer' %}
+{% endcase %}
+
+<html lang="en">
+  <head>
+    {% include 'shared-head' %}
+
+    {% block css-framework %}
+      {% include 'asset' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
+    {% endblock %}
+
+    {% block css-before %}{% endblock %}
+
+    {% block css-default %}
+      {{ 'main/app' | stylesheet_tag }}
+    {% endblock %}
+
+    {% block css %}{% endblock %}
+
+    {% block fonts-default %}
+      {% comment %}
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+      {% endcomment %}
+    {% endblock %}
+
+    {% block fonts %}{% endblock %}
+
+    {% block icons-default %}
+      {% include 'icons' with type: 'font-awesome-5' %}
+    {% endblock %}
+
+    {% block icons %}
+    {% endblock %}
+
+    {% block js-before %}{% endblock %}
+
+    {% block js-default %}
+      {{ 'main/app' | javascript_tag }}
+    {% endblock %}
+
+    {% block js %}{% endblock %}
+
+    {% block head-bottom %}{% endblock %}
+  </head>
+  <body id="page-top" class="{{ page.handle }} {{ body_class }}">
+    {% block body-top %}{% endblock %}
+
+    {% block loader %}
+      {% include 'loader' %}
+    {% endblock %}
+
+    {% block left-sidebar %}
+      {% include 'left-sidebar' %}
+    {% endblock %}
+
+    {% block right-sidebar %}
+      {% include 'right-sidebar' %}
+    {% endblock %}
+
+    {% block top-nav %}
+      {% include back-button %}
+      {% include 'top-nav' %}
+    {% endblock %}
+
+    <div id="page-content">
+      {% block flash-notice %}
+        {% include 'flash-notice' %}
+      {% endblock %}
+
+      {% block main %}{% endblock %}
+    </div>
+    
+    {% block footer %}
+      {% include 'footer' %}
+    {% endblock %}
+
+    {% block bottom-nav %}
+      {% include 'bottom-nav' %}
+    {% endblock %}
+
+    {% block body-bottom %}{% endblock %}
+  </body>
+</html>

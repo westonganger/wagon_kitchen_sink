@@ -128,20 +128,26 @@ sections_content: >
 {% block top-nav %}
 {% endblock %}
 
-{% block assets %}
+{% block css-framework %}
   {% include 'asset' with type: 'bootstrap', version: '3.4.1' bootswatch_theme: nil %}
-  {% include 'asset' with type: 'flex-slider' %}
-  {{ 'foodee/app' | stylesheet_tag }}
-  {{ 'foodee/app' | javascript_tag }}
 {% endblock %}
 
-{% block icons %}
+{% block css-default %}
+  {{ 'foodee/app' | stylesheet_tag }}
+{% endblock %}
+
+{% block icons-default %}
   {% include 'icons' with type: 'simple-line-icons' %}
 {% endblock %}
 
-{% block main %}
-  {% include 'back-button' %}
+{% block js-default %}
+  {{ 'foodee/app' | javascript_tag }}
+{% endblock %}
 
+{% block js-before
+  % include 'asset' with type: 'flex-slider' %}
+
+{% block main %}
   <div id="fh5co-container">
     {% section 'foodee-home', placement: 'top' %}
     {% include 'foodee-nav' %}

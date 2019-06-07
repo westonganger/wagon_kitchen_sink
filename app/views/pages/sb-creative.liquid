@@ -230,10 +230,12 @@ published: true
   </footer>
 {% endblock %}
 
-{% block head %}
+{% block fonts %}
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+{% endblock %}
 
+{% block css %}
   <style>
     body,
     html {
@@ -430,10 +432,14 @@ published: true
       opacity: 1;
     }
   </style>
+{% endblock %}
 
+{% block js-before %}
   {% include asset with type: 'jquery-easing' %}
   {% include asset with type: 'jquery.magnific-popup' %}
+{% endblock %}
 
+{% block js %}
   <script type="text/javascript">
     $(document).on('DOMContentLoaded turbolinks:load', function(){
       // Smooth scrolling using jQuery easing

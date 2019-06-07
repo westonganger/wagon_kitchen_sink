@@ -9,19 +9,25 @@ html, body{
   height: 100%; // required for sticky footer
 }
 
-footer{
-  margin-top: auto; // required for sticky footer, https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/
-}
+body.has-sticky-footer{
+  display: flex;
+  flex-direction: column;
 
-.full-height{
-  height: calc(100vh - #{$top_navbar_height});
-}
+  #page-content{
+    flex-shrink: 0;
+    margin-top: $top_navbar_height;
+  }
 
-#page-content{
-  margin-top: $top_navbar_height;
+  footer{
+    margin-top: auto; // required for sticky footer, https://getbootstrap.com/docs/4.3/examples/sticky-footer-navbar/
+  }
 }
 
 .blue-gradient{
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+
+.full-height{
+  height: calc(100vh - #{$top_navbar_height});
 }
