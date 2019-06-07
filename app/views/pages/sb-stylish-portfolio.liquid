@@ -15,12 +15,12 @@ published: true
   {% include 'icons' with type: 'simple-line-icons' %}
 {% endblock %}
 
-{% block top-nav %}
+{% block right-sidebar %}
   <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
+  <a class="menu-toggle rounded" href="#" style="z-index: 100001;">
     <i class="fas fa-bars"></i>
   </a>
-  <nav id="sidebar-wrapper">
+  <nav id="sidebar-wrapper" style="z-index: 10000;">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
         <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
@@ -80,7 +80,7 @@ published: true
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
+          <span class="service-icon rounded-circle mx-auto mb-3 flex-center-all">
             <i class="icon-screen-smartphone"></i>
           </span>
           <h4>
@@ -89,7 +89,7 @@ published: true
           <p class="text-faded mb-0">Looks great on any screen size!</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
+          <span class="service-icon rounded-circle mx-auto mb-3 flex-center-all">
             <i class="icon-pencil"></i>
           </span>
           <h4>
@@ -98,7 +98,7 @@ published: true
           <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
+          <span class="service-icon rounded-circle mx-auto mb-3 flex-center-all">
             <i class="icon-like"></i>
           </span>
           <h4>
@@ -109,7 +109,7 @@ published: true
             Start Bootstrap!</p>
         </div>
         <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
+          <span class="service-icon rounded-circle mx-auto mb-3 flex-center-all">
             <i class="icon-mustache"></i>
           </span>
           <h4>
@@ -211,17 +211,17 @@ published: true
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
+          <a class="social-link rounded-circle text-white mr-3 flex-center-all" href="#">
             <i class="icon-social-facebook"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
+          <a class="social-link rounded-circle text-white mr-3 flex-center-all" href="#">
             <i class="icon-social-twitter"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
+          <a class="social-link rounded-circle text-white flex-center-all" href="#">
             <i class="icon-social-github"></i>
           </a>
         </li>
@@ -397,8 +397,8 @@ published: true
       height: auto;
       padding-top: 8rem;
       padding-bottom: 8rem;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("{{ 'sb/bg-masthead.jpg' | theme_image_url }}");
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("{{ 'sb/bg-masthead.jpg' | theme_image_url }}");
+      background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("{{ 'sb/bg-masthead-1.jpg' | theme_image_url }}");
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("{{ 'sb/bg-masthead-1.jpg' | theme_image_url }}");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
