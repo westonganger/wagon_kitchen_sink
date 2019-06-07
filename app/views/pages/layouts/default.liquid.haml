@@ -4,6 +4,16 @@ is_layout: true
 slug: default
 ---
 
+{% case page.handle %}
+{% when 'sb-coming-soon' %}
+{% when '' %}
+{% when '' %}
+{% when '' %}
+{% when '' %}
+{% else %}
+{% assign body_class = 'd-flex flex-column' %}
+{% endcase %}
+
 %html{lang: "en"}
   %head
     {% include 'shared-head' %}
@@ -20,7 +30,7 @@ slug: default
 
     {% block head %}{% endblock %}
 
-  %body(class="page-top d-flex flex-column {{ page.handle }} {{ body_class }}")
+  %body#page-top(class="{{ page.handle }} {{ body_class }}")
     {% block body-top %}{% endblock %}
 
     {% block loader %}
