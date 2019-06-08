@@ -2,6 +2,10 @@
 {% when 'animate.css', 'animate-css', 'animate' %}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 
+{% when 'aos', 'animate-on-scroll' %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 {% when 'bootstrap' %}
   {% assign version = version | default: '4.3.1' %}
   {% assign major_version = version | slice: 0 %}
@@ -64,6 +68,13 @@
   {% assign the_path = 'https://cdnjs.cloudflare.com/ajax/libs/milligram/the-version/milligram.min.css' | replace_first: 'the-version', version %}
   {{ the_path | stylesheet_tag }}
 
+{% when 'parallax' %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+{% when 'parallax.js' %}
+  {% comment %} Yes its different {% endcomment %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+
 {% when 'semantic-ui' %}
   {% assign version = version | default: '2.4.2' %}
 
@@ -72,6 +83,9 @@
 
   {% assign the_path = 'https://cdn.jsdelivr.net/npm/semantic-ui@the-version/dist/semantic.min.js' | replace_first: 'the-version', version %}
   {{ the_path | javascript_tag }}
+
+{% when '' %}
+  {% comment %} dont bother warning when empty string is passed {% endcomment %}
 
 {% else %}
   <script type="text/javascript">console.log("Invalid asset specified: {{ type }}");</script>

@@ -1,0 +1,538 @@
+---
+title: Pet Life
+handle: pet-life
+listed: true
+published: true
+---
+
+{% extends layouts/default %}
+
+{% block fonts %}
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bitter|Gamja+Flower|Josefin+Sans|Kalam|Nunito|Pacifico|Satisfy" rel="stylesheet">
+{% endblock %}
+
+{% block icons %}
+  {% include 'icons' with type: '' %}
+{% endblock %}
+
+{% block top-nav %}
+  {% include back-button %}
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#"> 
+      <span class="nav_icon"><img src="{{ 'other/icon_cat.svg' | theme_image_url }}" width="30" height="30" class="d-inline-block align-top" alt=""></span>
+      <a class="nav-title">Pet Life</a>  
+    </a>         
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
+      <ul class="navbar-nav" >
+        <li class="nav-item">
+          <a class="nav-link" >Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categorie
+          </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Cat</a>
+        <a class="dropdown-item" href="#">Dog</a>
+        <a class="dropdown-item" href="#">Tropical Fish</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Other</a>
+      </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>       
+    </div> 
+  </nav>
+
+{% endblock %}
+
+{% block main %}
+    <div class="Main pb-2">
+      <div class="container-fluid mt-3"> 
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 mx-auto main-title">
+            <p class="welcome-text text-center mx-auto mt-5" >Welcome to Use My Free Bootstrap Template of Website</p>
+          </div> 
+          <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 mx-auto mb-3">
+            <p class="des-text text-faded text-center">Build responsive, mobile-first projects on the web with the world's most popular front-end component library. Just download your template and start 
+              going!</p>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 mx-auto text-center mb-3">
+            <a href="#" class="btn btn-lg btn-outline-light mx-auto">GET STARTED</a>
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-1 -->
+    <div class="container-fluid section1">
+      <div  class="row pt-2"></div>
+      <div class="row pt-5 pb-5">
+        <div class="col-sm-12 text-center mt-5 mb-4">
+          <h3 class="s1-title">Choose Your Service</h3>
+        </div>
+      </div>
+
+      <div class="row text-center pb-5">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"  data-aos="fade-down" data-aos-anchor-placement="center-bottom">
+          <p><i class="fas fa-user" style="font-size: 65px; color:rgb(179, 147, 102)"></i></p>
+          <p class="pb-1 subtitle">Registrations</p>
+          <p class="pb-2 sub">We register over 250,000 pedigree dogs and crossbreed dogs a year.</p>
+        </div>
+        <div class="col-sm-2" data-aos="fade-down"  data-aos-anchor-placement="center-bottom">
+          <p><i class="fas fa-medkit"  style="font-size: 65px; color:rgb(179, 147, 102)"></i></p>
+          <p class="pb-1 subtitle">Health</p>
+          <p class="pb-2 sub">We register over 250,000 pedigree dogs and crossbreed dogs a year.</p>
+        </div>
+        <div class="col-sm-2" data-aos="fade-down"  data-aos-anchor-placement="center-bottom">
+          <p><i class="fas fa-paper-plane" style="font-size: 65px; color:rgb(179, 147, 102)"></i></p>
+          <p class="pb-1 subtitle">Event</p>
+          <p class="pb-2 sub">We register over 250,000 pedigree dogs and crossbreed dogs a year.</p>
+        </div>
+        <div class="col-sm-2" data-aos="fade-down"  data-aos-anchor-placement="center-bottom">
+          <p><i class="fas fa-hand-holding-heart" style="font-size: 65px; color:rgb(179, 147, 102)"></i></p>
+          <p class="pb-1 subtitle">Donate</p>
+          <p class="pb-2 sub">We register over 250,000 pedigree dogs and crossbreed dogs a year.</p>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+
+    <!-- section-2 -->
+    <div class="container-fluid section2">
+      <div class="row mt-5"> 
+        <div class="col-md-1"></div>
+        <div class="col-md-5 pl-4" style="overflow:hidden; width: 80%">
+          <img src="{{ 'other/dog1.jpg' | theme_image_url }}" class="img-fluid d-block position-relative ml-5" alt="dog2">
+        </div>
+        <div class="col-md-5 mt-5 pt-5"  data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom" >
+          <div class="w-100 title pb-3">
+            <div class="s1-title" >
+              <img src="{{ 'other/pet-house.svg' | theme_image_url }}" width="48" alt="pet-house" class="d-inline-block mb-3 "/>
+              <p class="d-inline">Save a life adopt a pet</p>
+            </div>
+          </div>
+
+          <div class="w-100 head-text pb-4 text-justify">
+            <div style="width: 85%">If you’re flying solo, sharing your home with a dog may add a few years to your life. Breeding a litter of puppies can be very rewarding.</div></div>
+          <div class="w-100 des-text3">
+            <div style="width: 85%">There are so many different competitive dog activities you can enjoy, 
+              giving you great opportunities to meet fellow dog lovers and enjoy lots of fun with your dog.</div></div>
+          <div class="w-100 mt-4 mb-5">
+            <a href="#" class="btn2 btn-lg btn-outline-light mx-auto">Find More</a>
+          </div>
+
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+    </div>
+
+    <!-- section-3 -->
+    <div class="container-fluid section3 pt-5 pb-5" >
+      <div class="row pt-3">
+        <div class="col-sm-12 text-center">
+          <h3 class="news">News Blog</h3>
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col-sm-12 text-center">
+          <p class="news-p">Easily publish news, updates, and event information with my template.</p>
+        </div>
+      </div>
+
+      <div class="row mx-5 mt-5 mb-3">
+        <div class="col-sm-4 px-4">
+          <ul class="list-group">
+            <li class="list-group-item pb-4"><img src="{{ 'other/t1_cat2.jpg' | theme_image_url }}" alt="Dog" class="img-fluid"/></li>
+            <li class="list-group-item list-title pb-3"><strong>No Matter What, Dogs Bring Comfort</strong></li>
+            <li class="list-group-item content pb-4">If you’re flying solo, sharing your home with a dog may add a few years to your life. Dennis, a Skye Terrier owned by Steve and Elaine Hersey, gets in some reading time with kids and encourages them to study.</li>
+            <li class="list-group-item content mb-3">Read More</li>
+          </ul>
+        </div>
+        <div class="col-sm-4 px-4">
+          <ul class="list-group">
+            <li class="list-group-item pb-4"><img src="{{ 'other/t1_dog2.jpg' | theme_image_url }}" alt="Dog" class="img-fluid"/></li>
+            <li class="list-group-item list-title pb-3"><strong>No Matter What, Dogs Bring Comfort</strong></li>
+            <li class="list-group-item content pb-4">If you’re flying solo, sharing your home with a dog may add a few years to your lifes. Dennis, a Skye Terrier owned by Steve and Elaine Hersey, gets in some reading time with kids and encourages them to study.</li>
+            <li class="list-group-item content mb-3">Read More</li>
+          </ul>
+        </div>
+        <div class="col-sm-4 px-4">
+          <ul class="list-group">
+            <li class="list-group-item pb-4"><img src="{{ 'other/cat2.jpg' | theme_image_url }}" alt="Dog" class="img-fluid"/></li>
+            <li class="list-group-item list-title pb-3"><strong>No Matter What, Dogs Bring Comfort</strong></li>
+            <li class="list-group-item content pb-4">If you’re flying solo, sharing your home with a dog may add a few years to your life. Dennis, a Skye Terrier owned by Steve and Elaine Hersey, gets in some reading time with kids and encourages them to study.</li>
+            <li class="list-group-item content mb-3">Read More</li>
+          </ul>
+        </div>
+      </div> 
+    </div>
+
+    <!-- section-4 -->
+    <div class="container-fluid section4">
+      <div class="row align-items-center sub-row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10 text-center">
+          <h2 class="s4-head d-inline-block align-middle text-center mx-4  mt-3">Subscribe to our newsletter</h2>
+          <input type="email" class="form-control d-inline-block align-middle mt-3" id="inputEmail" placeholder="Enter your email">
+          <button type="submit" class="btn3 d-inline-block align-middle mt-3">Subscribe</button>
+        </div>
+        <div class="col-sm-1 mb-3"></div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+  <div class="container-fluid section5">
+    <footer class="page-footer font-small pt-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3"> 
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="s5_t1 text-uppercase mb-4 font-weight-bold">Company name</h6>
+            <p>Here you can use rows and columns here to organize your footer content.</p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="s5_t1 text-uppercase mb-4 font-weight-bold">Service</h6>
+            <p>
+              <a href="#!">Bootstrap Template</a>
+            </p>
+            <p>
+              <a href="#!">Bootstrap Template</a>
+            </p>
+            <p>
+              <a href="#!">Bootstrap Template</a>
+            </p>
+            <p>
+              <a href="#!">Bootstrap Template</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="s5_t1 text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a href="#!">My Account</a>
+            </p>
+            <p>
+              <a href="#!">Download</a>
+            </p>
+            <p>
+              <a href="#!">Careers</a>
+            </p>
+            <p>
+              <a href="#!">Help</a>
+            </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="s5_t1 text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p>
+              <i class="fa fa-home mr-3"></i> Toronto, Ontario, CA</p>
+            <p>
+              <i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+            <p>
+              <i class="fa fa-phone mr-3"></i> + 01 613-276-2462</p>
+          </div>               
+        </div>
+        <hr>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">Designed by <strong class="sign">Fiona Ran</strong></p>
+          </div>
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm mx-1">
+                    <img src="{{ 'other/pinterest.svg' | theme_image_url }}"/>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm mx-1">
+                    <img src="{{ 'other/twitter.svg' | theme_image_url }}"/>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm mx-1">
+                    <img src="{{ 'other/instagram.svg' | theme_image_url }}"/>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm  mx-1">
+                    <img src="{{ 'other/facebook.svg' | theme_image_url }}"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+{% endblock %}
+
+{% block js-before %}
+  {% include asset with type: 'animate-on-scroll' %}
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $(document).on('turbolinks:load', function(){
+      AOS.init();
+    });
+  </script>
+{% endblock %}
+
+{% block css %}
+  <style>
+    .Main{
+      min-height: 700px;
+      background-image: url({{ 'other/bg2.jpg' | theme_image_url }});
+      background-position: center;
+      background-size: cover;
+    }
+
+    .section1{
+      /* min-height: 450px; */
+      background-image: url({{ 'other/bg1.jpg' | theme_image_url }});  
+    }
+
+    .section3 {
+      /* background-image: linear-gradient(to right bottom, #dcc7aa, #e6ccb3, #efd1bd, #f7d6c7, #fedcd2); */
+      background-color:#ece2de;
+    }
+
+    .section4{
+      background-image: url({{ 'other/banner.jpg' | theme_image_url }});
+    }
+    .section5{
+      background-color: rgba(198, 221, 216, 0.883);
+    }
+    .navbar{
+      background-color:#DCC7AA; 
+    }
+    .nav_icon{
+      margin-right: -5px;
+    }
+
+    .main-title{
+      margin-top: 200px;
+    }
+    .nav-title{
+      font-family: 'Pacifico', cursive;  
+    }
+
+    .nav-item{
+      font-family: 'Abril Fatface', cursive ; 
+    }
+
+    .nav-link {
+      color:  #687a8f !important;
+    }
+
+    .Main .container{
+      padding-top: 230px;
+    }
+
+    .welcome-text{
+      font-family: 'Josefin Sans', sans-serif; 
+      font-size: 60px; 
+      font-weight: bold;
+      padding-bottom: 60px;
+      font-size: 60px;
+      background: -webkit-linear-gradient(#434343 0%, black 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .des-text{
+      font-family: 'Josefin Sans', sans-serif; 
+      font-size: 20px; 
+      margin-bottom: 0px;
+    }
+
+    .btn{
+      border-radius: 40px; 
+    }
+
+    .title{
+      font-family: 'Josefin Sans', sans-serif;  
+      color: #687a8f;
+    }
+
+    .des-text2{
+      font-family: 'Josefin Sans', sans-serif; 
+      color: #687a8f;
+    }
+
+    .s5_t1{
+      font-family: 'Abril Fatface', cursive ; 
+    }
+
+    .section5 a{
+      color:black;
+    }
+
+    .sign{
+      font-family: 'Satisfy', cursive; 
+    }
+
+    .line{
+      background-color: #687a8f;
+      width: 40px;
+    }
+
+    .s1-title{
+      font-family: 'Bitter'; 
+      color: #434c57;
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    .btn2 {
+      background-color:#bfd8d2;
+      -moz-border-radius:10px;
+      -webkit-border-radius:10px;
+      border-radius:10px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:17px;
+      padding:11px 19px;
+      text-decoration:none;
+    }
+    .btn2:hover {
+      background-color: #fedcd2;
+      color: white;
+    }
+    .btn2:active {
+      position:relative;
+      top:1px;
+    }
+
+    .des-text3{
+      font-family: 'Josefin Sans', sans-serif; 
+      color: #687a8f;
+    }
+
+    .head-text{
+      font-family:'Josefin Sans', sans-serif;
+      color: #687a8f;
+      font-weight: 600; 
+      font-size: 120%;
+    }
+
+    .line-top{
+      padding-top: 14px;
+
+    }
+
+    .center-vertical{
+
+      position: relative;
+      top: 50%; 
+      transform: translateY(-50%);
+
+    }
+
+    .section1-img1{
+      width: 80%;
+      text-align: center;
+    }
+
+    .news{
+      font-family: 'Kalam';
+      color: #333;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .news-p{
+      font-family: 'Josefin Sans', sans-serif; 
+      color: #292929;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      margin-bottom: 0;
+    }
+
+    .list-group-item{
+      margin: 0;
+      padding: 0;
+      border:0;
+      background-color:#ece2de;
+    }
+
+    .list-title{
+      font-size: 23px;
+      color: #333;
+    }
+
+    .list-group .content{
+      font-family: 'Josefin Sans', sans-serif; 
+      color: #687a8f;
+      font-size: 18px;
+    }
+
+    .sub-row{
+      min-height: 200px;
+    }
+
+    .s4-head{
+      font-family: 'Bitter'; 
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    .form-control{
+      border-radius: 40px;
+      border:0;
+      width: 350px;
+    }
+
+    .btn3{
+      background-color:#bfd8d2;
+      border-radius: 40px;
+      width: 100px;
+      color: #ffffff;
+      height: 40px;
+      width: 100px;
+    }
+
+    .subtitle{
+      font-family: 'Bitter'; 
+      color: #434c57;
+      font-size: 23px;
+      font-weight: 500;
+    }
+
+    .sub{
+      font-family: 'Bitter'; 
+      color: #505964f8;
+      font-size: 15px;
+    }
+  </style>
+{% endblock %}

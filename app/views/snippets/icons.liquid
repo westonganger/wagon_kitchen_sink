@@ -16,13 +16,16 @@
   <script type="text/javascript">feather.replace();</script>
 
 {% when 'icomoon' %}
-  {{ 'shared/icomoon' | stylesheet_tag }}
+  {{ 'shared/expose/icomoon' | stylesheet_tag }}
 
 {% when 'ion-icons', 'ion-icons-4' %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/loader/index.js"></script>
 
 {% when 'themify' %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+
+{% when '' %}
+  {% comment %} dont bother warning when empty string is passed {% endcomment %}
 
 {% else %}
   <script type="text/javascript">console.log("Invalid Icon Framework specified: {{ type }}");</script>

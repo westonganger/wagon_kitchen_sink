@@ -46,7 +46,7 @@ mix
   .js('app/assets/shared/javascripts/app.js', 'public/javascripts/shared/app.js')
   .sass('app/assets/shared/stylesheets/app.scss', 'public/stylesheets/shared/app.css')
 
-  .sass('app/assets/shared/stylesheets/icomoon.scss', 'public/stylesheets/shared/icomoon.css')
+  .copy('app/assets/shared/stylesheets/expose/*', 'public/stylesheets/shared/expose/')
   /* END Shared Assets */
 
   /* Theme Assets */

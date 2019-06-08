@@ -1,0 +1,1237 @@
+---
+title: Fitness
+handle: fitness
+listed: true
+published: true
+---
+
+{% extends layouts/default %}
+
+{% block fonts %}
+{% endblock %}
+
+{% block icons %}
+  {% include 'icons' with type: 'icomoon' %}
+{% endblock %}
+
+{% block css-framework %}
+  {{ 'shared/expose/bootstrap-4.3.1-columns-20' | stylesheet_tag }}
+  {{ 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js' | javascript_tag }}
+{% endblock %}
+
+{% block top-nav %}
+  {% include back-button %}
+{% endblock %}
+
+{% block main %}
+<header>
+  <div class="fixed-navbar">
+    <div class="navbar-lockup">
+      <div class="logo">
+        <a href=""><img src="{{ 'fitness/logo.png' | theme_image_url }}" alt="Fitness"></a>
+      </div>
+      <ul class="nav">
+        <li><a href="">About</a></li>
+        <li><a href="">How It Works</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="claim-lockup">
+    <div class="claim">
+      <p class="headline">Fitness In A Can<span>/</span></p>
+      <p class="kicker">Yes You Can<span>/</span></p>
+    </div>
+  </div>
+  <div class="angled-overlay"></div>
+  <div class="slide-out-nav">
+    <ul class="mobile-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">How It Works</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">FAQ</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-slice"></div>
+  </div>
+  <div class="mobile-nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+<section class="featured">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 feature">
+        <i class="icon-suitcase icon-lg"></i>
+        <h2>Resources</h2>
+        <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+        <a href="">Explore more<i class="icon-arrow-long-right"></i></a>
+      </div>
+      <div class="col-lg-5 feature">
+        <i class="icon-dashboard icon-lg"></i>
+        <h2>Training &amp; Funding</h2>
+        <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+        <a href="">Browse training<i class="icon-arrow-long-right"></i></a>
+      </div>
+      <div class="col-lg-5 feature">
+        <i class="icon-cloud icon-lg"></i>
+        <h2>Connect</h2>
+        <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+        <a href="">Connect now<i class="icon-arrow-long-right"></i></a>
+      </div>
+      <div class="col-lg-5 feature">
+        <i class="icon-chat icon-lg"></i>
+        <h2>Communicate</h2>
+        <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
+        <a href="">Start now<i class="icon-arrow-long-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="grid">
+  <div class="bg-secondary">
+    <div class="container">
+      <div class="row fitness-first">
+        <div class="col-lg-7 text-block">
+          <div class="text-lockup">
+            <h3>It's All About</h3>
+            <h2>Fitness First</h2>
+            <img src="{{ 'fitness/drop-muted.png' | theme_image_url }}">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <a href="">Read More</a>
+          </div>
+        </div>
+        <div class="col-lg-13 large-thumb">
+          <div class="stats">
+            <p>Active Users <span>(34)</span></p>
+            <img src="{{ 'fitness/drop-primary.png' | theme_image_url }}">
+          </div>
+        </div>
+      </div>
+      <div class="row love-your-body">
+        <div class="col-lg-13 large-thumb">
+          <div class="stats">
+            <p>Products Used <span>(658)</span></p>
+            <img src="{{ 'fitness/drop-primary.png' | theme_image_url }}">
+          </div>
+        </div>
+        <div class="col-lg-7 text-block">
+          <div class="text-lockup">
+            <h3>Love</h3>
+            <h2>Your Body</h2>
+            <img src="{{ 'fitness/drop-muted.png' | theme_image_url }}">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <a href="">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mid-unit">
+      <div class="col-lg-7 lifestyle">
+        <div class="small-thumb"></div>
+        <div class="text-block">
+          <div class="text-lockup">
+            <h3>Track Your</h3>
+            <h2>Lifestyle</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <i class="icon-user"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-13 summer-fun">
+        <div class="large-thumb">
+          <p class="date">24th August</p>
+          <div class="category">
+            <p>Health &amp; Fitness</p>
+            <i class="icon-tag"></i>
+          </div>
+        </div>
+        <div class="text-block">
+          <div class="text-lockup">
+            <h2>Summer of Fun</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bottom-unit">
+      <div class="col-lg-13 get-involved">
+        <div class="large-thumb"></div>
+        <div class="text-block">
+          <div class="text-lockup">
+            <h3>Helping You</h3>
+            <h2>Get Involved In Yourself</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillumdolore eu fugiat nulla pariatur.</p>
+            <img src="assets/img/strawberry.png{{ 'fitness/' | theme_image_url }}">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 eating-habits">
+        <div class="small-thumb"></div>
+        <div class="text-block">
+          <div class="text-lockup">
+            <h3>Improve Your</h3>
+            <h2>Eating Habits</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <img src="assets/img/avocado.png{{ 'fitness/' | theme_image_url }}">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer>
+  <div class="closer">
+    <div class="closing-claim">
+      <h1>We launch leaders with big ideas</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+  <div class="bg-angled-left"></div>
+  <div class="bg-angled-right"></div>
+  <div class="container footer-lockup">
+    <div class="red-angle"></div>
+    <div class="row">
+      <div class="col-lg-7">
+        <h3>Resources</h3>
+        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+      </div>
+      <div class="col-lg-8">
+        <h3>About us</h3>
+        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
+      </div>
+      <div class="col-lg-5">
+        <h3>Stay in touch</h3>
+        <div class="social-icons">
+          <a href=""><i class="icon-facebook"></i></a>
+          <a href=""><i class="icon-twitter"></i></a>
+          <a href=""><i class="icon-youtube-play"></i></a>
+          <a href=""><i class="icon-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-13 col-lg-offset-7">
+        <form>
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email" spellcheck="false">
+          <button class="newsletter-btn" type="submit" value="Join Newsletter">Join Newsletter<i class="icon-chevron-circle-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
+{% block js %}
+  <script type="text/javascript">
+    $(document).on('turbolinks:load', function(){
+      angleCalc();
+    });
+    $(window).scroll(function(){
+      var wScroll = $(this).scrollTop();
+      if (wScroll > ($(this).height() / 3)) {
+        $('.fixed-navbar, .navbar-lockup').addClass('nav-fix');
+      } else {
+        $('.fixed-navbar, .navbar-lockup').removeClass('nav-fix');
+      }
+    });
+    $('.mobile-nav-toggle').click(function(){
+      if (!($(this).hasClass('nav-open'))) {
+        $(this).addClass('nav-open');
+        $('.slide-out-nav, .fixed-navbar, .mobile-shift').addClass('nav-open');
+      } else {
+        $(this).removeClass('nav-open');
+        $('.slide-out-nav, .fixed-navbar, .mobile-shift').removeClass('nav-open');
+      }
+    });
+    function angleCalc() {
+      var opposite = $('.slide-out-nav').height(),
+        adjacent = $('.slide-out-nav').width(),
+        radian = Math.atan(opposite / adjacent),
+        angle = (90 - radian * (180 / Math.PI)) * -1;
+      $('.mobile-nav-slice').css({
+        'transform' : 'rotate('+ angle +'deg)'
+      });
+    }
+  </script>
+{% endblock %}
+
+{% block css %}
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+    body {
+      background-color: #fd634e;
+      font-size: 14px;
+      line-height: 1.6;
+      font-family: "Open Sans", sans-serif;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust: 100%;
+    }
+    ::-moz-selection {
+      background: #FFF498;
+    }
+    ::selection {
+      background: #FFF498;
+    }
+    ::-moz-selection {
+      background: #FFF498;
+    }
+    img::-moz-selection {
+      background: transparent;
+    }
+    img::selection {
+      background: transparent;
+    }
+    img::-moz-selection {
+      background: transparent;
+    }
+    body {
+      -webkit-tap-highlight-color: #FFF498;
+    }
+    header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-image: url("{{ 'fitness/hero.jpg' | theme_image_url }}");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+    .fixed-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      z-index: 11;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .fixed-navbar.nav-fix {
+      background-color: rgba(13, 7, 25, 0.9);
+      height: 80px;
+    }
+    .fixed-navbar.nav-open {
+      left: -180px;
+    }
+    @media (max-width: 1024px) {
+      .fixed-navbar {
+        height: 80px;
+      }
+    }
+    .navbar-lockup {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 30px;
+      line-height: 120px;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .navbar-lockup.nav-fix {
+      line-height: 80px;
+    }
+    .navbar-lockup .logo {
+      float: left;
+    }
+    .navbar-lockup .logo img {
+      width: 100px;
+    }
+    .navbar-lockup .nav {
+      float: right;
+      margin-bottom: 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    .navbar-lockup .nav li {
+      display: inline-block;
+      margin-right: 65px;
+    }
+    .navbar-lockup .nav li:last-child {
+      margin-right: 0;
+    }
+    .navbar-lockup .nav li a {
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      -webkit-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out;
+    }
+    .navbar-lockup .nav li a:hover {
+      color: #c8e474;
+      text-decoration: none;
+    }
+    .claim-lockup {
+      position: relative;
+      max-width: 1180px;
+      height: 100%;
+      margin: 0 auto;
+    }
+    .claim-lockup .claim {
+      position: absolute;
+      bottom: 150px;
+      left: 115px;
+    }
+    .claim-lockup .claim .headline {
+      margin-bottom: 0;
+      font-size: 40px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .claim-lockup .claim .headline span {
+      color: #a2ca28;
+    }
+    .claim-lockup .claim .kicker {
+      position: relative;
+      left: 158px;
+      margin-top: -10px;
+      margin-bottom: 0;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+    }
+    .claim-lockup .claim .kicker span {
+      color: #fd634e;
+    }
+    @media (max-width: 670px) {
+      .claim-lockup .claim {
+        left: 30px;
+      }
+    }
+    @media (max-width: 400px) {
+      .claim-lockup .claim {
+        left: 30px;
+      }
+      .claim-lockup .claim .headline {
+        font-size: 32px;
+      }
+      .claim-lockup .claim .kicker {
+        left: 128px;
+      }
+    }
+    @media (max-height: 414px) {
+      .claim-lockup .claim {
+        bottom: 85px;
+      }
+    }
+    .angled-overlay {
+      position: absolute;
+      bottom: 0;
+      -webkit-transform: skewY(-2deg);
+      transform: skewY(-2deg);
+      -webkit-transform-origin: right;
+      transform-origin: right;
+      width: 100%;
+      height: 100px;
+      background-color: #fd634e;
+      opacity: .3;
+    }
+    .slide-out-nav {
+      position: fixed;
+      top: 0;
+      right: -180px;
+      bottom: 0;
+      width: 180px;
+      background-color: #0d1119;
+      overflow: hidden;
+      z-index: 11;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .slide-out-nav.nav-open {
+      right: 0;
+    }
+    .slide-out-nav .mobile-nav {
+      margin: 50px 20px 0 0;
+      padding-left: 0;
+      text-align: right;
+      list-style: none;
+    }
+    .slide-out-nav .mobile-nav li {
+      margin-bottom: 15px;
+    }
+    .slide-out-nav .mobile-nav li a {
+      color: #fff;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      -webkit-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out;
+    }
+    .slide-out-nav .mobile-nav li a:hover {
+      color: #c8e474;
+      text-decoration: none;
+    }
+    .slide-out-nav .mobile-nav-slice {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      -webkit-transform-origin: bottom right;
+      transform-origin: bottom right;
+      width: 100%;
+      height: 125%;
+      background-color: #fff;
+      opacity: .05;
+    }
+    .mobile-nav-toggle {
+      display: none;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 11;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .mobile-nav-toggle.nav-open {
+      right: 210px;
+    }
+    .mobile-nav-toggle span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: #fff;
+    }
+    @media (max-width: 1024px) {
+      .navbar-lockup .logo {
+        line-height: 80px;
+      }
+      .navbar-lockup .nav {
+        display: none;
+      }
+      .mobile-nav-toggle {
+        display: block;
+      }
+    }
+    .mobile-shift {
+      position: relative;
+      left: 0;
+      -webkit-transition: left .2s ease-in-out;
+      transition: left .2s ease-in-out;
+    }
+    .mobile-shift.nav-open {
+      left: -180px;
+    }
+    .featured {
+      position: relative;
+      width: 100%;
+      padding: 100px 0;
+      background-color: #a2ca28;
+    }
+    .feature .icon-lg {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+    .feature h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .feature p {
+      margin-bottom: 30px;
+      line-height: 25px;
+    }
+    .feature a {
+      color: #fff;
+    }
+    .feature a .icon-arrow-long-right {
+      position: relative;
+      top: 2px;
+      left: 7px;
+      display: inline-block;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+    .feature a:hover {
+      text-decoration: none;
+    }
+    .feature a:hover .icon-arrow-long-right {
+      left: 17px;
+    }
+    @media (max-width: 991px) {
+      .feature {
+        margin-bottom: 30px;
+      }
+      .feature h2 {
+        margin-bottom: 15px;
+      }
+      .feature p {
+        margin-bottom: 20px;
+      }
+    }
+    .grid {
+      position: relative;
+      width: 100%;
+    }
+    .bg-secondary {
+      background-color: #a2ca28;
+    }
+    .fitness-first,
+    .love-your-body {
+      position: relative;
+      height: 395px;
+    }
+    .fitness-first .text-block,
+    .love-your-body .text-block {
+      position: relative;
+      height: 100%;
+      background-color: #fff;
+    }
+    .fitness-first .text-block .text-lockup,
+    .love-your-body .text-block .text-lockup {
+      max-width: 315px;
+      margin: 0 auto;
+      margin-top: 55px;
+      text-align: center;
+    }
+    .fitness-first .text-block .text-lockup h3,
+    .love-your-body .text-block .text-lockup h3 {
+      margin-bottom: -5px;
+      color: #fd634e;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .fitness-first .text-block .text-lockup h2,
+    .love-your-body .text-block .text-lockup h2 {
+      color: #a2ca28;
+      font-size: 35px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .fitness-first .text-block .text-lockup p,
+    .love-your-body .text-block .text-lockup p {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #656e74;
+      line-height: 25px;
+    }
+    .fitness-first .text-block .text-lockup a,
+    .love-your-body .text-block .text-lockup a {
+      color: #a2ca28;
+      text-decoration: underline;
+    }
+    .fitness-first .text-block .text-lockup img,
+    .love-your-body .text-block .text-lockup img {
+      width: 12px;
+    }
+    .fitness-first .large-thumb,
+    .love-your-body .large-thumb {
+      position: relative;
+      height: 100%;
+      background-image: url("{{ 'fitness/yoga.jpg' | theme_image_url }}");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .fitness-first .large-thumb .stats,
+    .love-your-body .large-thumb .stats {
+      position: absolute;
+      right: 45px;
+      bottom: 45px;
+    }
+    @media (max-width: 767px) {
+      .fitness-first .large-thumb .stats,
+      .love-your-body .large-thumb .stats {
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+    .fitness-first .large-thumb .stats p,
+    .love-your-body .large-thumb .stats p {
+      display: inline-block;
+      margin-right: 10px;
+      color: #fd634e;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .fitness-first .large-thumb .stats p span,
+    .love-your-body .large-thumb .stats p span {
+      color: #fff;
+    }
+    .fitness-first .large-thumb .stats img,
+    .love-your-body .large-thumb .stats img {
+      width: 15px;
+    }
+    @media (max-width: 1199px) {
+      .fitness-first,
+      .love-your-body {
+        height: 350px;
+      }
+      .fitness-first .text-block .text-lockup,
+      .love-your-body .text-block .text-lockup {
+        margin-top: 45px;
+        padding: 0 10px;
+      }
+    }
+    @media (max-width: 991px) {
+      .fitness-first,
+      .love-your-body {
+        height: 700px;
+      }
+      .fitness-first .text-block,
+      .love-your-body .text-block {
+        height: 50%;
+      }
+      .fitness-first .text-block .text-lockup,
+      .love-your-body .text-block .text-lockup {
+        max-width: 400px;
+        margin-top: 0;
+        padding-top: 45px;
+      }
+      .fitness-first .large-thumb,
+      .love-your-body .large-thumb {
+        height: 50%;
+      }
+    }
+    @media (max-width: 991px) {
+      .fitness-first {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .fitness-first .text-block {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+      }
+    }
+    .love-your-body .large-thumb {
+      background-image: url("{{ 'fitness/apple-watch.jpg' | theme_image_url }}");
+    }
+    .love-your-body .large-thumb .stats {
+      left: 45px;
+    }
+    @media (max-width: 767px) {
+      .love-your-body .large-thumb .stats {
+        left: 20px;
+      }
+    }
+    .mid-unit {
+      position: relative;
+      height: 650px;
+    }
+    .mid-unit .lifestyle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .mid-unit .lifestyle .small-thumb {
+      height: 330px;
+      background-image: url("{{ 'fitness/jogging.jpg' | theme_image_url }}");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .mid-unit .lifestyle .text-block {
+      position: relative;
+      height: 320px;
+      background-color: #fff;
+    }
+    .mid-unit .lifestyle .text-block .text-lockup {
+      position: relative;
+      max-width: 315px;
+      margin: 0 auto;
+      margin-top: 55px;
+    }
+    .mid-unit .lifestyle .text-block .text-lockup h3 {
+      margin-bottom: -5px;
+      color: #fd634e;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .mid-unit .lifestyle .text-block .text-lockup h2 {
+      color: #a2ca28;
+      font-size: 35px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .mid-unit .lifestyle .text-block .text-lockup p {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #656e74;
+      line-height: 25px;
+    }
+    .mid-unit .lifestyle .text-block .text-lockup i {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #000;
+      font-size: 30px;
+      opacity: .1;
+    }
+    @media (max-width: 1199px) {
+      .mid-unit .lifestyle .text-block .text-lockup {
+        padding: 0 15px;
+      }
+      .mid-unit .lifestyle .text-block .text-lockup i {
+        right: 15px;
+      }
+    }
+    @media (max-width: 991px) {
+      .mid-unit .lifestyle .text-block .text-lockup {
+        max-width: 650px;
+      }
+    }
+    .mid-unit .summer-fun {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .mid-unit .summer-fun .large-thumb {
+      position: relative;
+      height: 330px;
+      background-image: url("{{ 'fitness/beach.jpg' | theme_image_url }}");
+      background-position: 50% 75%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .mid-unit .summer-fun .large-thumb .date {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+    .mid-unit .summer-fun .large-thumb .category {
+      position: absolute;
+      top: 56px;
+      right: 60px;
+    }
+    .mid-unit .summer-fun .large-thumb .category p {
+      display: inline-block;
+      margin-right: 5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+    }
+    .mid-unit .summer-fun .large-thumb .category i {
+      position: relative;
+      top: 3px;
+      display: inline-block;
+      font-size: 20px;
+    }
+    @media (max-width: 767px) {
+      .mid-unit .summer-fun .large-thumb .date {
+        top: 30px;
+        left: 15px;
+      }
+      .mid-unit .summer-fun .large-thumb .category {
+        top: 26px;
+        right: 15px;
+      }
+    }
+    .mid-unit .summer-fun .text-block {
+      height: 320px;
+      background-color: #a2ca28;
+      box-shadow: 0 0 60px -20px #000;
+      z-index: 10;
+    }
+    .mid-unit .summer-fun .text-block .text-lockup {
+      position: relative;
+      top: 40px;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    .mid-unit .summer-fun .text-block .text-lockup h2 {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .mid-unit .summer-fun .text-block .text-lockup p {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #fff;
+      line-height: 25px;
+    }
+    @media (max-width: 1199px) {
+      .mid-unit .summer-fun .text-block .text-lockup {
+        padding: 0 15px;
+      }
+    }
+    @media (max-width: 991px) {
+      .mid-unit {
+        height: auto;
+      }
+    }
+    .bottom-unit {
+      position: relative;
+      height: 650px;
+    }
+    .bottom-unit .get-involved {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .bottom-unit .get-involved .large-thumb {
+      height: 330px;
+      background-image: url("{{ 'fitness/self-involved.jpg' | theme_image_url }}");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .bottom-unit .get-involved .text-block {
+      position: relative;
+      height: 320px;
+      background-color: #fff;
+    }
+    @media (max-width: 767px) {
+      .bottom-unit .get-involved .text-block {
+        height: auto;
+        padding-bottom: 50px;
+      }
+    }
+    .bottom-unit .get-involved .text-block .text-lockup {
+      position: relative;
+      max-width: 650px;
+      margin: 0 auto;
+      margin-top: 55px;
+    }
+    .bottom-unit .get-involved .text-block .text-lockup h3 {
+      margin-bottom: -5px;
+      color: #fd634e;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .bottom-unit .get-involved .text-block .text-lockup h2 {
+      color: #a2ca28;
+      font-size: 35px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .bottom-unit .get-involved .text-block .text-lockup p {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #656e74;
+      line-height: 25px;
+    }
+    .bottom-unit .get-involved .text-block .text-lockup img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 26px;
+    }
+    @media (max-width: 1199px) {
+      .bottom-unit .get-involved .text-block .text-lockup {
+        padding: 0 15px;
+      }
+      .bottom-unit .get-involved .text-block .text-lockup img {
+        right: 15px;
+      }
+    }
+    .eating-habits {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .eating-habits .small-thumb {
+      height: 330px;
+      background-image: url("{{ 'fitness/eating-habits.jpg' | theme_image_url }}");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .eating-habits .text-block {
+      position: relative;
+      height: 320px;
+      background-color: #a2ca28;
+    }
+    .eating-habits .text-block .text-lockup {
+      position: relative;
+      max-width: 315px;
+      margin: 0 auto;
+      margin-top: 55px;
+    }
+    .eating-habits .text-block .text-lockup h3 {
+      margin-bottom: -5px;
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .eating-habits .text-block .text-lockup h2 {
+      color: #fff;
+      font-size: 35px;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    .eating-habits .text-block .text-lockup p {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      color: #fff;
+      line-height: 25px;
+    }
+    .eating-habits .text-block .text-lockup img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 24px;
+    }
+    @media (max-width: 1199px) {
+      .eating-habits .text-block .text-lockup {
+        padding: 0 15px;
+      }
+      .eating-habits .text-block .text-lockup img {
+        right: 15px;
+      }
+    }
+    @media (max-width: 991px) {
+      .eating-habits .text-block .text-lockup {
+        max-width: 650px;
+      }
+    }
+    @media (max-width: 991px) {
+      .bottom-unit {
+        height: auto;
+      }
+    }
+    footer {
+      position: relative;
+      width: 100%;
+      background-color: #0d1119;
+      overflow: hidden;
+    }
+    .closer {
+      position: relative;
+      height: 600px;
+      background-image: url("{{ 'fitness/footer.jpg' | theme_image_url }}");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .closer .closing-claim {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 100%;
+      padding: 0 15px;
+    }
+    .closer .closing-claim h1 {
+      margin-bottom: 15px;
+      font-size: 40px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 42px;
+    }
+    .closer .closing-claim p {
+      max-width: 475px;
+      margin: 0 auto;
+      font-size: 16px;
+      text-align: center;
+    }
+    .footer-lockup {
+      position: relative;
+      padding-top: 25px;
+      padding-bottom: 135px;
+    }
+    .footer-lockup .red-angle {
+      position: relative;
+      left: -60%;
+      -webkit-transform: skewX(88deg);
+      transform: skewX(88deg);
+      width: 100%;
+      height: 30px;
+      margin-bottom: 50px;
+      background-color: #fd634e;
+      overflow: hidden;
+    }
+    @media (max-width: 767px) {
+      .footer-lockup .red-angle {
+        display: none;
+      }
+    }
+    .footer-lockup h3 {
+      margin-bottom: 20px;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .footer-lockup p {
+      color: #8297a7;
+    }
+    .footer-lockup .social-icons {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 265px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    @media (max-width: 991px) {
+      .footer-lockup .social-icons {
+        margin-bottom: 20px;
+      }
+    }
+    .footer-lockup .social-icons a {
+      color: #fff;
+    }
+    .footer-lockup .social-icons i {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      -webkit-transition: background-color .2s ease-in-out;
+      transition: background-color .2s ease-in-out;
+    }
+    .footer-lockup .social-icons .icon-facebook {
+      background-color: #2e3192;
+    }
+    .footer-lockup .social-icons .icon-facebook:hover {
+      background-color: #3a3eb9;
+    }
+    .footer-lockup .social-icons .icon-twitter {
+      background-color: #00aeef;
+    }
+    .footer-lockup .social-icons .icon-twitter:hover {
+      background-color: #23c3ff;
+    }
+    .footer-lockup .social-icons .icon-youtube-play {
+      background-color: #ed3123;
+    }
+    .footer-lockup .social-icons .icon-youtube-play:hover {
+      background-color: #f15d52;
+    }
+    .footer-lockup .social-icons .icon-linkedin {
+      background-color: #171a8f;
+    }
+    .footer-lockup .social-icons .icon-linkedin:hover {
+      background-color: #1e22bb;
+    }
+    .footer-lockup form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .footer-lockup form input {
+      height: 50px;
+      margin-right: 5px;
+      padding-left: 20px;
+      border: none;
+      border-radius: 3px;
+      color: #8297a7;
+    }
+    .footer-lockup form input:focus {
+      outline: none;
+    }
+    .footer-lockup form input::-webkit-input-placeholder {
+      color: #8297a7;
+    }
+    .footer-lockup form input::-moz-placeholder {
+      color: #8297a7;
+    }
+    .footer-lockup form input:-ms-input-placeholder {
+      color: #8297a7;
+    }
+    .footer-lockup form input::placeholder {
+      color: #8297a7;
+    }
+    .footer-lockup form input[type="email"] {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+    .footer-lockup form .newsletter-btn {
+      margin-right: 0;
+      padding: 0 30px;
+      color: #fff;
+      font-size: 15px;
+      line-height: 50px;
+      background-color: #a2ca28;
+      border: none;
+      border-radius: 3px;
+      -webkit-transition: background-color .2s ease-in-out;
+      transition: background-color .2s ease-in-out;
+    }
+    .footer-lockup form .newsletter-btn i {
+      position: relative;
+      top: 2px;
+      left: 7px;
+      display: inline-block;
+    }
+    .footer-lockup form .newsletter-btn:hover {
+      background-color: #afd735;
+    }
+    @media (max-width: 767px) {
+      .footer-lockup form {
+        display: block;
+      }
+      .footer-lockup form input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .footer-lockup form .newsletter-btn {
+        width: 100%;
+      }
+    }
+    .bg-angled-left, .bg-angled-right {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: skewY(-3.5deg);
+      transform: skewY(-3.5deg);
+      -webkit-transform-origin: left;
+      transform-origin: left;
+      background-color: #0d1119;
+    }
+    .bg-angled-right {
+      -webkit-transform: skewY(3deg);
+      transform: skewY(3deg);
+      -webkit-transform-origin: right;
+      transform-origin: right;
+    }
+  </style>
+{% endblock %}

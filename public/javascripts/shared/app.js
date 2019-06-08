@@ -3575,17 +3575,6 @@ $(document).on('keydown', 'input[type=number][maxlength]', function (e) {
 
 /***/ }),
 
-/***/ "./app/assets/shared/stylesheets/icomoon.scss":
-/*!****************************************************!*\
-  !*** ./app/assets/shared/stylesheets/icomoon.scss ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./node_modules/@rails/ujs/lib/assets/compiled/rails-ujs.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@rails/ujs/lib/assets/compiled/rails-ujs.js ***!
@@ -15361,15 +15350,14 @@ module.exports = g;
 /***/ }),
 
 /***/ 0:
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./app/assets/shared/javascripts/app.js ./app/assets/shared/stylesheets/app.scss ./app/assets/shared/stylesheets/icomoon.scss ./app/assets/main/stylesheets/app.scss ./app/assets/pluton/stylesheets/app.scss ./app/assets/foodee/stylesheets/app.scss ./app/assets/cube/stylesheets/app.scss ./app/assets/fresh/stylesheets/app.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./app/assets/shared/javascripts/app.js ./app/assets/shared/stylesheets/app.scss ./app/assets/main/stylesheets/app.scss ./app/assets/pluton/stylesheets/app.scss ./app/assets/foodee/stylesheets/app.scss ./app/assets/cube/stylesheets/app.scss ./app/assets/fresh/stylesheets/app.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/shared/javascripts/app.js */"./app/assets/shared/javascripts/app.js");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/shared/stylesheets/app.scss */"./app/assets/shared/stylesheets/app.scss");
-__webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/shared/stylesheets/icomoon.scss */"./app/assets/shared/stylesheets/icomoon.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/main/stylesheets/app.scss */"./app/assets/main/stylesheets/app.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/pluton/stylesheets/app.scss */"./app/assets/pluton/stylesheets/app.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/foodee/stylesheets/app.scss */"./app/assets/foodee/stylesheets/app.scss");

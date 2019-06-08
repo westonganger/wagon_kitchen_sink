@@ -15,16 +15,20 @@ published: true
   {% include 'icons' with type: '' %}
 {% endblock %}
 
+{% block js-before %}
+  {% include asset with type: '' %}
+{% endblock %}
+
+{% block top-nav %}
+  {% include top-nav %}
+{% endblock %}
+
 {% block main %}
 
 {% endblock %}
 
 {% block footer %}
 
-{% endblock %}
-
-{% block js-before %}
-  {% include asset with type: 'jquery-easing' %}
 {% endblock %}
 
 {% block js %}

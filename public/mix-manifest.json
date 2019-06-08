@@ -6,10 +6,11 @@
     "/javascripts/pluton/app.js": "/javascripts/pluton/app.js",
     "/javascripts/shared/app.js": "/javascripts/shared/app.js",
     "/stylesheets/shared/app.css": "/stylesheets/shared/app.css",
-    "/stylesheets/shared/icomoon.css": "/stylesheets/shared/icomoon.css",
     "/stylesheets/main/app.css": "/stylesheets/main/app.css",
     "/stylesheets/pluton/app.css": "/stylesheets/pluton/app.css",
+    "/stylesheets/foodee/app.css": "/stylesheets/foodee/app.css",
     "/stylesheets/cube/app.css": "/stylesheets/cube/app.css",
     "/stylesheets/fresh/app.css": "/stylesheets/fresh/app.css",
-    "/stylesheets/foodee/app.css": "/stylesheets/foodee/app.css"
+    "/stylesheets/shared/expose/bootstrap-4.3.1-columns-20.css": "/stylesheets/shared/expose/bootstrap-4.3.1-columns-20.css",
+    "/stylesheets/shared/expose/icomoon.css": "/stylesheets/shared/expose/icomoon.css"
 }

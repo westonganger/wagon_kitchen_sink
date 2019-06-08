@@ -5,8 +5,9 @@ slug: default
 ---
 
 {% case page.handle %}
-{% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age' %}
-{% when '' %}
+{% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age', 'sb-creative', 'pet-life', 'another-one' %}
+{% when 'fitness' %}
+  {% assign body_class = 'mobile-shift' %}
 {% else %}
   {% assign body_class = 'has-sticky-footer' %}
 {% endcase %}
