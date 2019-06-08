@@ -8,6 +8,10 @@ slug: default
 {% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age', 'sb-creative', 'pet-life', 'another-one', 'visit-nepal' %}
 {% when 'fitness' %}
   {% assign body_class = 'mobile-shift' %}
+{% when 'shards-agency-landing' %}
+  {% assign body_class = 'shards-landing-page--1' %}
+{% when 'shards-app-promo' %}
+  {% assign body_class = 'shards-app-promo-page--1' %}
 {% else %}
   {% assign body_class = 'has-sticky-footer' %}
 {% endcase %}

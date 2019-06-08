@@ -69,6 +69,9 @@ mix
 
   .js('app/assets/fresh/javascripts/app.js', 'public/javascripts/fresh/app.js')
   .sass('app/assets/fresh/stylesheets/app.scss', 'public/stylesheets/fresh/app.css')
+
+  .js('app/assets/shards/javascripts/app.js', 'public/javascripts/shards/app.js')
+  .sass('app/assets/shards/stylesheets/app.scss', 'public/stylesheets/shards/app.css')
   /* END Theme Assets */
 
   // .combine([

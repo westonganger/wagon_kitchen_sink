@@ -4,6 +4,7 @@
     "/javascripts/fresh/app.js": "/javascripts/fresh/app.js",
     "/javascripts/main/app.js": "/javascripts/main/app.js",
     "/javascripts/pluton/app.js": "/javascripts/pluton/app.js",
+    "/javascripts/shards/app.js": "/javascripts/shards/app.js",
     "/javascripts/shared/app.js": "/javascripts/shared/app.js",
     "/stylesheets/shared/app.css": "/stylesheets/shared/app.css",
     "/stylesheets/main/app.css": "/stylesheets/main/app.css",
@@ -11,5 +12,6 @@
     "/stylesheets/foodee/app.css": "/stylesheets/foodee/app.css",
     "/stylesheets/cube/app.css": "/stylesheets/cube/app.css",
     "/stylesheets/fresh/app.css": "/stylesheets/fresh/app.css",
-    "/stylesheets/vendor/icomoon.min.css": "/stylesheets/vendor/icomoon.min.css"
+    "/stylesheets/vendor/icomoon.min.css": "/stylesheets/vendor/icomoon.min.css",
+    "/stylesheets/shards/app.css": "/stylesheets/shards/app.css"
 }
