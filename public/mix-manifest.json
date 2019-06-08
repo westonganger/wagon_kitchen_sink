@@ -11,6 +11,5 @@
     "/stylesheets/foodee/app.css": "/stylesheets/foodee/app.css",
     "/stylesheets/cube/app.css": "/stylesheets/cube/app.css",
     "/stylesheets/fresh/app.css": "/stylesheets/fresh/app.css",
-    "/stylesheets/shared/expose/bootstrap-4.3.1-columns-20.css": "/stylesheets/shared/expose/bootstrap-4.3.1-columns-20.css",
-    "/stylesheets/shared/expose/icomoon.css": "/stylesheets/shared/expose/icomoon.css"
+    "/stylesheets/vendor/icomoon.min.css": "/stylesheets/vendor/icomoon.min.css"
 }

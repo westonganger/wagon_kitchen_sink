@@ -2,21 +2,11 @@
 
 subset=latin,latin-ext);@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext);@font-face {
   font-family: 'porta';
-  src: url(/fonts/pluton.eot?a5cd53c60ac88a332a19d4069d89dbd1);
-  src: url(/fonts/pluton.eot?a5cd53c60ac88a332a19d4069d89dbd1) format('embedded-opentype'), url(/fonts/pluton.woff?85b4a1f9a933031b0b88b19f3ce086b9) format('woff'), url(/fonts/pluton.ttf?6208e1469173d8462ec10fc6e22afd70) format('truetype'), url(/fonts/pluton.svg?b2925182e4192051e927745e5ec5a47e) format('svg');
+  src: url(/fonts/porta.eot?a5cd53c60ac88a332a19d4069d89dbd1);
+  src: url(/fonts/porta.eot?a5cd53c60ac88a332a19d4069d89dbd1) format('embedded-opentype'), url(/fonts/porta.woff?85b4a1f9a933031b0b88b19f3ce086b9) format('woff'), url(/fonts/porta.ttf?6208e1469173d8462ec10fc6e22afd70) format('truetype'), url(/fonts/porta.svg?b2925182e4192051e927745e5ec5a47e) format('svg');
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'porta';
-    src: url('../font/porta.svg?49924914#porta') format('svg');
-  }
-}
-*/
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "porta";

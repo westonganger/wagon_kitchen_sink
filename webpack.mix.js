@@ -37,16 +37,21 @@ mix
     clearConsole: false
   })
 
+  /*
+  // You probably shouldnt use this
   .autoload({
-    jquery: ['window.$', 'window.jQuery', 'jQuery', '$'],
+    //jquery: ['window.$', 'window.jQuery', 'jQuery', '$'],
     //moment: ['window.moment'],
   })
+  */
 
   /* Shared Assets */
   .js('app/assets/shared/javascripts/app.js', 'public/javascripts/shared/app.js')
   .sass('app/assets/shared/stylesheets/app.scss', 'public/stylesheets/shared/app.css')
 
-  .copy('app/assets/shared/stylesheets/expose/*', 'public/stylesheets/shared/expose/')
+  .copy('app/assets/vendor/javascripts/*', 'public/javascripts/vendor/')
+  .copy('app/assets/vendor/stylesheets/*', 'public/stylesheets/vendor/')
+  .copyDirectory('app/assets/vendor/stylesheets/fonts/', 'public/stylesheets/vendor/fonts/')
   /* END Shared Assets */
 
   /* Theme Assets */

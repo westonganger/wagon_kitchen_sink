@@ -14,11 +14,6 @@ published: true
   {% include 'icons' with type: 'icomoon' %}
 {% endblock %}
 
-{% block css-framework %}
-  {{ 'shared/expose/bootstrap-4.3.1-columns-20' | stylesheet_tag }}
-  {{ 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js' | javascript_tag }}
-{% endblock %}
-
 {% block top-nav %}
   {% include back-button %}
 {% endblock %}
@@ -65,25 +60,25 @@ published: true
 <section class="featured">
   <div class="container">
     <div class="row">
-      <div class="col-lg-5 feature">
+      <div class="col-lg-3 feature">
         <i class="icon-suitcase icon-lg"></i>
         <h2>Resources</h2>
         <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
         <a href="">Explore more<i class="icon-arrow-long-right"></i></a>
       </div>
-      <div class="col-lg-5 feature">
+      <div class="col-lg-3 feature">
         <i class="icon-dashboard icon-lg"></i>
         <h2>Training &amp; Funding</h2>
         <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
         <a href="">Browse training<i class="icon-arrow-long-right"></i></a>
       </div>
-      <div class="col-lg-5 feature">
+      <div class="col-lg-3 feature">
         <i class="icon-cloud icon-lg"></i>
         <h2>Connect</h2>
         <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
         <a href="">Connect now<i class="icon-arrow-long-right"></i></a>
       </div>
-      <div class="col-lg-5 feature">
+      <div class="col-lg-3 feature">
         <i class="icon-chat icon-lg"></i>
         <h2>Communicate</h2>
         <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor.</p>
@@ -96,7 +91,7 @@ published: true
   <div class="bg-secondary">
     <div class="container">
       <div class="row fitness-first">
-        <div class="col-lg-7 text-block">
+        <div class="col-lg-4 text-block">
           <div class="text-lockup">
             <h3>It's All About</h3>
             <h2>Fitness First</h2>
@@ -105,7 +100,7 @@ published: true
             <a href="">Read More</a>
           </div>
         </div>
-        <div class="col-lg-13 large-thumb">
+        <div class="col-lg-8 large-thumb">
           <div class="stats">
             <p>Active Users <span>(34)</span></p>
             <img src="{{ 'fitness/drop-primary.png' | theme_image_url }}">
@@ -113,13 +108,13 @@ published: true
         </div>
       </div>
       <div class="row love-your-body">
-        <div class="col-lg-13 large-thumb">
+        <div class="col-lg-8 large-thumb">
           <div class="stats">
             <p>Products Used <span>(658)</span></p>
             <img src="{{ 'fitness/drop-primary.png' | theme_image_url }}">
           </div>
         </div>
-        <div class="col-lg-7 text-block">
+        <div class="col-lg-4 text-block">
           <div class="text-lockup">
             <h3>Love</h3>
             <h2>Your Body</h2>
@@ -133,7 +128,7 @@ published: true
   </div>
   <div class="container">
     <div class="row mid-unit">
-      <div class="col-lg-7 lifestyle">
+      <div class="col-lg-4 lifestyle">
         <div class="small-thumb"></div>
         <div class="text-block">
           <div class="text-lockup">
@@ -144,7 +139,7 @@ published: true
           </div>
         </div>
       </div>
-      <div class="col-lg-13 summer-fun">
+      <div class="col-lg-8 summer-fun">
         <div class="large-thumb">
           <p class="date">24th August</p>
           <div class="category">
@@ -161,7 +156,7 @@ published: true
       </div>
     </div>
     <div class="row bottom-unit">
-      <div class="col-lg-13 get-involved">
+      <div class="col-lg-8 get-involved">
         <div class="large-thumb"></div>
         <div class="text-block">
           <div class="text-lockup">
@@ -172,7 +167,7 @@ published: true
           </div>
         </div>
       </div>
-      <div class="col-lg-7 eating-habits">
+      <div class="col-lg-4 eating-habits">
         <div class="small-thumb"></div>
         <div class="text-block">
           <div class="text-lockup">
@@ -201,15 +196,15 @@ published: true
   <div class="container footer-lockup">
     <div class="red-angle"></div>
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-4">
         <h3>Resources</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-5">
         <h3>About us</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-3">
         <h3>Stay in touch</h3>
         <div class="social-icons">
           <a href=""><i class="icon-facebook"></i></a>
@@ -220,7 +215,7 @@ published: true
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-13 col-lg-offset-7">
+      <div class="col-lg-8 col-lg-offset-4">
         <form>
           <input type="text" placeholder="Your Name">
           <input type="email" placeholder="Your Email" spellcheck="false">

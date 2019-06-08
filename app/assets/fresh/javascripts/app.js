@@ -1,10 +1,11 @@
+//Preloader
+$(window).on('load', function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({ 'overflow': 'visible' });
+});
+
 $(document).on('turbolinks:load',  function(){
-  //Preloader
-  $(window).on('load', function() { // makes sure the whole site is loaded
-    $('#status').fadeOut(); // will first fade out the loading animation
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({ 'overflow': 'visible' });
-  });
   //Mobile menu toggle
   if ($('.navbar-burger').length) {
     $('.navbar-burger').on("click", function() {
@@ -100,8 +101,8 @@ $(document).on('turbolinks:load',  function(){
   });
   // Select all links with hashes
   $('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]').not('[href="#0"]').click(function(event) {
+    .not('[href="#"]').not('[href="#0"]') // Remove links that don't actually link to anything
+    .click(function(event) {
       // On-page links
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         // Figure out element to scroll to

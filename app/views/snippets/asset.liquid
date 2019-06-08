@@ -35,6 +35,14 @@
   {% assign the_path = the_path | replace_first: 'the-version', version %}
   {{ the_path | javascript_tag }}
 
+{% when 'bootstrap-datepicker' %}
+  {% if bootstrap_version and (bootstrap_version == '3' or bootstrap_version == 3)
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker3.min.css" />
+  {% else %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+  {% endif %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
 {% when 'bulma' %}
   {% assign version = version | default: '0.7.5' %}
   {% assign the_path = 'https://cdnjs.cloudflare.com/ajax/libs/bulma/the-version/css/bulma.min.css' | replace_first: 'the-version', version %}
@@ -83,6 +91,9 @@
 
   {% assign the_path = 'https://cdn.jsdelivr.net/npm/semantic-ui@the-version/dist/semantic.min.js' | replace_first: 'the-version', version %}
   {{ the_path | javascript_tag }}
+
+{% when 'stellar', 'stellar.js', 'jquery-stellar' %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
 
 {% when '' %}
   {% comment %} dont bother warning when empty string is passed {% endcomment %}
