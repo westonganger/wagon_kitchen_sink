@@ -45,7 +45,7 @@ Warning the `-d` option will re-write seed data even if they have previously bee
   * https://wrapbootstrap.com/ (Paid Themes)
   * https://w3layouts.com/ (Good quality themes, but hard to tell whats Bootstrap 4 compatible)
 - Bootstrap 4 Snippets:
-  - https://www.froala.com/design-blocks
+  - /design-blocks/design-blocks
   * https://startbootstrap.com/snippets/
   * https://bootsnipp.com/
   * https://getbootstrap.com/docs/4.3/examples/

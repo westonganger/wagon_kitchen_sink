@@ -19,6 +19,12 @@ locales: [en]
 # Sample timezone strings: Tokyo, Beijing, Moscow, Cairo, Paris, Pacific Time (US & Canada)
 timezone: "Pacific Time (US & Canada)"
 
+### Custom routes - https://doc.locomotivecms.com/v4.0/docs/custom-routes
+# routes:
+#   - "news/:year/:month": "blog_posts_list"
+#   - "actualites/:year/:month": "blog_posts_list"
+#   - "products/:category/:product_id": "product_template"
+
 # For SEO purposes, sites may wish to add a relevant string to the <title> tag
 # And include <meta type="keywords"> and <meta type="description">
 # For this purpose you can set values for these variables here

@@ -1,12 +1,10 @@
 ---
 title: Default Layout
-is_layout: true
 slug: default
+is_layout: true
 ---
 
-{% block body_class %}
-{% endblock %}
-
+{% block body-class %}
 {% case page.handle %}
 {% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age', 'sb-creative', 'pet-life', 'another-one', 'visit-nepal', 'folio', 'reveal' %}
   {% comment %} DO NOTHING {% endcomment %}
@@ -21,6 +19,7 @@ slug: default
 {% else %}
   {% assign body_class = 'has-sticky-footer' %}
 {% endcase %}
+{% endblock %}
 
 <html lang="en">
   <head>

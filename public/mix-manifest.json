@@ -1,5 +1,6 @@
 {
     "/javascripts/cube/app.js": "/javascripts/cube/app.js",
+    "/javascripts/design-blocks/app.js": "/javascripts/design-blocks/app.js",
     "/javascripts/foodee/app.js": "/javascripts/foodee/app.js",
     "/javascripts/fresh/app.js": "/javascripts/fresh/app.js",
     "/javascripts/main/app.js": "/javascripts/main/app.js",
@@ -15,5 +16,6 @@
     "/stylesheets/fresh/app.css": "/stylesheets/fresh/app.css",
     "/stylesheets/shards/app.css": "/stylesheets/shards/app.css",
     "/stylesheets/now-ui-kit/app.css": "/stylesheets/now-ui-kit/app.css",
+    "/stylesheets/design-blocks/app.css": "/stylesheets/design-blocks/app.css",
     "/stylesheets/vendor/icomoon.min.css": "/stylesheets/vendor/icomoon.min.css"
 }

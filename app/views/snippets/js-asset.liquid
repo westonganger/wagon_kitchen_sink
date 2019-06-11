@@ -1,8 +1,0 @@
-{% case type %}
-{% when 'jquery-easing', 'jquery.easing' %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-{% else %}
-  <script type="text/javascript">console.log("Invalid JS Asset specified: {{ type }}");</script>
-
-{% endcase %}

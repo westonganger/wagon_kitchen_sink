@@ -1,0 +1,29 @@
+---
+title: Design Blocks
+handle: design-blocks-index
+listed: true
+published: true
+---
+{% extends layouts/design-blocks %}
+
+{% block top-nav %}
+  {% include 'top-nav' %}
+{% endblock %}
+
+{% block main %}
+  <section class="fdb-block py-0 my-5">
+    <div class="container bg-r py-5" style="background-image: url({{ 'design-blocks/shapes/1.svg' | theme_image_url }});">
+      <div class="row justify-content-start">
+        <div class="col-12 col-sm-10 col-md-8 text-center text-sm-left">
+          <h1>Design Blocks</h1>
+          <p class="lead">Over 170 responsive design blocks ready to be used in your web or mobile apps. All blocks are based on the Bootstrap Library, and they are the building blocks for beautiful websites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include design-blocks-nav %}
+
+  <div id="playground">
+  </div>
+{% endblock %}

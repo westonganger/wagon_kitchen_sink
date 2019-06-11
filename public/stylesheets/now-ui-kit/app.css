@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*!
 
  =========================================================
@@ -15,8 +16,11 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
  */
+
 /*     brand Colors              */
+
 /*      light colors         */
+
 /* ========================================================================
  * bootstrap-switch - v3.3.2
  * http://www.bootstrap-switch.org
@@ -24,6 +28,7 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -283,10 +288,12 @@
 }
 
 /*! nouislider - 13.1.4 */
+
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.
  */
+
 .noUi-target,
 .noUi-target * {
   -webkit-touch-callout: none;
@@ -314,6 +321,7 @@
 
 /* Wrapper for all connect elements.
  */
+
 .noUi-connects {
   overflow: hidden;
   z-index: 0;
@@ -334,6 +342,7 @@
 
 /* Offset direction
  */
+
 html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
   left: auto;
   right: 0;
@@ -342,6 +351,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 /* Give origins 0 height/width so they don't interfere with clicking the
  * connect elements.
  */
+
 .noUi-vertical .noUi-origin {
   width: 0;
 }
@@ -367,6 +377,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-origin {
 
 /* Slider size and handle placement;
  */
+
 .noUi-horizontal {
   height: 1px;
 }
@@ -401,6 +412,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /* Styling;
  * Giving the connect element a border radius causes issues with using transform: scale
  */
+
 .noUi-target {
   background-color: rgba(182, 182, 182, 0.3);
   border-radius: 3px;
@@ -418,6 +430,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /* Handles and cursors;
  */
+
 .noUi-draggable {
   cursor: ew-resize;
 }
@@ -445,6 +458,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /* Handle stripes;
  */
+
 .noUi-handle:before,
 .noUi-handle:after {
   display: none;
@@ -468,6 +482,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 /* Disabled state;
  */
+
 [disabled] .noUi-connect {
   background: #B8B8B8;
 }
@@ -481,6 +496,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /* Base;
  *
  */
+
 .noUi-pips,
 .noUi-pips * {
   box-sizing: border-box;
@@ -494,6 +510,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /* Values;
  *
  */
+
 .noUi-value {
   position: absolute;
   white-space: nowrap;
@@ -508,6 +525,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /* Markings;
  *
  */
+
 .noUi-marker {
   position: absolute;
   background: #CCC;
@@ -524,6 +542,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /* Horizontal layout;
  *
  */
+
 .noUi-pips-horizontal {
   padding: 10px 0;
   height: 80px;
@@ -559,6 +578,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 /* Vertical layout;
  *
  */
+
 .noUi-pips-vertical {
   padding: 0 10px;
   height: 100%;
@@ -700,6 +720,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
  *
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
+
 .datepicker {
   padding: 8px 6px;
   border-radius: 4px;
@@ -1032,7 +1053,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .datepicker table tr td.today:hover.active,
 .datepicker table tr td.today.disabled.active,
 .datepicker table tr td.today.disabled:hover.active {
-  background-color: #fbf069 \9 ;
+  background-color: #fbf069 \9;
 }
 
 .datepicker table tr td.today:hover:hover {
@@ -1096,7 +1117,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .datepicker table tr td.range.today:hover.active,
 .datepicker table tr td.range.today.disabled.active,
 .datepicker table tr td.range.today.disabled:hover.active {
-  background-color: #efe24b \9 ;
+  background-color: #efe24b \9;
 }
 
 .datepicker table tr td.selected,
@@ -1145,7 +1166,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .datepicker table tr td.selected:hover.active,
 .datepicker table tr td.selected.disabled.active,
 .datepicker table tr td.selected.disabled:hover.active {
-  background-color: #666666 \9 ;
+  background-color: #666666 \9;
 }
 
 .datepicker table tr td.active div,
@@ -1188,7 +1209,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .datepicker table tr td.active:hover.active,
 .datepicker table tr td.active.disabled.active,
 .datepicker table tr td.active.disabled:hover.active {
-  background-color: #003399 \9 ;
+  background-color: #003399 \9;
 }
 
 .datepicker table tr td span {
@@ -1255,7 +1276,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .datepicker table tr td span.active:hover.active,
 .datepicker table tr td span.active.disabled.active,
 .datepicker table tr td span.active.disabled:hover.active {
-  background-color: #003399 \9 ;
+  background-color: #003399 \9;
 }
 
 .datepicker table tr td span.old,
@@ -3193,6 +3214,7 @@ textarea.form-control:active {
 }
 
 /*           badges             */
+
 .badge {
   border-radius: 8px;
   padding: 4px 8px;
@@ -3602,6 +3624,7 @@ body {
 }
 
 /* Animations */
+
 .nav-pills .nav-link,
 .nav-item .nav-link,
 .navbar,
@@ -3788,6 +3811,7 @@ License - nucleoapp.com/license/
 Created using IcoMoon - icomoon.io
 
 -------------------------------- */
+
 @font-face {
   font-family: "Nucleo Outline";
   src: url(/fonts/nucleo-outline.eot?53a1bed7a3ec86d010fe100873828a89);
@@ -3795,9 +3819,11 @@ Created using IcoMoon - icomoon.io
   font-weight: normal;
   font-style: normal;
 }
+
 /*------------------------
 	base class definition
 -------------------------*/
+
 .now-ui-icons {
   display: inline-block;
   font: normal normal normal 14px/1 "Nucleo Outline";
@@ -3812,9 +3838,11 @@ Created using IcoMoon - icomoon.io
 /*------------------------
   change icon size
 -------------------------*/
+
 /*----------------------------------
   add a square/circle background
 -----------------------------------*/
+
 .now-ui-icons.circle {
   padding: 0.33333333em;
   vertical-align: -16%;
@@ -3828,6 +3856,7 @@ Created using IcoMoon - icomoon.io
 /*------------------------
   list icons
 -------------------------*/
+
 .nc-icon-ul {
   padding-left: 0;
   margin-left: 2.14285714em;
@@ -3853,6 +3882,7 @@ Created using IcoMoon - icomoon.io
 /*------------------------
   spinning icons
 -------------------------*/
+
 .now-ui-icons.spin {
   -webkit-animation: nc-icon-spin 2s infinite linear;
   animation: nc-icon-spin 2s infinite linear;
@@ -3862,26 +3892,32 @@ Created using IcoMoon - icomoon.io
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes nc-icon-spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 /*------------------------
   rotated/flipped icons
 -------------------------*/
+
 /*------------------------
 	font icons
 -------------------------*/
+
 .now-ui-icons.ui-1_check:before {
   content: "\EA22";
 }
@@ -6256,7 +6292,7 @@ img {
   }
 
   .sidebar-collapse .navbar .dropdown.show .dropdown-menu,
-.sidebar-collapse .navbar .dropdown .dropdown-menu {
+  .sidebar-collapse .navbar .dropdown .dropdown-menu {
     background-color: transparent;
     border: 0;
     transition: none;
@@ -6270,7 +6306,7 @@ img {
   }
 
   .sidebar-collapse .navbar .dropdown.show .dropdown-menu:before,
-.sidebar-collapse .navbar .dropdown .dropdown-menu:before {
+  .sidebar-collapse .navbar .dropdown .dropdown-menu:before {
     display: none;
   }
 
@@ -6287,7 +6323,7 @@ img {
   }
 
   .sidebar-collapse .navbar .dropdown-menu .dropdown-item:focus,
-.sidebar-collapse .navbar .dropdown-menu .dropdown-item:hover {
+  .sidebar-collapse .navbar .dropdown-menu .dropdown-item:hover {
     color: #FFFFFF;
     border-radius: 0.1875rem;
   }
@@ -6340,8 +6376,8 @@ img {
   }
 
   .sidebar-collapse .top-bar,
-.sidebar-collapse .middle-bar,
-.sidebar-collapse .bottom-bar {
+  .sidebar-collapse .middle-bar,
+  .sidebar-collapse .bottom-bar {
     transition: all 0.2s;
   }
 
@@ -6429,7 +6465,7 @@ img {
   }
 
   .navbar-nav .nav-link i.fab,
-.navbar-nav .nav-link i.now-ui-icons {
+  .navbar-nav .nav-link i.now-ui-icons {
     opacity: 0.5;
   }
 
@@ -6455,7 +6491,7 @@ img {
   }
 
   .bootstrap-collapse .navbar .dropdown.show .dropdown-menu,
-.bootstrap-collapse .navbar .dropdown .dropdown-menu {
+  .bootstrap-collapse .navbar .dropdown .dropdown-menu {
     background-color: transparent;
     border: 0;
     transition: none;
@@ -6469,7 +6505,7 @@ img {
   }
 
   .bootstrap-collapse .navbar .dropdown.show .dropdown-menu:before,
-.bootstrap-collapse .navbar .dropdown .dropdown-menu:before {
+  .bootstrap-collapse .navbar .dropdown .dropdown-menu:before {
     display: none;
   }
 
@@ -6486,7 +6522,7 @@ img {
   }
 
   .bootstrap-collapse .navbar .dropdown-menu .dropdown-item:focus,
-.bootstrap-collapse .navbar .dropdown-menu .dropdown-item:hover {
+  .bootstrap-collapse .navbar .dropdown-menu .dropdown-item:hover {
     color: #FFFFFF;
     border-radius: 0.1875rem;
   }
@@ -6539,8 +6575,8 @@ img {
   }
 
   .bootstrap-collapse .top-bar,
-.bootstrap-collapse .middle-bar,
-.bootstrap-collapse .bottom-bar {
+  .bootstrap-collapse .middle-bar,
+  .bootstrap-collapse .bottom-bar {
     transition: all 0.2s;
   }
 
@@ -6583,7 +6619,7 @@ img {
   }
 
   .navbar-nav .nav-link i.fa,
-.navbar-nav .nav-link i.now-ui-icons {
+  .navbar-nav .nav-link i.now-ui-icons {
     opacity: 0.5;
   }
 
@@ -6608,6 +6644,7 @@ img {
     top: 93%;
   }
 }
+
 @media screen and (min-width: 992px) {
   .navbar-collapse:not(.has-image) {
     background: transparent !important;
@@ -6683,7 +6720,7 @@ img {
   }
 
   .burger-menu .navbar .dropdown.show .dropdown-menu,
-.burger-menu .navbar .dropdown .dropdown-menu {
+  .burger-menu .navbar .dropdown .dropdown-menu {
     background-color: transparent;
     border: 0;
     transition: none;
@@ -6697,7 +6734,7 @@ img {
   }
 
   .burger-menu .navbar .dropdown.show .dropdown-menu:before,
-.burger-menu .navbar .dropdown .dropdown-menu:before {
+  .burger-menu .navbar .dropdown .dropdown-menu:before {
     display: none;
   }
 
@@ -6714,7 +6751,7 @@ img {
   }
 
   .burger-menu .navbar .dropdown-menu .dropdown-item:focus,
-.burger-menu .navbar .dropdown-menu .dropdown-item:hover {
+  .burger-menu .navbar .dropdown-menu .dropdown-item:hover {
     color: #FFFFFF;
     border-radius: 0.1875rem;
   }
@@ -6767,8 +6804,8 @@ img {
   }
 
   .burger-menu .top-bar,
-.burger-menu .middle-bar,
-.burger-menu .bottom-bar {
+  .burger-menu .middle-bar,
+  .burger-menu .bottom-bar {
     transition: all 0.2s;
   }
 
@@ -6914,6 +6951,7 @@ img {
     float: right;
   }
 }
+
 @media screen and (min-width: 768px) {
   .image-container.image-right {
     top: 80px;
@@ -6925,6 +6963,7 @@ img {
     margin-right: -100px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .image-container.image-left {
     margin-bottom: 220px;
@@ -6953,6 +6992,7 @@ img {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (max-width: 576px) {
   .navbar[class*=navbar-expand-] .container {
     margin-left: 0;
@@ -6975,6 +7015,7 @@ img {
     width: 90%;
   }
 }
+
 @media screen and (min-width: 991px) and (max-width: 1200px) {
   .section-images .hero-images-container-1 {
     right: 9%;
@@ -6986,6 +7027,7 @@ img {
     max-width: 216px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .section-images {
     height: 300px;
@@ -7008,11 +7050,13 @@ img {
     top: 99%;
   }
 }
+
 @media screen and (max-width: 517px) {
   .alert .alert-icon {
     margin-top: 10px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .section-images .hero-images-container-1 {
     top: 51%;
@@ -7024,10 +7068,11 @@ img {
     right: 14%;
   }
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .section-images .hero-images-container,
-.section-images .hero-images-container-1,
-.section-images .hero-images-container-2 {
+  .section-images .hero-images-container-1,
+  .section-images .hero-images-container-2 {
     margin-top: -15vh;
     margin-left: 80px;
   }
@@ -7050,6 +7095,7 @@ img {
     top: 90vh;
   }
 }
+
 @media screen and (max-width: 580px) {
   .alert button.close {
     position: absolute;
@@ -7059,8 +7105,10 @@ img {
             transform: translateY(-50%);
   }
 }
+
 @media only screen and (min-height: 950px) {
   .index-page .page-header .category-absolute {
     margin-top: -330px;
   }
 }
+

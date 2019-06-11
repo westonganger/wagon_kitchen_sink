@@ -97,6 +97,17 @@
 
 /***/ }),
 
+/***/ "./app/assets/design-blocks/stylesheets/app.scss":
+/*!*******************************************************!*\
+  !*** ./app/assets/design-blocks/stylesheets/app.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./app/assets/foodee/stylesheets/app.scss":
 /*!************************************************!*\
   !*** ./app/assets/foodee/stylesheets/app.scss ***!
@@ -15373,9 +15384,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./app/assets/shared/javascripts/app.js ./app/assets/shared/stylesheets/app.scss ./app/assets/main/stylesheets/app.scss ./app/assets/pluton/stylesheets/app.scss ./app/assets/foodee/stylesheets/app.scss ./app/assets/cube/stylesheets/app.scss ./app/assets/fresh/stylesheets/app.scss ./app/assets/shards/stylesheets/app.scss ./app/assets/now-ui-kit/stylesheets/app.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./app/assets/shared/javascripts/app.js ./app/assets/shared/stylesheets/app.scss ./app/assets/main/stylesheets/app.scss ./app/assets/pluton/stylesheets/app.scss ./app/assets/foodee/stylesheets/app.scss ./app/assets/cube/stylesheets/app.scss ./app/assets/fresh/stylesheets/app.scss ./app/assets/shards/stylesheets/app.scss ./app/assets/now-ui-kit/stylesheets/app.scss ./app/assets/design-blocks/stylesheets/app.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15387,7 +15398,8 @@ __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/cube/stylesheets/app.scss */"./app/assets/cube/stylesheets/app.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/fresh/stylesheets/app.scss */"./app/assets/fresh/stylesheets/app.scss");
 __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/shards/stylesheets/app.scss */"./app/assets/shards/stylesheets/app.scss");
-module.exports = __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/now-ui-kit/stylesheets/app.scss */"./app/assets/now-ui-kit/stylesheets/app.scss");
+__webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/now-ui-kit/stylesheets/app.scss */"./app/assets/now-ui-kit/stylesheets/app.scss");
+module.exports = __webpack_require__(/*! /home/weston/html/ruby/locomotive_cms/wagon_kitchen_sink/app/assets/design-blocks/stylesheets/app.scss */"./app/assets/design-blocks/stylesheets/app.scss");
 
 
 /***/ })

@@ -75,6 +75,9 @@ mix
 
   .js('app/assets/now-ui-kit/javascripts/app.js', 'public/javascripts/now-ui-kit/app.js')
   .sass('app/assets/now-ui-kit/stylesheets/app.scss', 'public/stylesheets/now-ui-kit/app.css')
+
+  .js('app/assets/design-blocks/javascripts/app.js', 'public/javascripts/design-blocks/app.js')
+  .sass('app/assets/design-blocks/stylesheets/app.scss', 'public/stylesheets/design-blocks/app.css')
   /* END Theme Assets */
 
   // .combine([

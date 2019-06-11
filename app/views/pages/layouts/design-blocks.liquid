@@ -1,0 +1,43 @@
+---
+title: Design Blocks Layout
+slug: design-blocks
+is_layout: true
+---
+{% extends layouts/default %}
+
+{% block body-class %}
+{% endblock %}
+
+{% block css-framework %}
+  {% include 'asset' with type: 'bootstrap', version: '4.3.1' bootswatch_theme: nil %}
+{% endblock %}
+
+{% block css-default %}
+  {{ 'design-blocks/app' | stylesheet_tag }}
+  {{ 'main/app' | stylesheet_tag }}
+{% endblock %}
+
+{% block fonts-default %}
+  {% comment %}
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  {% endcomment %}
+{% endblock %}
+
+{% block icons-default %}
+  {% include 'icons' with type: 'font-awesome-5' %}
+{% endblock %}
+
+{% block js-default %}
+  {{ 'design-blocks/app' | javascript_tag }}
+  {{ 'main/app' | javascript_tag }}
+{% endblock %}
+
+{% block loader %}
+  {% include 'loader' %}
+{% endblock %}
+
+{% block top-nav %}
+  {% include 'top-nav' %}
+
+  {% include 'design-blocks-nav' %}
+{% endblock %}
