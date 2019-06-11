@@ -18,8 +18,11 @@
 {% when 'icomoon' %}
   {{ 'vendor/icomoon.min' | stylesheet_tag }}
 
-{% when 'ion-icons', 'ion-icons-4' %}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/loader/index.js"></script>
+{% when 'ionicons-v3' %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.min.css" />
+
+{% when 'ionicons-v2' %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
 
 {% when 'themify' %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">

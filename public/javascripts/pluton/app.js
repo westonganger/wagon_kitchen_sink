@@ -109,11 +109,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_appli_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_vendor_appli_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _shared_javascripts_sections_manager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../shared/javascripts/sections/_manager */ "./app/assets/shared/javascripts/sections/_manager.js");
 /* harmony import */ var _sections__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./sections */ "./app/assets/pluton/javascripts/sections/index.js");
-// https://github.com/VodkaBears/Vide/issues/183#issuecomment-365603849
-jQuery.fn.load = function (callback) {
-  $(window).on("load", callback);
-};
-
 
 
 

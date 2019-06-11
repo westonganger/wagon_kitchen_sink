@@ -1,0 +1,835 @@
+---
+title: Now UI Kit Landing Page
+handle: now-ui-kit-landing-page
+listed: true
+published: true
+---
+
+{% extends layouts/default %}
+
+{% block fonts %}
+{% endblock %}
+
+{% block icons %}
+  {% include 'icons' with type: '' %}
+{% endblock %}
+
+{% block js-before %}
+  {% include asset with type: 'bootstrap-switch' %}
+  {% include asset with type: 'no-ui-slider' %}
+  {% include asset with type: 'bootstrap-datepicker' %}
+  {{ 'now-ui-kit/app' | javascript_tag }}
+
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+{% endblock %}
+
+{% block css-before %}
+  {{ 'now-ui-kit/app' | stylesheet_tag }}
+{% endblock %}
+
+{% block top-nav %}
+  {% include back-button %}
+
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <div class="container">
+      <div class="dropdown button-dropdown">
+        <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+          <span class="button-bar"></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-header">Dropdown header</a>
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">One more separated link</a>
+        </div>
+      </div>
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+          Now Ui Kit
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="../assets/img/blurred-image-1.jpg">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Back to Kit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/creativetimofficial/now-ui-kit/issues">Have an issue?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <p class="d-lg-none d-xl-none">Twitter</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <p class="d-lg-none d-xl-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+              <i class="fab fa-instagram"></i>
+              <p class="d-lg-none d-xl-none">Instagram</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block main %}
+  <div class="wrapper">
+    <div class="page-header page-header-small">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('{{ 'now-ui-kit/bg6.jpg' | theme_image_url }}');">
+      </div>
+      <div class="content-center">
+        <div class="container">
+          <h1 class="title">This is our great company.</h1>
+          <div class="text-center">
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title">Who we are?</h2>
+            <h5 class="description">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.</h5>
+          </div>
+        </div>
+        <div class="separator separator-primary"></div>
+        <div class="section-story-overview">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-container image-left" style="background-image: url('{{ 'now-ui-kit/login.jpg' | theme_image_url }}')">
+                <!-- First image on the left side -->
+                <p class="blockquote blockquote-primary">"Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                  <br>
+                  <br>
+                  <small>-NOAA</small>
+                </p>
+              </div>
+              <!-- Second image on the left side of the article -->
+              <div class="image-container" style="background-image: url('{{ 'now-ui-kit/bg3.jpg' | theme_image_url }}')"></div>
+            </div>
+            <div class="col-md-5">
+              <!-- First image on the right side, above the article -->
+              <div class="image-container image-right" style="background-image: url('{{ 'now-ui-kit/bg1.jpg' | theme_image_url }}')"></div>
+              <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
+              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              </p>
+              <p>
+                For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
+              </p>
+              <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-team text-center">
+      <div class="container">
+        <h2 class="title">Here is our team</h2>
+        <div class="team">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="team-player">
+                <img src="{{ 'now-ui-kit/avatar.jpg' | theme_image_url }}" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Romina Hadid</h4>
+                <p class="category text-primary">Model</p>
+                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-instagram"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <img src="{{ 'now-ui-kit/ryan.jpg' | theme_image_url }}" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Ryan Tompson</h4>
+                <p class="category text-primary">Designer</p>
+                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-player">
+                <img src="{{ 'now-ui-kit/eva.jpg' | theme_image_url }}" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                <h4 class="title">Eva Jenner</h4>
+                <p class="category text-primary">Fashion</p>
+                <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <a href="#">links</a> for people to be able to follow them outside the site.</p>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
+                <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-contact-us text-center">
+      <div class="container">
+        <h2 class="title">Want to work with us?</h2>
+        <p class="description">Your project is very important to us.</p>
+        <div class="row">
+          <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+            <div class="input-group input-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="now-ui-icons users_circle-08"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="First Name...">
+            </div>
+            <div class="input-group input-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="now-ui-icons ui-1_email-85"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Email...">
+            </div>
+            <div class="textarea-container">
+              <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
+            </div>
+            <div class="send-button">
+              <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer footer-default">
+      <div class=" container ">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.creative-tim.com">
+                Creative Tim
+              </a>
+            </li>
+            <li>
+              <a href="http://presentation.creative-tim.com">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="http://blog.creative-tim.com">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright" id="copyright">
+          &copy;
+          <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+          </script>, Designed by
+          <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+        </div>
+      </div>
+    </footer>
+  </div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+  <style>
+    .tim-row {
+      margin-bottom: 20px;
+    }
+
+    .tim-white-buttons {
+      background-color: #777777;
+    }
+
+    .typography-line {
+      padding-left: 25%;
+      margin-bottom: 35px;
+      position: relative;
+      display: block;
+      width: 100%;
+    }
+
+    .pick-class-label {
+      border-radius: 8px;
+      border: 1px solid #E3E3E3;
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 75%;
+      font-weight: bold;
+      line-height: 1;
+      margin-right: 10px;
+      padding: 23px;
+      text-align: center;
+      vertical-align: baseline;
+      white-space: nowrap;
+    }
+
+    .offline-doc .page-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .typography-line span {
+      bottom: 10px;
+      color: #c0c1c2;
+      display: block;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 13px;
+      left: 0;
+      margin-left: 20px;
+      position: absolute;
+      width: 260px;
+      text-transform: none;
+    }
+
+    .tim-row {
+      padding-top: 60px;
+    }
+
+    .tim-row h3 {
+      margin-top: 0;
+    }
+
+    .switch {
+      margin-right: 20px;
+    }
+
+    #navbar-full .navbar {
+      border-radius: 0 !important;
+      margin-bottom: 15px;
+      z-index: 2;
+    }
+
+    #menu-dropdown .navbar {
+      border-radius: 3px;
+    }
+
+    #pagination-row .pagination-container {
+      height: 100%;
+      max-height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    #icons-row i.now-ui-icons {
+      font-size: 30px;
+    }
+
+    .space {
+      height: 130px;
+      display: block;
+    }
+
+    .space-110 {
+      height: 110px;
+      display: block;
+    }
+
+    .space-50 {
+      height: 50px;
+      display: block;
+    }
+
+    .space-70 {
+      height: 70px;
+      display: block;
+    }
+
+    .navigation-example .img-src {
+      background-attachment: scroll;
+    }
+
+    .navigation-example {
+      background-position: center center;
+      background-size: cover;
+      margin-top: 0;
+      min-height: 740px;
+      height: 100%;
+    }
+
+    #notifications {
+      background-color: #FFFFFF;
+      display: block;
+      width: 100%;
+      position: relative;
+    }
+
+    .tim-note {
+      text-transform: capitalize;
+    }
+
+    #buttons .btn,
+    #javascriptComponents .btn {
+      margin: 0 0px 10px;
+    }
+
+    .space-100 {
+      height: 100px;
+      display: block;
+      width: 100%;
+    }
+
+    .be-social {
+      padding-bottom: 20px;
+      /*     border-bottom: 1px solid #aaa; */
+      margin: 0 auto 40px;
+    }
+
+    .txt-white {
+      color: #FFFFFF;
+    }
+
+    .txt-gray {
+      color: #ddd !important;
+    }
+
+    .parallax {
+      width: 100%;
+      height: 570px;
+      display: block;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .logo-container .logo {
+      overflow: hidden;
+      border-radius: 50%;
+      border: 1px solid #333333;
+      width: 50px;
+      float: left;
+    }
+
+    .logo-container .brand {
+      font-size: 16px;
+      color: #FFFFFF;
+      line-height: 18px;
+      float: left;
+      margin-left: 10px;
+      margin-top: 7px;
+      width: 70px;
+      height: 40px;
+      text-align: left;
+    }
+
+    .logo-container .brand-material {
+      font-size: 18px;
+      margin-top: 15px;
+      height: 25px;
+      width: auto;
+    }
+
+    .logo-container .logo img {
+      width: 100%;
+    }
+
+    .navbar-small .logo-container .brand {
+      color: #333333;
+    }
+
+    .fixed-section {
+      top: 90px;
+      max-height: 80vh;
+      overflow: scroll;
+      position: sticky;
+    }
+
+    .fixed-section ul {
+      padding: 0;
+    }
+
+    .fixed-section ul li {
+      list-style: none;
+    }
+
+    .fixed-section li a {
+      font-size: 14px;
+      padding: 2px;
+      display: block;
+      color: #666666;
+    }
+
+    .fixed-section li a.active {
+      color: #00bbff;
+    }
+
+    .fixed-section.float {
+      position: fixed;
+      top: 100px;
+      width: 200px;
+      margin-top: 0;
+    }
+
+    .parallax .parallax-image {
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .parallax .parallax-image img {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .parallax .parallax-image {
+        width: 100%;
+        height: 640px;
+        overflow: hidden;
+      }
+      .parallax .parallax-image img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    /*.separator{
+        content: "Separator";
+        color: #FFFFFF;
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    .separator-line{
+        background-color: #EEE;
+        height: 1px;
+        width: 100%;
+        display: block;
+    }
+    .separator.separator-gray{
+        background-color: #EEEEEE;
+    }*/
+
+    .social-buttons-demo .btn {
+      margin-right: 5px;
+      margin-bottom: 7px;
+    }
+
+    .img-container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .img-container img {
+      width: 100%;
+    }
+
+    .lightbox img {
+      width: 100%;
+    }
+
+    .lightbox .modal-content {
+      overflow: hidden;
+    }
+
+    .lightbox .modal-body {
+      padding: 0;
+    }
+
+    @media screen and (min-width: 991px) {
+      .lightbox .modal-dialog {
+        width: 960px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .fixed-section.affix {
+        position: relative;
+        margin-bottom: 100px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .btn,
+      .btn-morphing {
+        margin-bottom: 10px;
+      }
+      .parallax .motto {
+        top: 170px;
+        margin-top: 0;
+        font-size: 60px;
+        width: 270px;
+      }
+    }
+
+    /*       Loading dots  */
+
+    /*      transitions */
+
+    .presentation .front,
+    .presentation .front:after,
+    .presentation .front .btn,
+    .logo-container .logo,
+    .logo-container .brand {
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+
+    #images h4 {
+      margin-bottom: 30px;
+    }
+
+    #javascriptComponents {
+      padding-bottom: 0;
+    }
+
+    /*      layer animation          */
+
+    .layers-container {
+      display: block;
+      margin-top: 50px;
+      position: relative;
+    }
+
+    .layers-container img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+      text-align: center;
+    }
+
+    .animate {
+      transition: 1.5s ease-in-out;
+      -moz-transition: 1.5s ease-in-out;
+      -webkit-transition: 1.5s ease-in-out;
+    }
+
+    .navbar-default.navbar-small .logo-container .brand {
+      color: #333333;
+    }
+
+    .navbar-transparent.navbar-small .logo-container .brand {
+      color: #FFFFFF;
+    }
+
+    .navbar-default.navbar-small .logo-container .brand {
+      color: #333333;
+    }
+
+    .sharing-area {
+      margin-top: 80px;
+    }
+
+    .sharing-area .btn {
+      margin: 15px 4px 0;
+    }
+
+    .section-thin,
+    .section-notifications {
+      padding: 0;
+    }
+
+    .section-navbars {
+      padding-top: 0;
+    }
+
+    #navbar .navbar {
+      margin-bottom: 20px;
+    }
+
+    #navbar .navbar-toggler,
+    #menu-dropdown .navbar-toggler {
+      pointer-events: none;
+    }
+
+    .section-tabs {
+      background: #EEEEEE;
+    }
+
+    .section-pagination {
+      padding-bottom: 0;
+    }
+
+    .section-download {
+      padding-top: 130px;
+    }
+
+    .section-download .description {
+      margin-bottom: 60px;
+    }
+
+    .section-download h4 {
+      margin-bottom: 25px;
+    }
+
+    .section-examples a {
+      text-decoration: none;
+    }
+
+    .section-examples a+a {
+      margin-top: 30px;
+    }
+
+    .section-examples h5 {
+      margin-top: 30px;
+    }
+
+    .components-page .wrapper>.header,
+    .tutorial-page .wrapper>.header {
+      height: 500px;
+      padding-top: 128px;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .components-page .title,
+    .tutorial-page .title {
+      color: #FFFFFF;
+    }
+
+    .brand .h1-seo {
+      font-size: 2.8em;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .brand .n-logo {
+      max-width: 100px;
+      margin-bottom: 40px;
+    }
+
+    .invision-logo {
+      max-width: 70px;
+      top: -2px;
+      position: relative;
+    }
+
+    .creative-tim-logo {
+      max-width: 140px;
+      top: -2px;
+      position: relative;
+    }
+
+    .section-javascript .title {
+      margin-bottom: 0;
+    }
+
+    .navbar .switch-background {
+      display: block;
+    }
+
+    .navbar-transparent .switch-background {
+      display: none;
+    }
+
+    .section-signup .col .btn {
+      margin-top: 30px;
+    }
+
+    #buttons-row .btn {
+      margin-bottom: 10px;
+    }
+
+    .section-basic {
+      padding-top: 0;
+    }
+
+    .section-images {
+      padding-bottom: 0;
+    }
+
+    @media screen and (max-width: 991px) {
+      .section-navbars .navbar-collapse {
+        display: none !important;
+      }
+    }
+
+    .header {
+      height: 100vh;
+      position: relative;
+    }
+
+    .header .container {
+      padding-top: 26vh;
+      color: #FFFFFF;
+      z-index: 2;
+      position: relative;
+    }
+
+    .header .share {
+      margin-top: 150px;
+    }
+
+    .header h1 {
+      font-weight: 600;
+    }
+
+    .header .title {
+      color: #FFFFFF;
+    }
+
+    .section-team .team .team-player img {
+      max-width: 100px;
+    }
+
+    .section-team .team-player {
+      margin-bottom: 15px;
+    }
+
+    .section-contact-us .title {
+      margin-bottom: 15px;
+    }
+
+    .section-contact-us .description {
+      margin-bottom: 30px;
+    }
+
+    .section-contact-us .input-group,
+    .section-contact-us .send-button,
+    .section-contact-us .textarea-container {
+      padding: 0 40px;
+    }
+
+    .section-contact-us .textarea-container {
+      margin: 40px 0;
+    }
+
+    .section-contact-us a.btn {
+      margin-top: 35px;
+    }
+  </style>
+{% endblock %}

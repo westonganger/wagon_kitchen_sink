@@ -10,7 +10,7 @@ published: true
 {% block fonts %}
 {% endblock %}
 
-{% block default-icons %}
+{% block icons-default %}
   {% include 'icons' with type: 'font-awesome-4' %}
 {% endblock %}
 
@@ -37,7 +37,7 @@ published: true
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
         <a class="navbar-brand mr-5" href="#">
-          <img src="images/app-promo/shards-logo-green.svg" class="mr-2" alt="Shards - Agency Landing Page">
+          <img src="{{ 'shards/app-promo/shards-logo-green.svg' | theme_image_url }}" class="mr-2" alt="Shards - Agency Landing Page">
           Shards App
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,13 +88,13 @@ published: true
             <a href="https://designrevision.com/download/shards" class="btn btn-lg btn-success btn-pill align-self-center"><i class="fa fa-download mr-2"></i>Download</a>
 
             <div class="d-block mt-4">
-              <a href="https://designrevision.com/download/shards"><img class="w-25 mt-2 mr-3" src="images/app-promo/badge-apple-store.png" alt="Get it on Apple Store"></a>
-              <a href="https://designrevision.com/download/shards"><img class="w-25 mt-2" src="images/app-promo/badge-google-play-store.png" alt="Get it on Google Play Store"></a>
+              <a href="https://designrevision.com/download/shards"><img class="w-25 mt-2 mr-3" src="{{ 'shards/app-promo/badge-apple-store.png' | theme_image_url }}" alt="Get it on Apple Store"></a>
+              <a href="https://designrevision.com/download/shards"><img class="w-25 mt-2" src="{{ 'shards/app-promo/badge-google-play-store.png' | theme_image_url }}" alt="Get it on Google Play Store"></a>
             </div>
         </div>
 
         <div class="col-lg-4 col-md-5 col-sm-12 ml-auto">
-          <img class="iphone-mockup ml-auto" src="images/app-promo/iphone-app-mockup.png" alt="iPhone App Mockup - Shards App Promo Demo">
+          <img class="iphone-mockup ml-auto" src="{{ 'shards/app-promo/iphone-app-mockup.png' | theme_image_url }}" alt="iPhone App Mockup - Shards App Promo Demo">
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@ published: true
     <div class="container-fluid">
       <div class="row">
         <div class="app-screenshot col-lg-4 col-md-12 col-sm-12 px-0 py-5">
-          <img class="mt-auto mb-auto" src="images/app-promo/iphone-app-screenshot.png" alt="App Screenshot - Shards App Promo Demo Page">
+          <img class="mt-auto mb-auto" src="{{ 'shards/app-promo/iphone-app-screenshot.png' | theme_image_url }}" alt="App Screenshot - Shards App Promo Demo Page">
         </div>
 
         <!-- App Features Wrapper -->
@@ -115,7 +115,7 @@ published: true
           <div class="container">
             <h3 class="section-title underline--left my-5">Features</h3>
             <div class="feature py-4 d-flex">
-              <div class="icon text-white bg-success mr-5"><i class="fa fa-refresh"></i></div>
+              <div class="icon text-white bg-success mr-5 flex-center-all"><i class="fa fa-refresh"></i></div>
               <div>
                   <h5>Everything Synced</h5>
                   <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
@@ -123,7 +123,7 @@ published: true
             </div>
 
             <div class="feature py-4 d-flex">
-              <div class="icon text-white bg-success mr-5"><i class="fa fa-shield"></i></div>
+              <div class="icon text-white bg-success mr-5 flex-center-all"><i class="fa fa-shield"></i></div>
               <div>
                   <h5>Security</h5>
                   <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
@@ -131,7 +131,7 @@ published: true
             </div>
 
             <div class="feature py-4 d-flex">
-              <div class="icon text-white bg-success mr-5"><i class="fa fa-share"></i></div>
+              <div class="icon text-white bg-success mr-5 flex-center-all"><i class="fa fa-share"></i></div>
               <div>
                   <h5>Sharing</h5>
                   <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
@@ -139,7 +139,7 @@ published: true
             </div>
 
             <div class="feature py-4 d-flex">
-              <div class="icon text-white bg-success mr-5"><i class="fa fa-globe"></i></div>
+              <div class="icon text-white bg-success mr-5 flex-center-all"><i class="fa fa-globe"></i></div>
               <div>
                   <h5>Access Anywhere</h5>
                   <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
@@ -160,7 +160,7 @@ published: true
         <div class="row">
             <div class="col-md-4 testimonial text-center">
                 <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
-                    <img src="images/common/avatar-1.jpeg" class="w-100" alt="Testimonial Avatar" />
+                    <img src="{{ 'shards/common/avatar-1.jpeg' | theme_image_url }}" class="w-100" alt="Testimonial Avatar" />
                 </div>
                 <h5 class="mb-1">Osbourne Tranter</h5>
                 <span class="text-muted d-block mb-2">CEO at Megacorp</span>
@@ -169,7 +169,7 @@ published: true
 
             <div class="col-md-4 testimonial text-center">
                 <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
-                    <img src="images/common/avatar-2.jpeg" class="w-100" alt="Testimonial Avatar" />
+                    <img src="{{ 'shards/common/avatar-2.jpeg' | theme_image_url }}" class="w-100" alt="Testimonial Avatar" />
                 </div>
                 <h5 class="mb-1">Darrin Ollie</h5>
                 <span class="text-muted d-block mb-2">CEO at Megacorp</span>
@@ -178,7 +178,7 @@ published: true
 
             <div class="col-md-4 testimonial text-center">
                 <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
-                    <img src="images/common/avatar-3.jpeg" class="w-100" alt="Testimonial Avatar" />
+                    <img src="{{ 'shards/common/avatar-3.jpeg' | theme_image_url }}" class="w-100" alt="Testimonial Avatar" />
                 </div>
                 <h5 class="mb-1">Quinton Bruce</h5>
                 <span class="text-muted d-block mb-2">CEO at Megacorp</span>
@@ -198,7 +198,7 @@ published: true
           <div class="card-deck">
             <div class="col-md-12 col-lg-4">
               <div class="card mb-4">
-                <img class="card-img-top" src="images/common/card-1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/common/card-1.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">Find Great Places to Work While Travelling</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -209,7 +209,7 @@ published: true
 
             <div class="col-md-12 col-lg-4">
               <div class="card mb-4">
-                <img class="card-img-top" src="images/common/card-3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/common/card-3.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">Quick Tips for Improving Your Website's Design</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -220,7 +220,7 @@ published: true
 
             <div class="col-md-12 col-lg-4">
               <div class="card mb-4">
-                <img class="card-img-top" src="images/common/card-2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/common/card-2.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">A Designer's Tips While Travelling and Working</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>

@@ -1,0 +1,1717 @@
+---
+title: Meet Me
+handle: meet-me
+listed: true
+published: true
+---
+
+{% extends layouts/default %}
+
+{% block fonts %}
+{% endblock %}
+
+{% block icons-default %}
+  {% include 'icons' with type: 'font-awesome-4' %}
+  {% include 'icons' with type: 'simple-line-icons' %}
+{% endblock %}
+
+{% block js-before %}
+  {% include asset with type: '' %}
+{% endblock %}
+
+{% block css-before %}
+  {% include asset with type: '' %}
+{% endblock %}
+
+{% block top-nav %}
+  {% include back-button %}
+{% endblock %}
+
+{% block main %}
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a href="index.html" class="navbar-brand"><img src="{{ 'meet-me/logo.png' | theme_image_url }}" alt=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero-area">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">
+                Work
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#resume">resume</a>
+        </li>
+        <li>
+          <a href="#portfolio">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
+              <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Tom Saulnier</h2>
+              <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Front-end Web Developer and Graphic Designer</p>
+              <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                <li>
+                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li>
+                  <a class="google" href="#"><i class="icon-social-google"></i></a>
+                </li>
+              </ul>
+              <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                <a href="#" class="btn btn-common">Get a Free Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <!-- About Section Start -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+            <img class="img-fluid" src="{{ 'meet-me/about/about-1.jpg' | theme_image_url }}" alt="">
+          </div>
+        </div> 
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+            <h3>Hi Guys!</h3>
+            <p>Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
+            <div class="about-profile">
+              <ul class="admin-profile">
+                <li><span class="pro-title"> Name </span> <span class="pro-detail">Tom Saulnier</span></li>
+                <li><span class="pro-title"> Age </span> <span class="pro-detail">25 Years</span></li>
+                <li><span class="pro-title"> Experience </span> <span class="pro-detail">4 Years</span></li>
+                <li><span class="pro-title"> Country </span> <span class="pro-detail">USA</span></li>
+                <li><span class="pro-title"> Location </span> <span class="pro-detail">San Francisco, CA</span></li>
+                <li><span class="pro-title"> e-mail </span> <span class="pro-detail">email@example.com</span></li>
+                <li><span class="pro-title"> Phone </span> <span class="pro-detail">+ (00) 123 456 789</span></li>
+                <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
+              </ul>
+            </div>
+            <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>
+            <a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+          </div>
+        </div>   
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Services Section Start -->
+  <section id="services" class="services section-padding">
+    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+            <div class="icon">
+              <i class="icon-grid"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Front-end Development</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon">
+              <i class="icon-layers"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Graphic Design</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+            <div class="icon">
+              <i class="icon-briefcase"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Business Branding</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+            <div class="icon">
+              <i class="icon-bubbles"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">Consultancy</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+  <!-- Resume Section Start -->
+  <div id="resume" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="education wow fadeInRight" data-wow-delay="0.3s">
+            <ul class="timeline">
+              <li>
+                <i class="icon-graduation"></i>
+                <h2 class="timelin-title">Education</h2>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Bsc In CSE - Yale University</h3>
+                  <span>2012 - 2016</span>
+                  <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Higher Secondary School - San Francisco College</h3>
+                  <span>2010 - 2012</span>
+                  <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Secondary School - Labratory High School</h3>
+                  <span>2005 - 2010</span>
+                  <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+            <ul class="timeline">
+              <li>
+                <i class="icon-briefcase"></i>
+                <h2 class="timelin-title">Experience</h2>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Art Director - Tesla Inc.</h3>
+                  <span>Jan 2018 - Present</span>
+                  <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">UX/UI Designer - Samsung</h3>
+                  <span>Nov 2016 - Dec 2017</span>
+                  <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Intern UI Designer - UIdeck</h3>
+                  <span>Mar 2015 - Oct 2016</span>
+                  <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Resume Section End -->
+
+  <!-- Portfolio Section -->
+  <section id="portfolios" class="section-padding">
+    <!-- Container Starts -->
+    <div class="container">        
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Remarkable Works</h2>
+      <div class="row">          
+        <div class="col-md-12">
+          <!-- Portfolio Controller/Buttons -->
+          <div class="controls text-center">
+            <a class="filter active btn btn-common" data-filter="all">
+              All 
+            </a>
+            <a class="filter btn btn-common" data-filter=".design">
+              Design 
+            </a>
+            <a class="filter btn btn-common" data-filter=".development">
+              Development
+            </a>
+            <a class="filter btn btn-common" data-filter=".print">
+              Print 
+            </a>
+          </div>
+          <!-- Portfolio Controller/Buttons Ends-->
+        </div>
+
+        <!-- Portfolio Recent Projects -->
+        <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="{{ 'meet-me/gallery/img-1.jpg' | theme_image_url }}" alt="" />  
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="lightbox preview" href="assets/img/gallery/img-1.jpg">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a class="link" href="#">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="{{ 'meet-me/gallery/img-2.jpg' | theme_image_url }}" alt=""/> 
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="lightbox preview" href="assets/img/gallery/img-2.jpg">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a class="link" href="#">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="{{ 'meet-me/gallery/img-3.jpg' | theme_image_url }}" alt=""/> 
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a class="link" href="#">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="{{ 'meet-me/gallery/img-4.jpg' | theme_image_url }}" alt="" /> 
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a class="link" href="#">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="{{ 'meet-me/gallery/img-5.jpg' | theme_image_url }}" alt="" /> 
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a class="link" href="#">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
+            <div class="portfolio-item">
+              <div class="shot-item">
+                <img src="{{ 'meet-me/gallery/img-6.jpg' | theme_image_url }}" alt=""/>
+                <div class="overlay">
+                  <div class="icons">
+                    <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
+                      <i class="icon-eye"></i>
+                    </a>
+                    <a class="link" href="#">
+                      <i class="icon-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container Ends -->
+  </section>
+  <!-- Portfolio Section Ends --> 
+
+  <!-- Counter Area Start-->
+  <section class="counter-section section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- Counter Item -->
+        <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+          <div class="counter wow fadeInDown" data-wow-delay="0.3s">
+            <div class="icon"><i class="icon-briefcase"></i></div>
+            <div class="counterUp">250</div>
+            <p>Project Working</p>
+          </div>
+        </div>
+        <!-- Counter Item -->
+        <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+          <div class="counter wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon"><i class="icon-check"></i></div>
+            <div class="counterUp">950</div>
+            <p>Project Done</p>
+          </div>
+        </div>
+        <!-- Counter Item -->
+        <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+          <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+            <div class="icon"><i class="icon-diamond"></i></div>
+            <div class="counterUp">150</div>
+            <p>Awards Received</p>
+          </div>
+        </div>
+        <!-- Counter Item -->
+        <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+          <div class="counter wow fadeInDown" data-wow-delay="1.2s">
+            <div class="icon"><i class="icon-heart"></i></div>
+            <div class="counterUp">299</div>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Counter Area End-->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="section-padding">      
+    <div class="contact-form">
+      <div class="container">
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-block">
+              <h2>Contact Form</h2><br>
+              <div class="text-center">
+                <h2>You are using Free Version</h2>
+                <h4>Please, purchase full version to get all features and pages</h4><br>
+                <b>Including:</b>
+                <p>- 2 Homepage Variations</p>
+                <p>- All Elements and Features</p>
+                <p>- Amazing Slider</p>
+                <p>- Documentation File</p>
+                <p>- Quick Support</p>
+                <p>- Permission to Use in Commercial Projects</p>
+                <p>- Footer Credit Removal</p>
+                <p>- SASS Files</p>
+                <br>
+                <a href="http://rebrand.ly/meetme-purchase" target="_blank" class="btn btn-common btn-lg">Purchase Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="footer-right-area wow fadeIn">
+              <h2>Contact Address</h2>
+              <div class="footer-right-contact">
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-map-marker"></i>
+                  </div>
+                  <p>San Francisco, CA</p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <p><a href="mailto:hello@tom.com">hello@tom.com</a></p>
+                  <p><a href="mailto:tomsaulnier@gmail.com">tomsaulnier@gmail.com</a></p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <p><a href="#">+ (00) 123 456 789</a></p>
+                  <p><a href="#">+ (00) 123 344 789</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </section>
+{% endblock %}
+
+{% block footer %}
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+              </li>
+            </ul>
+            <p>Copyright © 2018 UIdeck All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+
+{% block css %}
+  <style>
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #666;
+  line-height: 25px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-size: 38px;
+  font-weight: 700;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.script-font {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+a {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a a:focus {
+  outline: none;
+}
+
+p {
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0px;
+  font-size: 14px;
+}
+
+ul, ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+.hero-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 70px;
+  letter-spacing: 0.1rem;
+}
+
+.hero-sub-heading {
+  font-size: 20px;
+  font-weight: 400;
+  color: #e6e6e6;
+  line-height: 45px;
+  letter-spacing: 0.1rem;
+}
+
+.section-titile-bg {
+  display: inline;
+  font-size: 115px;
+  font-weight: 700;
+  height: 100%;
+  left: -173px;
+  opacity: 0.1;
+  position: absolute;
+  top: -14px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title-header p {
+  text: center;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 36px;
+}
+
+.section-title {
+  color: #252525;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 48px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 10px 30px;
+  border-radius: 0px;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 4px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: inline-block;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+  color: #fff;
+}
+
+.btn-common {
+  background-color: #00b4d9;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-common:hover {
+  color: #fff;
+  background-color: #21cff3;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-danger:hover {
+  background-color: #f55262;
+  border-color: #f55262;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-border {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-border:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-lg {
+  padding: 14px 33px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.btn-rm {
+  padding: 7px 10px;
+  text-transform: capitalize;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.icon-close, .icon-check {
+  color: #00b4d9;
+}
+
+.social-icon li {
+  display: inline-block;
+}
+
+.social-icon li a {
+  color: #000;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 16px;
+  margin: 15px 6px 12px 6px;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.social-icon li a:hover {
+  color: #fff;
+}
+
+.social-icon li .facebook:hover {
+  background: #3b5999;
+}
+
+.social-icon li .twitter:hover {
+  background: #4A9CEC;
+}
+
+.social-icon li .instagram:hover {
+  background: #D6274D;
+}
+
+.social-icon li .linkedin:hover {
+  background: #1260A2;
+}
+
+.social-icon li .google:hover {
+  background: #CE332A;
+}
+
+/* ScrollToTop */
+a.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  text-decoration: none;
+}
+
+a.back-to-top i {
+  display: block;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #00b4d9;
+  border-radius: 2px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+a.back-to-top:hover, a.back-to-top:focus {
+  text-decoration: none;
+}
+
+#loader {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999;
+}
+
+.square-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+.square-spin img {
+  max-width: 64px;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+#about .img-thumb img {
+  border: 8px solid #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.profile-wrapper {
+  padding: 45px 0;
+}
+
+.profile-wrapper .btn {
+  margin: 10px 10px 0px 0px;
+}
+
+.profile-wrapper .btn i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.about-profile {
+  position: relative;
+  margin: 20px 0 20px 0;
+}
+
+.about-profile .pro-title {
+  font-weight: 700;
+  color: #040404;
+  position: relative;
+  width: 120px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.about-profile .pro-title:after {
+  position: absolute;
+  content: ':';
+  color: #040404;
+  font-size: 14px;
+  left: 77px;
+}
+
+.about-profile .admin-sign {
+  position: absolute;
+  right: 45px;
+  bottom: 10px;
+}
+
+.counter-section {
+  background: url(../img/background/bg-1.jpg);
+  overflow: hidden;
+  position: relative;
+}
+
+.counter-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.counter-section .counter {
+  padding: 30px 0;
+}
+
+.counter-section .counter .icon {
+  margin-bottom: 30px;
+}
+
+.counter-section .counter .icon i {
+  font-size: 48px;
+  color: #00b4d9;
+}
+
+.counter-section .counter p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+
+.counter-section .counter .counterUp {
+  color: #fff;
+  font-size: 42px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+/* Resume */
+.timeline {
+  position: relative;
+}
+
+.timeline .timelin-title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.timeline li {
+  padding: 0 20px 20px 30px;
+  list-style: none;
+  border-left: 2px solid #f1f1f1;
+}
+
+.timeline li .content-text {
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.timeline li .line-title {
+  font-size: 16px;
+  line-height: 6px;
+}
+
+.timeline li span {
+  font-size: 12px;
+  padding: 9px 0;
+  display: block;
+}
+
+.timeline li .line-text {
+  color: #888;
+  line-height: 18px;
+}
+
+.timeline li:first-child:before {
+  border: 0;
+  background: none;
+  position: relative;
+}
+
+.timeline li:last-child {
+  padding: 0 20px 0px 30px;
+}
+
+.timeline li:before {
+  content: "";
+  border: solid 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  font-size: 8px;
+  margin-left: -35px;
+  font-weight: 400;
+  background: #fff;
+  display: block;
+  position: absolute;
+  margin-top: 18px;
+  border-color: #00b4d9 !important;
+}
+
+.timeline li:first-child i {
+  font-size: 20px;
+  float: left;
+  margin-left: -30px;
+  line-height: 50px;
+  border-radius: 30px;
+  margin: -12px -55px;
+  background: #00b4d9;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.navbar-brand {
+  position: relative;
+  padding: 0px;
+}
+
+.top-nav-collapse {
+  background: #fff;
+  z-index: 999999;
+  top: 0px !important;
+  min-height: 58px;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  background: #fff !important;
+}
+
+.top-nav-collapse .navbar-brand {
+  top: 0px;
+}
+
+.top-nav-collapse .navbar-brand img {
+  width: 65%;
+}
+
+.top-nav-collapse .navbar-nav .nav-link {
+  color: #333 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:hover {
+  cursor: pointer;
+  color: #00b4d9 !important;
+}
+
+.top-nav-collapse .navbar-nav li.active a.nav-link {
+  color: #00b4d9 !important;
+}
+
+.indigo {
+  background: #fff;
+}
+
+.menu-bg {
+  background: transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i {
+  font-size: 28px;
+  color: #00b4d9;
+  vertical-align: middle;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link i:hover {
+  color: #21cff3;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #333;
+  font-weight: 700;
+  padding: 0 17px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav li a:hover,
+.navbar-expand-lg .navbar-nav li .active > a,
+.navbar-expand-lg .navbar-nav li a:focus {
+  color: #00b4d9;
+  outline: none;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar li.active a.nav-link {
+  color: #00b4d9;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  display: none;
+  position: absolute;
+  z-index: 99;
+  min-width: 210px;
+  background-color: #fff;
+  white-space: nowrap;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+}
+
+.dropdown-menu:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  border: none;
+  animation: fadeIn 0.4s;
+  -webkit-animation: fadeIn 0.4s;
+  -moz-animation: fadeIn 0.4s;
+  -o-animation: fadeIn 0.4s;
+  -ms-animation: fadeIn 0.4s;
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f1f1f1;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  clear: both;
+  position: relative;
+  outline: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.dropdown .dropdown-menu .dropdown-item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.dropdown .dropdown-menu .dropdown-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.dropdown .dropdown-item:focus,
+.dropdown .dropdown-item:hover,
+.dropdown .dropdown-item.active {
+  color: #00b4d9;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background: transparent;
+}
+
+.fadeInUpMenu {
+  -webkit-animation-name: fadeInUpMenu;
+  animation-name: fadeInUpMenu;
+}
+
+.slicknav_btn {
+  border-color: #00b4d9;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  background: #00b4d9;
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-main li a.nav-link {
+    padding-top: 18px;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 0px 15px;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 75%;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_nav .active a {
+    background: #E91E63;
+    color: #fff;
+  }
+  .slicknav_nav a:hover,
+  .slicknav_nav a:focus,
+  .slicknav_nav .active {
+    color: #00b4d9;
+    outline: none;
+    background: #f8f9fa;
+  }
+}
+
+/* ==========================================================================
+3. Hero Area
+========================================================================== */
+.hero-area-bg {
+  background: url(../img/hero-area.jpg) no-repeat;
+  background-size: cover;
+}
+
+#hero-area {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero-area .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #0c0808;
+  opacity: 0.6;
+}
+
+#hero-area .contents {
+  padding: 175px 0px 120px;
+}
+
+#hero-area .contents h5 {
+  font-size: 50px;
+}
+
+#hero-area .contents .head-title {
+  color: #fff;
+  font-size: 80px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#hero-area .contents p {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+#hero-area .contents .btn {
+  margin: 25px 0px;
+  text-transform: uppercase;
+}
+
+#hero-area .banner_bottom_btn {
+  margin-top: 40px;
+}
+
+#hero-area .banner_bottom_btn i {
+  color: #fff;
+  font-size: 48px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#hero-area .banner_bottom_btn i:hover {
+  color: #ddd;
+}
+
+/* ==========================================================================
+  Portfolio Section
+   ========================================================================== */
+#portfolios {
+  background: #f2f2f2;
+}
+
+#portfolios .mix {
+  padding: 10px;
+}
+
+#portfolios .portfolio-item .shot-item {
+  margin: 0px;
+}
+
+#portfolio .mix {
+  display: none;
+}
+
+.controls {
+  text-align: center;
+  padding: 0px 0px 20px;
+}
+
+.controls .active {
+  color: #00b4d9 !important;
+  border-color: #00b4d9;
+  background: transparent;
+}
+
+.controls .btn {
+  text-transform: uppercase;
+  margin: 2px;
+  color: #fff;
+}
+
+.controls:hover {
+  cursor: pointer;
+}
+
+.portfolio-img {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.portfolio-img img {
+  width: 100%;
+}
+
+.shot-item {
+  margin-right: 15px;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
+
+.shot-item img {
+  width: 100%;
+}
+
+.shot-item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 180, 217, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.shot-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  opacity: 0;
+}
+
+.overlay .icons i {
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  color: #00b4d9;
+  left: 50%;
+  margin-left: -24px;
+  margin-top: -24px;
+  top: 50%;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.overlay .preview {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  color: #fff;
+}
+
+.overlay .link {
+  position: absolute;
+  left: 60%;
+  margin-left: 10px;
+  top: 50%;
+  color: #fff;
+}
+
+.shot-item:hover .overlay {
+  opacity: 1;
+}
+
+a:not([href]):not([tabindex]) {
+  color: #fff;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: #fff;
+}
+
+/* Services Item */
+.services {
+  background: #F0F0F0;
+}
+
+.services-item {
+  background: #fff;
+  border-radius: 4px;
+  padding: 48px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.services-item .icon i {
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 48px;
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  color: #00b4d9;
+}
+
+.services-item .services-content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.services-item .services-content h3 a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.services-item .services-content h3 a:hover {
+  color: #00b4d9;
+}
+
+.services-item .services-content p {
+  line-height: 22px;
+}
+
+.services-item:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 8px 10px;
+  border: 1px solid #e1e1e1;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 1;
+}
+
+.contact-form-area {
+  background: #fff;
+  box-shadow: 0 0 30px #ededed;
+  padding: 60px 40px;
+}
+
+.contact-form-area h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.footer-right-contact {
+  padding: 4px;
+  border: 1px solid #e1e1e1;
+  margin-top: 30px;
+}
+
+.footer-right-contact .single-contact {
+  margin: 10px 22px;
+  padding: 3px 55px;
+  position: relative;
+  color: #666;
+}
+
+.footer-right-contact .single-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-right-contact .single-contact p a {
+  color: #666;
+}
+
+.footer-right-contact .contact-icon {
+  background: #00b4d9;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 40px;
+  left: 0;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 40px;
+}
+
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+
+#contact #contactForm {
+  margin-top: 30px;
+}
+
+.text-danger {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.list-unstyled li {
+  color: #d9534f;
+}
+
+#conatiner-map {
+  margin-top: 30px;
+  text-align: center;
+  background-color: #fff;
+  height: 370px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 101;
+  width: 100%;
+}
+
+/* Footer Area Start */
+.footer-area {
+  background: #1C1C20;
+}
+
+.footer-area .footer-text p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer-area .footer-text p a {
+  color: #00b4d9;
+}
+
+.footer-area .footer-text .nav-inline .nav-link {
+  padding: 11px 7px;
+  color: #888;
+}
+
+.footer-area .footer-text .nav-inline .nav-link:hover {
+  color: #00b4d9;
+}
+
+.footer-2 {
+  background: #252525;
+}
+
+.footer-2 img {
+  margin-top: -8px;
+}
+
+.footer-2 h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.footer-2 p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  margin: 0;
+  padding-right: 50px;
+}
+
+.footer-2 ul li a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer-2 ul li a:hover {
+  color: #00b4d9;
+}
+
+#copyright {
+  background: #333;
+}
+
+#copyright p {
+  line-height: 42px;
+  color: #fff;
+  margin: 0;
+}
+
+#copyright p a {
+  color: #fff;
+}
+
+#copyright p a:hover {
+  color: #00b4d9;
+}
+
+.about-profile{position:relative;margin:20px 0 30px 0}.about-profile .pro-title{font-weight:700;color:#040404;position:relative;width:120px;display:inline-block;margin-bottom:5px}.about-profile .pro-title:after{position:absolute;content:':';color:#040404;font-size:14px;left:77px}.about-profile .admin-sign{position:absolute;right:45px;bottom:10px}
+  </style>
+{% endblock %}

@@ -72,6 +72,9 @@ mix
 
   .js('app/assets/shards/javascripts/app.js', 'public/javascripts/shards/app.js')
   .sass('app/assets/shards/stylesheets/app.scss', 'public/stylesheets/shards/app.css')
+
+  .js('app/assets/now-ui-kit/javascripts/app.js', 'public/javascripts/now-ui-kit/app.js')
+  .sass('app/assets/now-ui-kit/stylesheets/app.scss', 'public/stylesheets/now-ui-kit/app.css')
   /* END Theme Assets */
 
   // .combine([

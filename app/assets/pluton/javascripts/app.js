@@ -1,6 +1,3 @@
-// https://github.com/VodkaBears/Vide/issues/183#issuecomment-365603849
-jQuery.fn.load = function(callback) { $(window).on("load", callback) };
-
 import './vendor/jquery.mixitup.js';
 import './vendor/jquery.bxslider.js';
 import './vendor/jquery.cslider.js';

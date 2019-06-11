@@ -1,5 +1,8 @@
 global.$ = global.jQuery = require('jquery');
 
+// https://github.com/VodkaBears/Vide/issues/183#issuecomment-365603849
+jQuery.fn.load = function(callback) { $(window).on("load", callback) };
+
 var autosize = require('autosize/dist/autosize.js');
 require("./vendor/jquery.tablesorter.js");
 require("jquery-enable-disable/dist/jquery-enable-disable.js");

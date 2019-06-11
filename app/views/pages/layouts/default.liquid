@@ -4,8 +4,14 @@ is_layout: true
 slug: default
 ---
 
+{% block body_class %}
+{% endblock %}
+
 {% case page.handle %}
-{% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age', 'sb-creative', 'pet-life', 'another-one', 'visit-nepal' %}
+{% when 'sb-coming-soon', 'sb-agency', 'sb-grayscale', 'sb-new-age', 'sb-creative', 'pet-life', 'another-one', 'visit-nepal', 'folio', 'reveal' %}
+  {% comment %} DO NOTHING {% endcomment %}
+{% when 'now-ui-kit-demo', 'now-ui-kit-landing-page' %}
+  {% assign body_class = 'sidebar-collapse' %}
 {% when 'fitness' %}
   {% assign body_class = 'mobile-shift' %}
 {% when 'shards-agency-landing' %}

@@ -10,7 +10,7 @@ published: true
 {% block fonts %}
 {% endblock %}
 
-{% block default-icons %}
+{% block icons-default %}
   {% include 'icons' with type: 'font-awesome-4' %}
 {% endblock %}
 
@@ -38,7 +38,7 @@ published: true
 
 {% block main %}
   <!-- Floating Shards -->
-  <img src="images/demo/shard-1-5x-3.png" alt="Shard" class="shard">
+  <img src="images/{{ 'shards/demo/shard-1-5x-3.png' | theme_image_url }}" alt="Shard" class="shard">
 
   <!-- Welcome Section -->
   <div class="welcome d-flex justify-content-center flex-column">
@@ -244,7 +244,7 @@ published: true
         <div class="icons-example clearfix mb-5">
           <div class="icons-example-wrapper material-icons col-md-6 float-left">
             <div class="material-icons col-lg-3 col-md-3 col-sm-12 d-table text-center ml-auto mr-auto py-5">
-              <img class="mb-4" src="images/demo/material-icons.svg" alt="Shards supports the Material Icons pack by default.">
+              <img class="mb-4" src="{{ 'shards/demo/material-icons.svg' | theme_image_url }}" alt="Shards supports the Material Icons pack by default.">
               <h2 class="text-light mb-2">Material Icons</h2>
               <h5 class="text-muted mb-0">Over 900+ Icons</h5>
             </div>
@@ -252,7 +252,7 @@ published: true
 
           <div class="icons-example-wrapper font-awesome col-md-6 float-left">
             <div class="material-icons col-lg-3 col-md-3 col-sm-12 d-table text-center mr-auto ml-auto py-5">
-              <img class="mb-4" src="images/demo/fontawesome-icons.svg" alt="Shards supports the FontAwesome Icons pack by default.">
+              <img class="mb-4" src="{{ 'shards/demo/fontawesome-icons.svg' | theme_image_url }}" alt="Shards supports the FontAwesome Icons pack by default.">
               <h2 class="text-light mb-2">Font Awesome</h2>
               <h5 class="text-muted mb-0">Over 600+ Icons</h5>
             </div>
@@ -721,7 +721,7 @@ published: true
           <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
               <div class="card">
-                <img class="card-img-top" src="images/demo/stock-photos/3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/demo/stock-photos/3.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">Sample Card Title</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed
@@ -733,7 +733,7 @@ published: true
 
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-hidden">
               <div class="card">
-                <img class="card-img-top" src="images/demo/stock-photos/1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/demo/stock-photos/1.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">Sample Card Title</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed
@@ -745,7 +745,7 @@ published: true
 
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 sm-hidden">
               <div class="card">
-                <img class="card-img-top" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/demo/stock-photos/2.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">Sample Card Title</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed
@@ -757,7 +757,7 @@ published: true
 
             <div class="col-lg-4 col-md-6 col-sm-12 d-none sm-hidden last">
               <div class="card">
-                <img class="card-img-top" src="images/demo/stock-photos/2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ 'shards/demo/stock-photos/2.jpg' | theme_image_url }}" alt="Card image cap">
                 <div class="card-body">
                   <h4 class="card-title">Sample Card Title</h4>
                   <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed
@@ -1142,7 +1142,7 @@ published: true
 
       <div class="example">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-1" aria-controls="navbarNavDropdown-1"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1202,7 +1202,7 @@ published: true
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-2" aria-controls="navbarNavDropdown-2"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1262,7 +1262,7 @@ published: true
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-4">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-3" aria-controls="navbarNavDropdown-3"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1322,7 +1322,7 @@ published: true
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-warning mb-4">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-4" aria-controls="navbarNavDropdown-4"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1381,7 +1381,7 @@ published: true
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-4">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-5" aria-controls="navbarNavDropdown-5"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1440,7 +1440,7 @@ published: true
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-          <img src="images/demo/shards-logo.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-6" aria-controls="navbarNavDropdown-6"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1500,7 +1500,7 @@ published: true
           </div>
         </nav>
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
-          <img src="images/demo/shards-logo-black.svg" alt="Example Navbar 1" class="mr-2" height="30">
+          <img src="{{ 'shards/demo/shards-logo-black.svg' | theme_image_url }}" alt="Example Navbar 1" class="mr-2" height="30">
           <a class="navbar-brand" href="#">Shards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown-7" aria-controls="navbarNavDropdown-7"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -1579,7 +1579,7 @@ published: true
           <!-- Extra: App Landing Page -->
           <div class="col-md-4 mb-4 ml-auto">
             <div class="card">
-              <img class="card-img-top" src="images/demo/shards-app-demo-page-demo.jpg" alt="Shards App Promo - Demo Landing Page">
+              <img class="card-img-top" src="{{ 'shards/demo/shards-app-demo-page-demo.jpg' | theme_image_url }}" alt="Shards App Promo - Demo Landing Page">
               <div class="card-body py-3">
                 <h6 class="text-center text-muted m-0">Mobile App Promo</h6>
               </div>
@@ -1592,7 +1592,7 @@ published: true
           <!-- Extra: Agency Landing Page -->
           <div class="col-md-4 mb-4 mr-auto">
             <div class="card">
-              <img class="card-img-top" src="images/demo/shards-agency-landing-page-demo.jpg" alt="Shards Agency - Demo Landing Page">
+              <img class="card-img-top" src="{{ 'shards/demo/shards-agency-landing-page-demo.jpg' | theme_image_url }}" alt="Shards Agency - Demo Landing Page">
               <div class="card-body py-3">
                 <h6 class="text-center text-muted m-0">Agency Landing Page</h6>
               </div>
@@ -1649,22 +1649,6 @@ published: true
       </div>
     </div>
   </div>
-
-  <!-- JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=1662270373824826";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-
-  </script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% endblock %}
 
 {% block footer %}

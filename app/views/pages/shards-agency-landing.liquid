@@ -10,7 +10,7 @@ published: true
 {% block fonts %}
 {% endblock %}
 
-{% block default-icons %}
+{% block icons-default %}
   {% include 'icons' with type: 'font-awesome-4' %}
 {% endblock %}
 
@@ -37,7 +37,7 @@ published: true
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
         <a class="navbar-brand" href="#">
-          <img src="images/agency-landing/shards-logo-white.svg" class="mr-2" alt="Shards - Agency Landing Page">
+          <img src="{{ 'shards/agency-landing/shards-logo-white.svg' | theme_image_url }}" class="mr-2" alt="Shards - Agency Landing Page">
           Shards Agency
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,14 +100,14 @@ published: true
       <div class="container">
         <div class="row">
           <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3"><i class="fa fa-paint-brush"></i></div>
+            <div class="icon text-primary mr-3 flex-center-all"><i class="fa fa-paint-brush"></i></div>
             <div class="px-4">
                 <h5>Design & Branding</h5>
                 <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
             </div>
           </div>
           <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3"><i class="fa fa-code"></i></div>
+            <div class="icon text-primary mr-3 flex-center-all"><i class="fa fa-code"></i></div>
             <div class="px-4">
                 <h5>Programming</h5>
                 <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
@@ -117,14 +117,14 @@ published: true
 
         <div class="row">
           <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3"><i class="fa fa-font"></i></div>
+            <div class="icon text-primary mr-3 flex-center-all"><i class="fa fa-font"></i></div>
             <div class="px-4">
                 <h5>Copywriting</h5>
                 <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
             </div>
           </div>
           <div class="feature py-4 col-md-6 d-flex">
-            <div class="icon text-primary mr-3"><i class="fa fa-support"></i></div>
+            <div class="icon text-primary mr-3 flex-center-all"><i class="fa fa-users"></i></div>
             <div class="px-4">
                 <h5>Training & Support</h5>
                 <p>Quisque mollis mi ac aliquet accumsan. Sed sed dapibus libero. Nullam luctus purus duis sensibus signiferumque.</p>
@@ -147,7 +147,7 @@ published: true
           <div class="card-deck">
           <div class="col-md-12 col-lg-4">
             <div class="card mb-4">
-              <img class="card-img-top" src="images/common/card-1.jpg" alt="Card image cap">
+              <img class="card-img-top" src="{{ 'shards/common/card-1.jpg' | theme_image_url }}" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title">Find Great Places to Work While Travelling</h4>
                 <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -158,7 +158,7 @@ published: true
 
           <div class="col-md-12 col-lg-4">
             <div class="card mb-4">
-              <img class="card-img-top" src="images/common/card-3.jpg" alt="Card image cap">
+              <img class="card-img-top" src="{{ 'shards/common/card-3.jpg' | theme_image_url }}" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title">Quick Tips for Improving Your Website's Design</h4>
                 <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -169,7 +169,7 @@ published: true
 
           <div class="col-md-12 col-lg-4">
             <div class="card mb-4">
-              <img class="card-img-top" src="images/common/card-2.jpg" alt="Card image cap">
+              <img class="card-img-top" src="{{ 'shards/common/card-2.jpg' | theme_image_url }}" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title">A Designer's Tips While Travelling and Working</h4>
                 <p class="card-text">He seems sinking under the evidence could not only grieve and a visit. The father is to bless and placed in his length hid...</p>
@@ -191,7 +191,7 @@ published: true
         <div class="row">
             <div class="col-md-4 testimonial text-center">
                 <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
-                    <img src="images/common/avatar-1.jpeg" class="w-100" alt="Testimonial Avatar" />
+                    <img src="{{ 'shards/common/avatar-1.jpeg' | theme_image_url }}" class="w-100" alt="Testimonial Avatar" />
                 </div>
                 <h5 class="mb-1">Osbourne Tranter</h5>
                 <span class="text-muted d-block mb-2">CEO at Megacorp</span>
@@ -200,7 +200,7 @@ published: true
 
             <div class="col-md-4 testimonial text-center">
                 <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
-                    <img src="images/common/avatar-2.jpeg" class="w-100" alt="Testimonial Avatar" />
+                    <img src="{{ 'shards/common/avatar-2.jpeg' | theme_image_url }}" class="w-100" alt="Testimonial Avatar" />
                 </div>
                 <h5 class="mb-1">Darrin Ollie</h5>
                 <span class="text-muted d-block mb-2">CEO at Megacorp</span>
@@ -209,7 +209,7 @@ published: true
 
             <div class="col-md-4 testimonial text-center">
                 <div class="avatar rounded-circle with-shadows mb-3 ml-auto mr-auto">
-                    <img src="images/common/avatar-3.jpeg" class="w-100" alt="Testimonial Avatar" />
+                    <img src="{{ 'shards/common/avatar-3.jpeg' | theme_image_url }}" class="w-100" alt="Testimonial Avatar" />
                 </div>
                 <h5 class="mb-1">Quinton Bruce</h5>
                 <span class="text-muted d-block mb-2">CEO at Megacorp</span>
