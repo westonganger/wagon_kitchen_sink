@@ -6,6 +6,10 @@ published: true
 ---
 {% extends layouts/design-blocks %}
 
+{% block body-class %}
+{% comment %} to fix full page block {% endcomment %}
+{% endblock %}
+
 {% block main %}
   <!-- Call to Action 1 -->
   <section class="fdb-block">
@@ -395,7 +399,7 @@ published: true
     <div class="container align-items-center justify-content-center d-flex">
       <div class="row align-items-center text-left">
         <div class="col-12 col-sm-10 col-md-8 col-lg-8">
-          <h1>Design Blocks is build on Boostrap Framework</h1>
+          <h1>Design Blocks is build on Bootstrap Framework</h1>
           <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there.</p>
           <p class="mt-5">
             <a href="/design-blocks" class="btn btn-light">Call to Action</a>

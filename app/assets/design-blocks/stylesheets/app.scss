@@ -1,9 +1,12 @@
 @import "./design-blocks";
 
 #navigator {
-  position: sticky;
-  top: 60px;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
   z-index: 1000;
+  border-bottom: 2px solid #DDD;
 }
 
 #navigator .navbar-toggler-icon {
@@ -26,4 +29,8 @@
 
 body:not(.design-blocks-index) #page-content{
   margin-top: 0 !important;
+}
+
+body.design-blocks-index #page-content{
+  margin-top: 150px !important;
 }
