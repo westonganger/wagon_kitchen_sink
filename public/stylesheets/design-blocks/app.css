@@ -1953,11 +1953,7 @@ header + header {
   padding: 250px 0;
 }
 
-body:not(.design-blocks-index) #page-content {
-  margin-top: 0 !important;
-}
-
-body.design-blocks-index #page-content {
-  margin-top: 150px !important;
+#page-content {
+  margin-top: 135px !important;
 }
 
